@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | LLD Enterprises</title>
+  <meta name="description" content="Get in touch with LLD Enterprises. Located at 415 Park Avenue, Rochester, NY 14607. Call (585) 244-3575.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="LLD Enterprises" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Who We Are</a>
+        <a href="services.html">What We Do</a>
+        <a href="properties.html">Properties</a>
+        <a href="fair-housing.html">Fair Housing</a>
+        <a href="tel:5852443575" class="nav-phone">&#9742; (585) 244-3575</a>
+        <a href="contact.html" class="nav-contact active">Contact Us</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span class="current">Contact Us</span>
+      </div>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you. Reach out to discuss acquisitions, leasing, management, or any real estate opportunity.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section>
+    <div class="container">
+      <div class="contact-section">
+
+        <!-- Contact Info -->
+        <div class="fade-in-left">
+          <h2 style="margin-bottom:0.5rem;">Get in Touch</h2>
+          <p style="color:#6B7280;margin-bottom:2.5rem;">Our team is ready to assist you with any commercial real estate needs.</p>
+
+          <div class="contact-info-block">
+            <div class="contact-info-icon">&#9906;</div>
+            <div>
+              <h4>Office Address</h4>
+              <p>415 Park Avenue<br>Rochester, NY 14607</p>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="contact-info-icon">&#9742;</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:5852443575">(585) 244-3575</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="contact-info-icon">&#9000;</div>
+            <div>
+              <h4>Fax</h4>
+              <p>(585) 473-3555</p>
+            </div>
+          </div>
+
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;color:#1C1C1C;margin-top:2rem;margin-bottom:1rem;">Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/lld-enterprises/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://www.instagram.com/lldenterprises/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">&#9737;</a>
+            <a href="https://www.facebook.com/profile.php?id=100063598735022" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form fade-in-right">
+          <h3>Send Us a Message</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Your company">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email <span style="color:#800020;">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="interest">Area of Interest</label>
+              <select id="interest" name="interest">
+                <option value="">Select an option...</option>
+                <option value="leasing">Leasing</option>
+                <option value="acquisitions">Acquisitions</option>
+                <option value="development">Development</option>
+                <option value="brokerage">Brokerage Services</option>
+                <option value="management">Property Management</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span style="color:#800020;">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us about your project or inquiry..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="img/footer_logo.png" alt="LLD Enterprises" class="footer-logo-img">
+          <p>A family-owned real estate investment and development firm based in Rochester, New York. Over 30 years of building value in commercial real estate.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/lld-enterprises/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://www.instagram.com/lldenterprises/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">&#9737;</a>
+            <a href="https://www.facebook.com/profile.php?id=100063598735022" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="services.html">What We Do</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Properties</h4>
+          <ul class="footer-links">
+            <li><a href="properties.html#retail">Retail</a></li>
+            <li><a href="properties.html#office">Office</a></li>
+            <li><a href="properties.html#industrial">Industrial</a></li>
+            <li><a href="properties.html#land">Land</a></li>
+            <li><a href="properties.html#residential">Residential</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>415 Park Avenue</li>
+            <li>Rochester, NY 14607</li>
+            <li><a href="tel:5852443575">(585) 244-3575</a></li>
+            <li><a href="fair-housing.html">Fair Housing Notice</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LLD Enterprises. All rights reserved.</p>
+        <p><a href="fair-housing.html">Fair Housing Notice</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
