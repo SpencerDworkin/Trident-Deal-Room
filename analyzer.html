@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deal Analyzer | LLD Enterprises Sheriff Sale Platform</title>
+  <meta name="description" content="Underwrite any sheriff sale, tax foreclosure, or off-market property against flip, buy-and-hold, and BRRRR exits — basis, NOI, DSCR, cash-on-cash, maximum allowable offer, and sensitivity tables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/platform.css">
+</head>
+<body>
+
+  <header class="header scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="LLD Enterprises" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="deals.html">Deals</a>
+        <a href="platform.html">Platform</a>
+        <a href="analyzer.html" class="active">Analyzer</a>
+        <a href="about.html">Who We Are</a>
+        <a href="properties.html">Portfolio</a>
+        <a href="tel:5852443575" class="nav-phone">&#9742; (585) 244-3575</a>
+        <a href="contact.html" class="nav-contact">Contact Us</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="wk-head">
+    <div class="p-wrap">
+      <div class="wk-head-inner" style="padding-bottom:2rem">
+        <div>
+          <p class="eyebrow">Underwriting</p>
+          <h1>Deal Analyzer</h1>
+          <p class="lede">The same engine that scores the desk, pointed at whatever numbers you put in. Change one input and the basis, the coverage ratio, the maximum allowable offer, and both sensitivity grids all move with it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wk-shell">
+    <div class="p-wrap">
+      <div class="an-grid">
+
+        <!-- ===== INPUTS ===== -->
+        <div>
+          <form id="an-form" autocomplete="off">
+            <div class="panel">
+              <h3>Start from a live file</h3>
+              <div class="field" style="margin-bottom:.6rem">
+                <label for="an-load">Prefill from the deal desk</label>
+                <select id="an-load"></select>
+              </div>
+              <p class="hint" id="an-source-note" style="font-size:.8rem;color:var(--p-muted)">Worked example: a moderate-rehab single family in a $1,750/mo rent market.</p>
+            </div>
+
+            <div class="panel">
+              <h3>The property</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="in-purchase">Purchase price</label>
+                  <div class="with-unit"><span class="unit">$</span><input type="number" id="in-purchase" value="95000" min="0" step="500"></div>
+                  <p class="hint">Winning bid, not the judgment</p>
+                </div>
+                <div class="field">
+                  <label for="in-rehab">Rehab budget</label>
+                  <div class="with-unit"><span class="unit">$</span><input type="number" id="in-rehab" value="42000" min="0" step="500"></div>
+                  <p class="hint">Scope plus contingency</p>
+                </div>
+                <div class="field">
+                  <label for="in-arv">Exit value (ARV)</label>
+                  <div class="with-unit"><span class="unit">$</span><input type="number" id="in-arv" value="215000" min="1" step="1000"></div>
+                  <p class="hint">Renovated, from paired comps</p>
+                </div>
+                <div class="field">
+                  <label for="in-rent">Market rent</label>
+                  <div class="with-unit"><span class="unit">$</span><input type="number" id="in-rent" value="1750" min="0" step="25"></div>
+                  <p class="hint">Per month, all units</p>
+                </div>
+                <div class="field">
+                  <label for="in-taxes">Annual taxes</label>
+                  <div class="with-unit"><span class="unit">$</span><input type="number" id="in-taxes" value="4900" min="0" step="50"></div>
+                </div>
+                <div class="field">
+                  <label for="in-hoa">HOA / common charge</label>
+                  <div class="with-unit"><span class="unit">$</span><input type="number" id="in-hoa" value="0" min="0" step="5"></div>
+                  <p class="hint">Per month</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>The money</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="in-down">Down payment</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-down" value="25" min="0" max="100" step="1"></div>
+                </div>
+                <div class="field">
+                  <label for="in-rate">Interest rate</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-rate" value="7.95" min="0" max="25" step="0.05"></div>
+                </div>
+                <div class="field">
+                  <label for="in-term">Amortization</label>
+                  <div class="with-unit suffix"><span class="unit suf">yr</span><input type="number" id="in-term" value="30" min="1" max="40" step="1"></div>
+                </div>
+                <div class="field">
+                  <label for="in-hold">Hold before exit</label>
+                  <div class="with-unit suffix"><span class="unit suf">mo</span><input type="number" id="in-hold" value="6" min="0" max="36" step="1"></div>
+                </div>
+                <div class="field">
+                  <label for="in-closing">Buy-side closing</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-closing" value="2.5" min="0" max="10" step="0.1"></div>
+                </div>
+                <div class="field">
+                  <label for="in-selling">Sell-side costs</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-selling" value="7" min="0" max="15" step="0.1"></div>
+                </div>
+                <div class="field">
+                  <label for="in-refi">Refinance LTV</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-refi" value="75" min="0" max="90" step="1"></div>
+                </div>
+                <div class="field">
+                  <label for="in-insurance">Insurance rate</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-insurance" value="0.55" min="0" max="5" step="0.05"></div>
+                  <p class="hint">Annual, as % of ARV</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Operating assumptions</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="in-vacancy">Vacancy</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-vacancy" value="7" min="0" max="40" step="0.5"></div>
+                </div>
+                <div class="field">
+                  <label for="in-maintenance">Maintenance</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-maintenance" value="6" min="0" max="30" step="0.5"></div>
+                </div>
+                <div class="field">
+                  <label for="in-mgmt">Management</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-mgmt" value="8" min="0" max="20" step="0.5"></div>
+                </div>
+                <div class="field">
+                  <label for="in-capex">Capital reserve</label>
+                  <div class="with-unit suffix"><span class="unit suf">%</span><input type="number" id="in-capex" value="5" min="0" max="20" step="0.5"></div>
+                </div>
+              </div>
+              <p style="margin-top:1rem"><button class="btn-sm ghost" type="button" id="an-reset">Reset to house assumptions</button></p>
+            </div>
+
+            <div class="panel">
+              <h3>Acquisition &amp; basis</h3>
+              <dl class="kv" id="out-acq"></dl>
+            </div>
+
+            <div class="panel">
+              <h3>Stabilized operations</h3>
+              <dl class="kv" id="out-ops"></dl>
+            </div>
+
+            <div class="panel">
+              <h3>Exit &amp; refinance</h3>
+              <dl class="kv" id="out-exit"></dl>
+            </div>
+
+            <div class="panel">
+              <h3>Sensitivity &mdash; resale profit</h3>
+              <p style="font-size:.84rem;color:var(--p-muted);margin-bottom:.9rem">Net profit on resale as exit value and rehab budget move against you.</p>
+              <div id="out-sens-flip" style="overflow-x:auto"></div>
+            </div>
+
+            <div class="panel">
+              <h3>Sensitivity &mdash; debt coverage</h3>
+              <p style="font-size:.84rem;color:var(--p-muted);margin-bottom:.9rem">DSCR as the rate moves and rent lands above or below your estimate. Most lenders floor at 1.20x&ndash;1.25x.</p>
+              <div id="out-sens-hold" style="overflow-x:auto"></div>
+            </div>
+          </form>
+        </div>
+
+        <!-- ===== STICKY OUTPUT ===== -->
+        <aside class="an-out">
+          <div class="out-hero" id="out-hero"></div>
+          <div class="panel">
+            <h3>Verdict</h3>
+            <div class="stat-row" id="out-strats"></div>
+            <div class="verdict watch" id="out-verdict"></div>
+          </div>
+          <div class="panel">
+            <h3>Equity</h3>
+            <dl class="kv" id="out-key" style="grid-template-columns:1fr"></dl>
+          </div>
+          <div class="panel">
+            <h3>Before you bid</h3>
+            <ul class="bullets">
+              <li>The 70% rule is a screen, not a ceiling &mdash; it exists so you walk away, not so you justify a number.</li>
+              <li>Carry runs whether or not the crew shows up. Model the hold you will actually have, not the one you want.</li>
+              <li>At a sheriff sale you buy the title you get. Price a full title rundown into every file.</li>
+            </ul>
+            <p style="margin-top:1rem"><a href="contact.html" class="btn-sm" style="display:inline-block;text-decoration:none">Have us review the file</a></p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="img/footer_logo.png" alt="LLD Enterprises" class="footer-logo-img">
+          <p>A family-owned real estate investment and development firm based in Rochester, New York. Over 30 years of building value in commercial real estate.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/lld-enterprises/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://www.instagram.com/lldenterprises/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">&#9737;</a>
+            <a href="https://www.facebook.com/profile.php?id=100063598735022" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="deals.html">On-Market Deals</a></li>
+            <li><a href="platform.html">How It Works</a></li>
+            <li><a href="analyzer.html">Deal Analyzer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="services.html">What We Do</a></li>
+            <li><a href="properties.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>415 Park Avenue</li>
+            <li>Rochester, NY 14607</li>
+            <li><a href="tel:5852443575">(585) 244-3575</a></li>
+            <li><a href="fair-housing.html">Fair Housing Notice</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LLD Enterprises. All rights reserved. This tool is an underwriting aid, not investment, tax, or legal advice.</p>
+        <p><a href="fair-housing.html">Fair Housing Notice</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/deals-data.js"></script>
+  <script src="js/analyzer.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On-Market Deals | LLD Enterprises Sheriff Sale Platform</title>
+  <meta name="description" content="Browse sheriff sale, tax foreclosure, REO, and off-market properties across Monroe County and Western New York — each one scored, underwritten, and filtered by strategy fit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/platform.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="LLD Enterprises" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="deals.html" class="active">Deals</a>
+        <a href="platform.html">Platform</a>
+        <a href="analyzer.html">Analyzer</a>
+        <a href="about.html">Who We Are</a>
+        <a href="properties.html">Portfolio</a>
+        <a href="tel:5852443575" class="nav-phone">&#9742; (585) 244-3575</a>
+        <a href="contact.html" class="nav-contact">Contact Us</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== WORKSPACE HEADER ===== -->
+  <section class="wk-head">
+    <div class="p-wrap">
+      <div class="wk-head-inner">
+        <div>
+          <p class="eyebrow">Deal Desk &middot; Western New York</p>
+          <h1>On-Market Properties</h1>
+          <p class="lede">Every sheriff sale, tax foreclosure, REO, and pre-foreclosure filing in our coverage counties &mdash; scored, underwritten to a basis, and filtered by the strategy you actually run.</p>
+        </div>
+        <div class="wk-kpis">
+          <div class="wk-kpi"><strong id="kpi-active">—</strong><span>Active files</span></div>
+          <div class="wk-kpi"><strong id="kpi-soon">—</strong><span>Sales in 30 days</span></div>
+          <div class="wk-kpi"><strong id="kpi-equity">—</strong><span>Avg. equity spread</span></div>
+          <div class="wk-kpi"><strong id="kpi-saved">—</strong><span>On your watchlist</span></div>
+        </div>
+      </div>
+
+      <div class="wk-tabs" id="wk-tabs" role="tablist">
+        <button class="wk-tab active" type="button" data-tab="on-market">On Market <span class="tab-count">0</span></button>
+        <button class="wk-tab" type="button" data-tab="auctions">Auction Calendar <span class="tab-count">0</span></button>
+        <button class="wk-tab" type="button" data-tab="off-market">Off Market <span class="tab-count">0</span></button>
+        <button class="wk-tab" type="button" data-tab="saved">Watchlist <span class="tab-count">0</span></button>
+        <button class="wk-tab" type="button" data-tab="sold">Sold Comps <span class="tab-count">0</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SAMPLE DATA NOTICE ===== -->
+  <div class="wk-notice">
+    <div class="p-wrap">
+      <span>&#9888;</span>
+      <p><b>Demonstration data.</b> Every listing, index number, plaintiff, and auction date on this page is generated sample data used to demonstrate the platform. It is not a record of any real foreclosure proceeding. Confirm all sale terms with the county clerk, the referee, and the plaintiff's counsel before bidding.</p>
+    </div>
+  </div>
+
+  <!-- ===== WORKSPACE ===== -->
+  <section class="wk-shell" id="wk-shell">
+    <div class="p-wrap">
+      <div class="wk-grid">
+
+        <!-- FILTER RAIL (rendered by js/deals.js) -->
+        <div class="rail-scrim" id="rail-scrim"></div>
+        <aside class="wk-rail" id="wk-rail" aria-label="Filters"></aside>
+
+        <!-- RESULTS -->
+        <div class="wk-main">
+          <div class="wk-toolbar">
+            <button class="btn-sm ghost rail-toggle" type="button" id="rail-toggle">&#9776; Filters</button>
+            <div class="wk-search">
+              <span class="ico">&#128269;</span>
+              <label for="wk-q" class="wk-hide">Search properties</label>
+              <input type="search" id="wk-q" placeholder="Address, city, ZIP, parcel, or index number">
+            </div>
+            <span class="wk-count" id="wk-count">Loading…</span>
+            <label for="wk-sort" class="wk-hide">Sort</label>
+            <select class="wk-sort" id="wk-sort">
+              <option value="score-desc">Deal score</option>
+              <option value="auction-asc">Auction date</option>
+              <option value="equity-desc">Equity spread</option>
+              <option value="cashflow-desc">Cash flow</option>
+              <option value="roi-desc">Cash-on-cash</option>
+              <option value="cap-desc">Yield on cost</option>
+              <option value="price-asc">Opening bid: low to high</option>
+              <option value="price-desc">Opening bid: high to low</option>
+              <option value="newest">Newest filing</option>
+            </select>
+            <div class="view-toggle" id="wk-views" role="group" aria-label="View">
+              <button type="button" data-view="grid" class="on">Grid</button>
+              <button type="button" data-view="list">List</button>
+              <button type="button" data-view="table">Table</button>
+              <button type="button" data-view="map">Map</button>
+            </div>
+          </div>
+
+          <div class="wk-chips" id="wk-chips"></div>
+          <div id="wk-results"></div>
+          <div class="wk-pager" id="wk-pager"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW THE DESK WORKS ===== -->
+  <section class="mk-band" style="background:#fff;border-top:1px solid var(--p-line)">
+    <div class="p-wrap">
+      <p class="section-subtitle">How the desk works</p>
+      <h2 class="section-title">From docket to deed</h2>
+      <p class="section-desc" style="margin-left:0">Filings hit the desk the morning they publish. Everything you see above has already been through valuation, scope, and financing before it reaches you.</p>
+      <div class="step-grid">
+        <div class="step">
+          <h3>Docket ingest</h3>
+          <p>Sheriff sale notices, tax foreclosure lists, referee filings, and REO dispositions across six counties are pulled and normalized to one record format.</p>
+        </div>
+        <div class="step">
+          <h3>Valuation &amp; scope</h3>
+          <p>Each parcel is valued against paired comps and given a condition read and a rehab budget, so an opening bid can be compared to a basis, not a list price.</p>
+        </div>
+        <div class="step">
+          <h3>Underwrite &amp; score</h3>
+          <p>Flip, buy-and-hold, and BRRRR are all modeled &mdash; NOI, DSCR, cash-on-cash, maximum allowable offer &mdash; and blended into one composite score.</p>
+        </div>
+        <div class="step">
+          <h3>Bid &amp; take title</h3>
+          <p>We hand you the bidder checklist, deposit terms, and lien position, then stand behind you at the courthouse steps and through the referee's deed.</p>
+        </div>
+      </div>
+      <p style="margin-top:2.5rem">
+        <a href="analyzer.html" class="btn btn-primary">Open the deal analyzer</a>
+        <a href="platform.html" class="btn btn-outline" style="color:#1C1C1C;border-color:#1C1C1C;margin-left:.75rem">See the platform</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== DETAIL PANEL ===== -->
+  <div class="dp-backdrop" id="dp-backdrop"></div>
+  <aside class="dp" id="dp" role="dialog" aria-modal="true" aria-label="Property analysis"></aside>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="img/footer_logo.png" alt="LLD Enterprises" class="footer-logo-img">
+          <p>A family-owned real estate investment and development firm based in Rochester, New York. Over 30 years of building value in commercial real estate.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/lld-enterprises/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://www.instagram.com/lldenterprises/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">&#9737;</a>
+            <a href="https://www.facebook.com/profile.php?id=100063598735022" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="deals.html">On-Market Deals</a></li>
+            <li><a href="platform.html">How It Works</a></li>
+            <li><a href="analyzer.html">Deal Analyzer</a></li>
+            <li><a href="deals.html#wk-shell">Auction Calendar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="services.html">What We Do</a></li>
+            <li><a href="properties.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>415 Park Avenue</li>
+            <li>Rochester, NY 14607</li>
+            <li><a href="tel:5852443575">(585) 244-3575</a></li>
+            <li><a href="fair-housing.html">Fair Housing Notice</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LLD Enterprises. All rights reserved. Platform data shown is sample data for demonstration.</p>
+        <p><a href="fair-housing.html">Fair Housing Notice</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/deals-data.js"></script>
+  <script src="js/deals.js"></script>
+</body>
+</html>
