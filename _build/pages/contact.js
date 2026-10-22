@@ -4,7 +4,7 @@ module.exports = {
   title: 'Contact · Trident',
   description: 'Reach a Trident principal directly. Investors receive the private placement memorandum and the current screened book, then a call with both principals.',
   body: r => `
-  <section class="phead"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/hero-street.jpg)"><div class="wrap">
     <p class="kicker">Contact</p>
     <h1>Write to a principal.</h1>
     <p class="lead">There is no form and no gate. An email reaches Spencer Dworkin directly.</p>
@@ -12,8 +12,8 @@ module.exports = {
     <p class="also">Spencer Dworkin and Ayush Patel, principals. Trident, a Pursuit Lending Partners company.</p>
   </div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">Investors</span><h2>What happens next</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">Investors</p><h2>What happens next</h2></div>
     <div>
       <p class="prose">Write with &ldquo;fund materials&rdquo; in the subject line and this is the sequence.</p>
       <dl class="rows">
@@ -26,8 +26,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">Everyone else</span><h2>Counsel, title, housing authorities, sellers</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">Everyone else</p><h2>Counsel, title, housing authorities, sellers</h2></div>
     <div class="prose">
       <p>If you are plaintiff&rsquo;s counsel on a scheduled sale, a title company, a housing authority, a contractor who
         does make-ready to inspection standard, or an owner who would rather sell before the sale than at it, the same

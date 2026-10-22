@@ -4,7 +4,7 @@ module.exports = {
   title: 'Investors · Trident',
   description: 'Trident is raising its first private fund to acquire one-to-four-unit homes at New Jersey sheriff\'s sales and hold them under voucher tenancy. How capital moves, the terms, reporting, who we raise from, and the questions investors ask first.',
   body: r => `
-  <section class="phead"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/two-family.jpg)"><div class="wrap">
     <p class="kicker">Investors</p>
     <h1>Trident is raising its first fund.</h1>
     <p class="lead">A private fund that buys at the courthouse, for cash, and holds for income. Raised from family offices
@@ -12,8 +12,8 @@ module.exports = {
       controls over anything here; this is the shape of it.</p>
   </div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">01</span><h2>How capital moves</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">01</p><h2>How capital moves</h2></div>
     <div class="prose">
       <p>Investors commit capital to the fund. The fund buys properties outright at sheriff&rsquo;s sale, brings each to
         the housing authority&rsquo;s inspection standard, leases it to a voucher holder and holds it. Rents pay operating
@@ -29,8 +29,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">02</span><h2>Terms</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">02</p><h2>Terms</h2></div>
     <div>
       <p class="prose">Economic terms &mdash; the distribution waterfall, fees, term and the manager&rsquo;s participation
         &mdash; are stated in the memorandum and discussed in person rather than published here.</p>
@@ -52,8 +52,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">03</span><h2>Who we raise from</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">03</p><h2>Who we raise from</h2></div>
     <div class="prose">
       <p>Family offices in New York, New Jersey, Pennsylvania and Connecticut, because an allocator who can drive to a
         property in an afternoon is an allocator who understands what they own; and Florida, because a good many of the
@@ -64,8 +64,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">04</span><h2>Reporting</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">04</p><h2>Reporting</h2></div>
     <div class="prose">
       <p>Trident runs on one working book: every filing in the covered counties, its screen result, and for every property
         the fund pursues, the file &mdash; title findings, lien reserve, occupancy, ceiling, what it paid, what make-ready
@@ -75,8 +75,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">05</span><h2>Questions investors ask first</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">05</p><h2>Questions investors ask first</h2></div>
     <div>
       <div class="faq" style="margin-top:0">
         <details><summary>What am I invested in?</summary><div class="a"><p>An interest in the fund, which owns the properties. Distributions come from the rents those properties generate after costs and reserves, and from any eventual sale. The fund is the owner of record; you own the fund.</p></div></details>
@@ -92,7 +92,7 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene finale"><div class="wrap">
+  <section class="band" style="background-image:url(${r}assets/img/two-family.jpg)"><div class="wrap">
     <p class="kicker">Request the memorandum</p>
     <h2 style="margin-top:12px">Write to a principal.</h2>
     <p class="lead">You will receive the private placement memorandum and the current screened book, and a call with both

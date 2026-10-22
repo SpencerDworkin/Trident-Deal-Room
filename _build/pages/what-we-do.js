@@ -4,7 +4,7 @@ module.exports = {
   title: 'What we do · Trident',
   description: 'How a New Jersey sheriff\'s sale sets its price, why Trident bids against recorded debt rather than market value, the process from calendar to deed, and the voucher-backed hold.',
   body: r => `
-  <section class="phead"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/courthouse.jpg)"><div class="wrap">
     <p class="kicker">What we do</p>
     <h1>The opening bid is the debt. Everything Trident does follows from that.</h1>
     <p class="lead">A sheriff&rsquo;s sale is the one place in residential property where the price is set by a number on a
@@ -12,8 +12,8 @@ module.exports = {
       only those, and holds them for the rent.</p>
   </div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">01</span><h2>How a sheriff&rsquo;s sale works</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">01</p><h2>How a sheriff&rsquo;s sale works</h2></div>
     <div class="prose">
       <p>New Jersey is a judicial-foreclosure state. A lender that wants to take a house must sue, obtain a <strong>final
         judgment of foreclosure</strong> for what it is owed &mdash; principal, interest, fees and costs &mdash; and have the
@@ -28,8 +28,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">02</span><h2>Why the debt, not the market</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">02</p><h2>Why the debt, not the market</h2></div>
     <div class="prose">
       <p>The judgment is the borrower&rsquo;s debt, not the house&rsquo;s worth. A house bought in 2004 and foreclosed in 2026
         may carry a judgment of $120,000 against a county median of $540,000; the lender bids to its $120,000 and is
@@ -45,8 +45,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">03</span><h2>From the calendar to the deed</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">03</p><h2>From the calendar to the deed</h2></div>
     <div>
       <p class="prose">Every property runs the same sequence. The dates hang off the sale date, so when a sale is adjourned
         the whole schedule moves. Nine of the ten checklist items block a bid until done; a file that reaches sale day
@@ -67,8 +67,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">04</span><h2>The hold: Housing Choice Vouchers</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">04</p><h2>The hold: Housing Choice Vouchers</h2></div>
     <div class="prose">
       <p>Trident does not flip. Each property is leased under the federal Housing Choice Voucher program, in which the
         local housing authority pays the larger part of the rent directly to the owner each month and the tenant pays the
@@ -82,8 +82,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">05</span><h2>What survives the sale</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">05</p><h2>What survives the sale</h2></div>
     <div>
       <p class="prose">A sheriff&rsquo;s deed conveys the property subject to whatever the judgment did not extinguish. The
         discount is real only after these are priced. Each is paired with the step that handles it; the

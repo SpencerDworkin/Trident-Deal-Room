@@ -4,7 +4,7 @@ module.exports = {
   title: 'Where · Trident',
   description: 'Where Trident buys: six New Jersey counties with their medians, Fair Market Rents and modelled yields, two more coming on, and why New Jersey first.',
   body: r => `
-  <section class="phead"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/aerial.jpg)"><div class="wrap">
     <p class="kicker">Where</p>
     <h1>Six New Jersey counties today. Two more coming on. National in ambition.</h1>
     <p class="lead">Trident buys where the foreclosure process is judicial, public and calendared, and where the housing
@@ -12,8 +12,8 @@ module.exports = {
       Market Rent.</p>
   </div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">01</span><h2>The counties</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">01</p><h2>The counties</h2></div>
     <div>
       <p class="prose">Each county carries two numbers that matter: the median value, which is the denominator of the
         screen, and the three-bedroom Fair Market Rent, which is what the housing authority will pay and so what the
@@ -38,8 +38,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">02</span><h2>Why New Jersey first</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">02</p><h2>Why New Jersey first</h2></div>
     <div class="prose">
       <p><strong>Judicial foreclosure.</strong> Every sale follows a court judgment, so the debt figure the screen runs on
         is a court record rather than a lender&rsquo;s estimate, and sales are calendared weeks ahead by county sheriffs.
@@ -54,8 +54,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">03</span><h2>Beginning here, not ending here</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">03</p><h2>Beginning here, not ending here</h2></div>
     <div class="prose">
       <p>Any judicial-foreclosure state with public sale calendars and a functioning voucher program is a candidate, and
         the screen is pointed at a new county by loading its median value and its Fair Market Rent. The rules do not

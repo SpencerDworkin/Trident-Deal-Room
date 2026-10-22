@@ -6,7 +6,7 @@ module.exports = {
   title: 'How we buy · Trident',
   description: 'The buy box as nine rules, how the current book of filings sorts, what is refused and why, who is filing, the ten-item pre-bid checklist, and the four statutory dates.',
   body: r => `
-  <section class="phead"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/aerial.jpg)"><div class="wrap">
     <p class="kicker">How we buy</p>
     <h1>The buy box is written as rules. It runs on every filing, the same way, every time.</h1>
     <p class="lead">A screen that lives in someone&rsquo;s head drifts. Trident&rsquo;s is written down with numbers in it,
@@ -14,8 +14,8 @@ module.exports = {
       like. This page shows the rules and how the current book sorts under them.</p>
   </div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">01</span><h2>The buy box</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">01</p><h2>The buy box</h2></div>
     <div>
       <p class="prose">Nine rules, in order. A principal cannot override a verdict; the only way to change it is to change
         the rule, for everyone, and say so.</p>
@@ -36,15 +36,13 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">02</span><h2>How the current book sorts</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">02</p><h2>How the current book sorts</h2></div>
     <div>
       <p class="prose">Every filing on the calendars of six counties at the last pull, run through the rules above. Not a
         sample.</p>
-      <figure class="window" style="margin-top:26px">
-        <figcaption class="windowBar"><span class="dot" aria-hidden="true"></span><span class="windowName">${N} residential filings with a published judgment &middot; recorded debt &divide; county median value</span><span class="windowTag">Current pull</span></figcaption>
-        <div class="windowBody"><div class="chart">${chart()}</div></div>
-      </figure>
+      <div class="chart">${chart()}</div>
+      <p class="cap" style="margin-top:10px">${N} residential filings with a published judgment, by recorded debt as a share of county median value.</p>
       <div class="strip">
         <div><div class="v">468</div><div class="l">filings on the calendars</div></div>
         <div><div class="v">21</div><div class="l">routed to commercial, above $1.5M</div></div>
@@ -65,8 +63,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">03</span><h2>What was refused, and why</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">03</p><h2>What was refused, and why</h2></div>
     <div>
       <p class="prose">A sheriff&rsquo;s sale forgives nothing: senior liens, municipal charges and tax liens survive the
         deed. The refusals exist to keep us out of the files where the discount is an illusion.</p>
@@ -80,8 +78,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">04</span><h2>Who is filing</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">04</p><h2>Who is filing</h2></div>
     <div>
       <p class="prose">Some lenders foreclose on loans paid down for years; others on loans written at the top of the market
         with little equity. The median debt-to-value of a lender&rsquo;s filings is a fast first read on whether its files
@@ -100,8 +98,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">05</span><h2>The pre-bid checklist</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">05</p><h2>The pre-bid checklist</h2></div>
     <div>
       <p class="prose">Ten items on every file, each with a date that hangs off the sale. Nine block the bid. A file that
         reaches sale day with a blocking item open is not bid on.</p>
@@ -120,8 +118,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split">
-    <div class="sh"><span class="kicker">06</span><h2>The four dates</h2></div>
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">06</p><h2>The four dates</h2></div>
     <div>
       <p class="prose">All four are derived from the sale date, so when a sale is adjourned the set moves together. Twenty
         percent of the bid is committed at the gavel and rides until redemption lapses; missing the thirty-day balance

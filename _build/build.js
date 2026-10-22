@@ -50,8 +50,8 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 function shell(p) {
   const r = p.path ? '../' : '';
   const on = k => (p.nav === k ? ' class="on" aria-current="page"' : '');
-  const rail = NAV.map(([k, t, ic]) =>
-    `<a href="${r}${k ? k + '/' : ''}"${on(k)}><svg viewBox="0 0 24 24" aria-hidden="true">${ic}</svg><span>${t}</span></a>`).join('\n      ');
+  const rail = NAV.filter(([k]) => k).map(([k, t]) =>
+    `<a href="${r}${k}/"${on(k)}>${t}</a>`).join('\n      ');
   const strip = NAV.map(([k, t]) => `<a href="${r}${k ? k + '/' : ''}"${on(k)}>${t}</a>`).join('');
   const foot = NAV.filter(([k]) => k).map(([k, t]) => `<a href="${r}${k}/">${t}</a>`).join('');
 
@@ -66,26 +66,27 @@ function shell(p) {
 <meta property="og:site_name" content="Trident">
 <meta property="og:title" content="${esc(p.title)}">
 <meta property="og:description" content="${esc(p.description)}">
-<meta name="theme-color" content="#f2efe8">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2222%22%20fill%3D%22%2312455f%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f2efe8%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M50%2090V62%22%2F%3E%3Cpath%20d%3D%22M26%2056c0%2012%2010%2016%2024%2016s24-4%2024-16%22%2F%3E%3Cpath%20d%3D%22M26%2056V28M50%2050V22M74%2056V28%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23f2efe8%22%3E%3Cpolygon%20points%3D%2217%2C32%2026%2C14%2035%2C32%22%2F%3E%3Cpolygon%20points%3D%2241%2C26%2050%2C8%2059%2C26%22%2F%3E%3Cpolygon%20points%3D%2265%2C32%2074%2C14%2083%2C32%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<meta property="og:image" content="${r}assets/img/hero-street.jpg">
+<meta name="theme-color" content="#0b1a2b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20fill%3D%22%230b1a2b%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23c9a86f%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M50%2090V62%22%2F%3E%3Cpath%20d%3D%22M26%2056c0%2012%2010%2016%2024%2016s24-4%2024-16%22%2F%3E%3Cpath%20d%3D%22M26%2056V28M50%2050V22M74%2056V28%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23c9a86f%22%3E%3Cpolygon%20points%3D%2217%2C32%2026%2C14%2035%2C32%22%2F%3E%3Cpolygon%20points%3D%2241%2C26%2050%2C8%2059%2C26%22%2F%3E%3Cpolygon%20points%3D%2265%2C32%2074%2C14%2083%2C32%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="${r}assets/site.css">
 </head>
 <body>
 
-<aside class="rail">
-  <a class="brand" href="${r}" aria-label="Trident home">${MARK}<span><b>TRIDENT</b><i>Pursuit Lending Partners</i></span></a>
-  <nav aria-label="Sections">
+<header class="top${p.path ? '' : ''}" id="top">
+  <div class="wrap">
+    <a class="brand" href="${r}" aria-label="Trident home">${MARK}<span><b>Trident</b><i>A Pursuit Lending Partners company</i></span></a>
+    <nav aria-label="Sections">
       ${rail}
-  </nav>
-  <a class="rcta" href="${r}contact/">Talk to a principal</a>
-  <div class="raux"><a href="${r}investors/">Investors</a><a href="${r}legal/">Disclosures</a></div>
-</aside>
-
-<div class="mbar"><a class="brand" href="${r}" aria-label="Trident home">${MARK}<span><b>TRIDENT</b><i>Pursuit Lending Partners</i></span></a><a class="mcta" href="${r}contact/">Contact</a></div>
-<nav class="mstrip" aria-label="Sections">${strip}</nav>
+    </nav>
+    <a class="tcta" href="${r}contact/">Contact</a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Sections">${strip}<a class="tcta" href="${r}contact/">Contact</a></nav>
 
 <main>
 ${p.body(r)}
@@ -93,12 +94,25 @@ ${p.body(r)}
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="${r}">${MARK}<span><b>TRIDENT</b><i>A Pursuit Lending Partners company</i></span></a>
-    <div class="fl">${foot}<a href="${r}legal/">Disclosures</a></div>
-    <p class="cop">&copy; 2026 Trident. Nothing on this site is an offer to sell or a solicitation of an offer to buy any security. Trident is newly formed and has no assets under management.</p>
+    <div>
+      <a class="brand" href="${r}">${MARK}<span><b>Trident</b><i>A Pursuit Lending Partners company</i></span></a>
+      <p class="fabout">A private real estate investment firm acquiring one-to-four-unit homes at New Jersey sheriff&rsquo;s sales and holding them under Housing Choice Voucher tenancy.</p>
+    </div>
+    <div class="fcol"><h4>Firm</h4>${foot}</div>
+    <div class="fcol"><h4>Investors</h4><a href="${r}investors/">The fund</a><a href="${r}contact/">Request the memorandum</a><a href="${r}legal/">Disclosures</a><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></div>
+    <p class="legal">&copy; 2026 Trident. Nothing on this website constitutes an offer to sell, or a solicitation of an offer to buy, any security or interest in any fund. Any offering is made only by a confidential private placement memorandum to accredited investors and qualified purchasers. Trident is newly formed and has no operating history and no assets under management. Figures describing the screened book describe Trident&rsquo;s screening process applied to public foreclosure calendars; they are not a record of acquisitions or returns. <a href="${r}legal/">Full disclosures.</a></p>
   </div>
 </footer>
 
+<script>
+(function(){
+  var top=document.getElementById('top'),b=document.querySelector('.burger'),m=document.getElementById('mnav');
+  function onScroll(){top.classList.toggle('solid',window.scrollY>40)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  document.querySelectorAll('.photo img').forEach(function(i){i.addEventListener('error',function(){i.classList.add('missing')});if(i.complete&&i.naturalWidth===0)i.classList.add('missing')});
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);top.classList.toggle('solid',o||window.scrollY>40);document.body.style.overflow=o?'hidden':''});
+})();
+</script>
 </body>
 </html>
 `;
