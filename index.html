@@ -10,239 +10,47 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<style>
-/* ============================================================
-   Trident — investor site
-   Same identity as the desk: Public Sans for UI, Source Serif 4
-   for the argument, IBM Plex Mono for figures. Navy accent on
-   blue-biased neutrals. Nothing decorative that is not information.
-   ============================================================ */
-:root {
-  --ground: #f4f6f9;
-  --paper: #ffffff;
-  --paper-2: #fafbfd;
-  --ink: #0d1520;
-  --ink-2: #2b3949;
-  --dim: #5a6b80;
-  --mut: #8b9aad;
-  --hair: #e2e7ee;
-  --hair-2: #eef1f6;
-  --accent: #1d4166;
-  --accent-2: #2f6ca3;
-  --accent-soft: #e8eef5;
-  --ok: #136c46;
-  --band: #0d1520;
-  --band-2: #142030;
-  --band-text: #eef2f7;
-  --band-dim: rgba(238,242,247,.62);
-  --band-hair: rgba(255,255,255,.1);
-  --band-accent: #7fb0e0;
-  --shadow: 0 1px 2px rgba(13,21,32,.05), 0 8px 24px rgba(13,21,32,.06);
-  --r: 8px;
-  --r-sm: 5px;
-  --ui: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --ground: #0b111a; --paper: #131c28; --paper-2: #18222f;
-    --ink: #e9eef5; --ink-2: #c2ccd9; --dim: #93a2b5; --mut: #6b7c92;
-    --hair: #243040; --hair-2: #1b2532;
-    --accent: #6ea3d6; --accent-2: #8fbde8; --accent-soft: #17293c;
-    --ok: #5cc394;
-    --band: #08101a; --band-2: #0e1826;
-    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
-  }
-}
-:root[data-theme="dark"] {
-  --ground: #0b111a; --paper: #131c28; --paper-2: #18222f;
-  --ink: #e9eef5; --ink-2: #c2ccd9; --dim: #93a2b5; --mut: #6b7c92;
-  --hair: #243040; --hair-2: #1b2532;
-  --accent: #6ea3d6; --accent-2: #8fbde8; --accent-soft: #17293c;
-  --ok: #5cc394;
-  --band: #08101a; --band-2: #0e1826;
-  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
-}
-
-*, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
-body {
-  margin: 0; background: var(--ground); color: var(--ink);
-  font-family: var(--ui); font-size: 15.5px; line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; margin: 0; text-wrap: balance; letter-spacing: -.012em; }
-p { margin: 0; }
-a { color: inherit; text-decoration: none; }
-:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; border-radius: 3px; }
-.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
-
-.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-.eyebrow { font-size: 10.5px; font-weight: 700; letter-spacing: 2.4px; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
-.prose { max-width: 66ch; font-size: 16.5px; line-height: 1.68; color: var(--ink-2); }
-.prose p + p { margin-top: 16px; }
-.prose strong { color: var(--ink); font-weight: 600; }
-
-/* ---------- nav ---------- */
-.nav {
-  position: sticky; top: 0; z-index: 40; background: var(--band); color: var(--band-text);
-  border-bottom: 1px solid var(--band-hair);
-}
-.nav-in { max-width: 1120px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 28px; min-height: 58px; }
-.brand { display: flex; align-items: baseline; gap: 9px; font-weight: 700; letter-spacing: 3.4px; font-size: 14px; }
-.brand .g { font-size: 17px; letter-spacing: 0; color: var(--band-accent); }
-.brand small { font-weight: 400; letter-spacing: .7px; font-size: 10px; color: rgba(238,242,247,.42); text-transform: uppercase; }
-.links { display: flex; gap: 2px; margin-left: auto; }
-.links a { padding: 7px 11px; border-radius: var(--r-sm); font-size: 13px; font-weight: 500; color: rgba(238,242,247,.66); }
-.links a:hover { background: rgba(255,255,255,.08); color: #fff; }
-.cta {
-  display: inline-flex; align-items: center; gap: 8px; padding: 9px 15px; border-radius: var(--r-sm);
-  background: var(--accent-2); color: #fff; font-weight: 600; font-size: 13.5px; border: 1px solid transparent;
-  white-space: nowrap;
-}
-.cta:hover { background: #3f80bb; }
-.cta.ghost { background: transparent; color: var(--ink); border-color: var(--hair); }
-.cta.ghost:hover { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
-.nav .cta.ghost { color: var(--band-text); border-color: rgba(255,255,255,.22); }
-.nav .cta.ghost:hover { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.4); }
-@media (max-width: 820px) { .links { display: none; } }
-@media (max-width: 560px) {
-  .nav-in { gap: 14px; }
-  .brand small { display: none; }
-  .nav .cta { padding: 8px 11px; font-size: 12.5px; }
-}
-
-/* ---------- hero ---------- */
-.hero { padding: 76px 0 70px; border-bottom: 1px solid var(--hair); background: var(--paper); }
-.hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .85fr); gap: 56px; align-items: start; }
-.hero h1 { font-size: clamp(34px, 4.6vw, 54px); font-weight: 600; max-width: 18ch; }
-.hero h1 em { font-style: italic; font-weight: 400; color: var(--accent); }
-.hero .lede { margin-top: 24px; font-size: 18px; line-height: 1.62; color: var(--ink-2); max-width: 58ch; }
-.hero .acts { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-.hero .acts .cta { padding: 12px 18px; font-size: 14.5px; }
-.ledger { background: var(--ground); border: 1px solid var(--hair); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); }
-.ledger .h { padding: 12px 18px; border-bottom: 1px solid var(--hair); background: var(--paper-2); font-size: 10.5px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--dim); }
-.ledger dl { margin: 0; display: grid; }
-.ledger .row { display: grid; grid-template-columns: 108px 1fr; gap: 14px; padding: 12px 18px; border-bottom: 1px solid var(--hair); font-size: 13.5px; align-items: baseline; }
-.ledger .row:last-child { border-bottom: 0; }
-.ledger dt { color: var(--mut); font-size: 11px; letter-spacing: .9px; text-transform: uppercase; font-weight: 700; margin: 0; }
-.ledger dd { margin: 0; color: var(--ink); font-weight: 500; line-height: 1.45; }
-.ledger dd .num { font-size: 15px; font-weight: 600; }
-.ledger .row.key { background: var(--accent-soft); }
-.ledger .row.key dd { color: var(--accent); }
-@media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; gap: 34px; } .hero { padding: 54px 0 50px; } }
-
-/* ---------- sections ---------- */
-.sec { padding: 78px 0; border-bottom: 1px solid var(--hair); }
-.sec h2 { font-size: clamp(27px, 3.1vw, 36px); max-width: 22ch; margin-bottom: 20px; }
-.sec-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 48px; align-items: start; }
-@media (max-width: 860px) { .sec-head { grid-template-columns: 1fr; gap: 20px; } .sec { padding: 56px 0; } }
-
-.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 46px; }
-.col { background: var(--paper); border: 1px solid var(--hair); border-radius: var(--r); padding: 22px 22px 24px; box-shadow: var(--shadow); }
-.col .k { font-family: var(--mono); font-size: 11px; color: var(--mut); letter-spacing: .6px; margin-bottom: 12px; }
-.col h3 { font-size: 20px; margin-bottom: 10px; }
-.col p { font-size: 14.5px; line-height: 1.62; color: var(--ink-2); }
-@media (max-width: 860px) { .cols { grid-template-columns: 1fr; gap: 14px; margin-top: 30px; } }
-
-/* ---------- the dark band ---------- */
-.band { background: var(--band); color: var(--band-text); padding: 84px 0; border-bottom: 1px solid var(--band-hair); }
-.band .eyebrow { color: var(--band-accent); }
-.band h2 { color: #fff; }
-.band .prose { color: var(--band-dim); }
-.band .prose strong { color: #fff; }
-.terms { margin-top: 46px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--band-hair); border: 1px solid var(--band-hair); border-radius: var(--r); overflow: hidden; }
-.term { background: var(--band-2); padding: 20px 22px; }
-.term .k { font-size: 10.5px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--band-dim); margin-bottom: 7px; }
-.term .v { font-size: 16px; font-weight: 500; line-height: 1.5; color: #fff; }
-.term .v .num { font-size: 21px; font-weight: 600; color: var(--band-accent); }
-.term .n { font-size: 13px; color: var(--band-dim); margin-top: 6px; line-height: 1.55; }
-.term.wide { grid-column: 1 / -1; }
-.band .fine { margin-top: 22px; font-size: 12.5px; color: var(--band-dim); line-height: 1.6; max-width: 80ch; }
-.band .acts { margin-top: 30px; }
-@media (max-width: 720px) { .terms { grid-template-columns: 1fr; } .band { padding: 60px 0; } }
-
-/* ---------- figures ---------- */
-.figs { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.fig { background: var(--paper); border: 1px solid var(--hair); border-radius: var(--r); padding: 20px 20px 18px; box-shadow: var(--shadow); }
-.fig .v { font-family: var(--mono); font-size: 36px; font-weight: 600; letter-spacing: -1px; line-height: 1; color: var(--ink); }
-.fig .v small { font-size: 18px; letter-spacing: 0; color: var(--dim); }
-.fig .l { margin-top: 9px; font-size: 13.5px; color: var(--ink-2); line-height: 1.5; }
-.fig.refuse .v { color: var(--accent); }
-.fig-note { margin-top: 14px; font-size: 12.5px; color: var(--mut); }
-@media (max-width: 860px) { .figs { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 520px) { .figs { grid-template-columns: 1fr; } }
-
-.refusals { margin-top: 52px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 48px; align-items: start; }
-.refusals h3 { font-size: 24px; margin-bottom: 12px; }
-.refusals ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0; border-top: 1px solid var(--hair); }
-.refusals li { padding: 13px 0; border-bottom: 1px solid var(--hair); display: grid; grid-template-columns: 22px 1fr; gap: 12px; font-size: 14.5px; line-height: 1.55; color: var(--ink-2); }
-.refusals li b { color: var(--ink); font-weight: 600; }
-.refusals li::before { content: "✕"; color: var(--accent); font-weight: 700; font-size: 12px; margin-top: 3px; }
-@media (max-width: 860px) { .refusals { grid-template-columns: 1fr; gap: 22px; margin-top: 40px; } }
-
-/* ---------- principals ---------- */
-.people { margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; max-width: 760px; }
-.person { background: var(--paper); border: 1px solid var(--hair); border-radius: var(--r); padding: 24px 24px 22px; box-shadow: var(--shadow); }
-.person .mark { width: 44px; height: 44px; border-radius: 50%; background: var(--band); color: var(--band-accent); display: grid; place-items: center; font-family: var(--serif); font-size: 18px; font-weight: 600; margin-bottom: 16px; }
-.person h3 { font-size: 21px; margin-bottom: 3px; }
-.person .role { font-size: 12.5px; color: var(--dim); letter-spacing: .4px; }
-.person a { display: inline-block; margin-top: 14px; font-size: 13.5px; color: var(--accent); font-weight: 600; }
-.person a:hover { text-decoration: underline; }
-@media (max-width: 600px) { .people { grid-template-columns: 1fr; } }
-
-/* ---------- contact ---------- */
-.contact { background: var(--paper); }
-.contact .box { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px; align-items: center; }
-.contact .mailrow { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
-.contact .where { border-left: 2px solid var(--accent); padding-left: 20px; }
-.contact .where .k { font-size: 10.5px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--dim); margin-bottom: 8px; }
-.contact .where .states { font-family: var(--serif); font-size: 26px; line-height: 1.3; color: var(--ink); }
-.contact .where p { margin-top: 10px; font-size: 13.5px; color: var(--dim); line-height: 1.55; }
-@media (max-width: 860px) { .contact .box { grid-template-columns: 1fr; gap: 30px; } }
-
-/* ---------- footer ---------- */
-.foot { padding: 44px 0 56px; color: var(--dim); font-size: 12.5px; line-height: 1.62; }
-.foot .legal { max-width: 92ch; }
-.foot .legal p + p { margin-top: 10px; }
-.foot .legal b { color: var(--ink-2); font-weight: 600; }
-.foot .row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--hair); }
-.foot .row a { color: var(--dim); }
-.foot .row a:hover { color: var(--accent); }
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="nav-in">
-    <a class="brand" href="#top"><span class="g">&#936;</span>TRIDENT<small>A Pursuit Lending Partners company</small></a>
+    <a class="brand" href=""><span class="g">&#936;</span>TRIDENT<small>A Pursuit Lending Partners company</small></a>
     <nav class="links" aria-label="Sections">
-      <a href="#strategy">Strategy</a>
-      <a href="#preferred">Preferred equity</a>
-      <a href="#discipline">Discipline</a>
-      <a href="#principals">Principals</a>
+      <a href="strategy/">Strategy</a>
+      <a href="preferred/">Preferred equity</a>
+      <a href="method/">Method</a>
+      <a href="markets/">Markets</a>
+      <a href="principals/">Principals</a>
     </nav>
-    <a class="cta ghost" href="#contact">Request the materials</a>
+    <a class="cta ghost" href="contact/">Request the materials</a>
   </div>
 </header>
+<nav class="subnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="strategy/">Strategy</a>
+    <a href="preferred/">Preferred equity</a>
+    <a href="method/">Method</a>
+    <a href="markets/">Markets</a>
+    <a href="principals/">Principals</a>
+    <a href="contact/">Contact</a>
+  </div>
+</nav>
 
-<main id="top">
+<main>
 
-  <!-- ===================== HERO ===================== -->
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow">New Jersey sheriff&rsquo;s-sale acquisition</p>
         <h1>Residential property, bought at the courthouse and priced against <em>the debt</em> &mdash; not the market.</h1>
-        <p class="lede">Trident acquires one-to-four-unit homes at New Jersey sheriff&rsquo;s sales, where the
-          opening bid is set by what the borrower owes rather than what the house is worth, and converts them
-          to stable, voucher-backed tenancy. We are raising preferred equity from family offices to fund the
-          program.</p>
+        <p class="lead">Trident acquires one-to-four-unit homes at New Jersey sheriff&rsquo;s sales, where the opening bid
+          is set by what the borrower owes rather than what the house is worth, and converts them to stable,
+          voucher-backed tenancy. We are raising preferred equity from family offices to fund the program.</p>
         <div class="acts">
-          <a class="cta" href="#preferred">How the preferred works</a>
-          <a class="cta ghost" href="#contact">Request the materials</a>
+          <a class="cta lg" href="preferred/">How the preferred works</a>
+          <a class="cta ghost lg" href="contact/">Request the materials</a>
         </div>
       </div>
 
@@ -261,8 +69,7 @@ a { color: inherit; text-decoration: none; }
     </div>
   </section>
 
-  <!-- ===================== STRATEGY ===================== -->
-  <section class="sec" id="strategy">
+  <section class="sec">
     <div class="wrap">
       <div class="sec-head">
         <div>
@@ -270,13 +77,12 @@ a { color: inherit; text-decoration: none; }
           <h2>Where the price is set by the debt.</h2>
         </div>
         <div class="prose">
-          <p>At a sheriff&rsquo;s sale the foreclosing lender opens the bidding at its judgment &mdash; the balance
-            of the loan, interest and costs. Where a borrower has paid the mortgage down, or bought long ago,
-            that figure sits well below what the house would bring on the open market. <strong>The gap is the
-            opportunity, and it is visible before the sale</strong>: the judgment is public record.</p>
-          <p>Trident screens every scheduled sale across six New Jersey counties against county median values
-            and bids only where recorded debt sits at a deep discount to value. The number comes off the
-            docket, not from a broker.</p>
+          <p>At a sheriff&rsquo;s sale the foreclosing lender opens the bidding at its judgment &mdash; the balance of
+            the loan, interest and costs. Where a borrower has paid the mortgage down, or bought long ago, that figure
+            sits well below what the house would bring on the open market. <strong>The gap is the opportunity, and it
+            is visible before the sale</strong>: the judgment is public record.</p>
+          <p>Trident screens every scheduled sale across six New Jersey counties against county median values and bids
+            only where recorded debt sits at a deep discount to value. The number comes off the docket, not from a broker.</p>
         </div>
       </div>
 
@@ -284,30 +90,30 @@ a { color: inherit; text-decoration: none; }
         <div class="col">
           <div class="k">01 &mdash; SCREEN</div>
           <h3>Priced on the record</h3>
-          <p>Every filing is scored on the ratio of recorded debt to county median. Below 40% is a deep
-            discount. Above 80% we refuse. Above 100% the lender will bid to its own debt and there is no
-            discount to win.</p>
+          <p>Every filing is scored on the ratio of recorded debt to county median. Below 40% is a deep discount. Above
+            80% we refuse. Above 100% the lender will bid to its own debt and there is no discount to win.</p>
+          <a class="more" href="method/">The method &rarr;</a>
         </div>
         <div class="col">
           <div class="k">02 &mdash; BID</div>
           <h3>Bought with a ceiling</h3>
-          <p>A bid ceiling is set before the sale from the yield the property can carry, and it is never
-            raised in the room. Twenty percent in certified funds at the gavel; the balance in thirty days;
-            redemption lapses in ten.</p>
+          <p>A bid ceiling is set before the sale from the yield the property can carry, and it is never raised in the
+            room. Twenty percent in certified funds at the gavel; the balance in thirty days; redemption lapses in ten.</p>
+          <a class="more" href="strategy/">The process &rarr;</a>
         </div>
         <div class="col">
           <div class="k">03 &mdash; HOLD</div>
           <h3>Held for yield</h3>
-          <p>Properties are converted to Housing Choice Voucher tenancy &mdash; rent paid substantially by the
-            housing authority, on a schedule. Each is underwritten to a 5% unlevered yield on the county&rsquo;s
-            Fair Market Rent before any lift is assumed.</p>
+          <p>Properties are converted to Housing Choice Voucher tenancy &mdash; rent paid substantially by the housing
+            authority, on a schedule. Each is underwritten to a 5% unlevered yield on the county&rsquo;s Fair Market Rent
+            before any lift is assumed.</p>
+          <a class="more" href="markets/">Where we buy &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== PREFERRED EQUITY ===================== -->
-  <section class="band" id="preferred">
+  <section class="band">
     <div class="wrap">
       <div class="sec-head">
         <div>
@@ -315,33 +121,28 @@ a { color: inherit; text-decoration: none; }
           <h2>Preferred equity, senior to our own.</h2>
         </div>
         <div class="prose">
-          <p>We are funding the program with preferred equity. Preferred sits ahead of Trident&rsquo;s common:
-            it earns <strong>a fixed preferred return before Trident takes anything</strong>, and Trident&rsquo;s
-            own capital absorbs the first loss.</p>
-          <p>The return is contractual rather than a share of upside, which is the point. It is built for an
-            allocator who wants real-estate exposure with a defined coupon and a defined place in the stack,
-            not an operator&rsquo;s promote.</p>
+          <p>We are funding the program with preferred equity. Preferred sits ahead of Trident&rsquo;s common: it earns
+            <strong>a fixed preferred return before Trident takes anything</strong>, and Trident&rsquo;s own capital absorbs
+            the first loss.</p>
+          <p>The return is contractual rather than a share of upside, which is the point. It is built for an allocator
+            who wants real-estate exposure with a defined coupon and a defined place in the stack, not an operator&rsquo;s
+            promote.</p>
         </div>
       </div>
-
       <div class="terms">
         <div class="term"><div class="k">Instrument</div><div class="v">Preferred equity in the acquisition vehicle</div></div>
         <div class="term"><div class="k">Position</div><div class="v">Senior to Trident common</div><div class="n">Trident&rsquo;s capital takes the first loss.</div></div>
         <div class="term"><div class="k">Return</div><div class="v">Fixed preferred return</div><div class="n">Stated in the offering memorandum. Accrues if unpaid; paid before any distribution to common.</div></div>
         <div class="term"><div class="k">Minimum investment</div><div class="v"><span class="num">$1,000,000</span></div></div>
-        <div class="term wide"><div class="k">Use of proceeds</div><div class="v">Acquisition of screened sheriff&rsquo;s-sale properties, make-ready, and carry to stabilised voucher tenancy</div></div>
-        <div class="term"><div class="k">Reporting</div><div class="v">Quarterly, property by property</div><div class="n">Every acquisition: its basis, its tenancy, its yield. The same book we run the business from.</div></div>
-        <div class="term"><div class="k">Eligible investors</div><div class="v">Accredited investors and qualified purchasers</div><div class="n">Family offices in New York, New Jersey, Pennsylvania, Connecticut and Florida.</div></div>
       </div>
-
-      <p class="fine">The terms above are a summary. Any offering is made only through a confidential private placement
-        memorandum, which controls in every respect, and only to investors who qualify.</p>
-      <div class="acts"><a class="cta" href="#contact">Request the memorandum</a></div>
+      <div class="acts">
+        <a class="cta" href="preferred/">The full terms and the stack</a>
+        <a class="cta ghost" href="contact/">Request the memorandum</a>
+      </div>
     </div>
   </section>
 
-  <!-- ===================== DISCIPLINE ===================== -->
-  <section class="sec" id="discipline">
+  <section class="sec">
     <div class="wrap">
       <div class="sec-head">
         <div>
@@ -349,88 +150,37 @@ a { color: inherit; text-decoration: none; }
           <h2>A buy box written as rules, applied to every filing.</h2>
         </div>
         <div class="prose">
-          <p>Trident does not have a track record to show you yet, and will not pretend to. What it has is a
-            method that runs the same way on every filing, and the current book is the evidence. <strong>Every
-            rule in the buy box is a line of code</strong>, so the screen cannot be bent for a property we
-            happen to like.</p>
-          <p>We also know who is filing. One lender accounts for nearly a fifth of the current calendar, at a
-            median debt-to-value of 0.82 &mdash; thin. Another&rsquo;s thirty-one filings sit at 0.58. The
-            plaintiff tells you the discount before you open the file.</p>
+          <p>Trident does not have a track record to show you yet, and will not pretend to. What it has is a method that
+            runs the same way on every filing, and the current book is the evidence. <strong>Every rule in the buy box is
+            a line of code</strong>, so the screen cannot be bent for a property we happen to like.</p>
         </div>
       </div>
 
       <div class="figs">
-        <div class="fig"><div class="v">429</div><div class="l">filings screened across six New Jersey counties in the current book</div></div>
-        <div class="fig refuse"><div class="v">34.8<small>%</small></div><div class="l">refused by the buy box &mdash; 143 filings the screen would not let us bid on</div></div>
-        <div class="fig"><div class="v">90</div><div class="l">at a deep discount: recorded debt at or below 40% of the county median</div></div>
-        <div class="fig"><div class="v">121</div><div class="l">in the core band, $40,000 to $250,000 of recorded debt</div></div>
-        <div class="fig"><div class="v">4</div><div class="l">statutory dates tracked on every file: title search back, the sale, redemption, balance due</div></div>
-        <div class="fig"><div class="v">10</div><div class="l">pre-bid checklist items on every property; eight of them block the bid until done</div></div>
+        <div class="fig"><div class="v">468</div><div class="l">filings screened across six New Jersey counties in the current book</div></div>
+        <div class="fig refuse"><div class="v">37<small>%</small></div><div class="l">refused by the buy box &mdash; 175 filings the screen would not let us bid on</div></div>
+        <div class="fig"><div class="v">96</div><div class="l">at a deep discount: recorded debt at or below 40% of the county median</div></div>
+        <div class="fig"><div class="v">123</div><div class="l">in the core band, $40,000 to $250,000 of recorded debt</div></div>
+        <div class="fig"><div class="v">126</div><div class="l">distinct lenders behind the filings; one of them accounts for nearly a fifth of the calendar</div></div>
+        <div class="fig"><div class="v">10</div><div class="l">pre-bid checklist items on every property; nine of them block the bid until done</div></div>
       </div>
       <p class="fig-note">From the current screened book. These figures describe the screen, not returns.</p>
-
-      <div class="refusals">
-        <div>
-          <h3>What we refuse</h3>
-          <p class="prose" style="font-size:15px">The refusals matter as much as the buys. A sheriff&rsquo;s sale forgives
-            nothing: senior liens, municipal charges and tax liens survive the deed. The screen exists to keep
-            us out of the files where the discount is an illusion.</p>
-        </div>
-        <ul>
-          <li><span><b>Debt above the county median.</b> The lender bids to its own debt; there is no discount to win.</span></li>
-          <li><span><b>Debt implausibly small for a first mortgage.</b> Below 12% of median it is likelier a subordinate lien or a private judgment &mdash; and the senior debt survives the sale.</span></li>
-          <li><span><b>Thin margins.</b> Between 80% and 100% of median there is no room for a title, occupancy or make-ready surprise.</span></li>
-          <li><span><b>HOA and condominium plaintiffs.</b> An association foreclosure sits behind the mortgage, not ahead of it.</span></li>
-          <li><span><b>Anything the title search has not cleared</b> seven days before the sale. No search, no bid.</span></li>
-          <li><span><b>Commercial property, and anything above $1.5 million.</b> Routed out of the program, not refused on merit &mdash; it is simply a different business.</span></li>
-        </ul>
-      </div>
+      <div class="acts" style="margin-top:28px"><a class="cta ghost" href="method/">Every rule, every refusal, the whole checklist &rarr;</a></div>
     </div>
   </section>
 
-  <!-- ===================== PRINCIPALS ===================== -->
-  <section class="sec" id="principals">
+  <section class="sec paper">
     <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <p class="eyebrow">The principals</p>
-          <h2>Two principals, one book.</h2>
-        </div>
-        <div class="prose">
-          <p>Trident is a subsidiary of <strong>Pursuit Lending Partners</strong>. It is run by its two principals,
-            who source, screen and bid every property themselves and report to investors from the same book they
-            work from each morning.</p>
-        </div>
-      </div>
-      <div class="people">
-        <div class="person">
-          <div class="mark">SD</div>
-          <h3>Spencer Dworkin</h3>
-          <div class="role">Principal</div>
-          <a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>
-        </div>
-        <div class="person">
-          <div class="mark">AP</div>
-          <h3>Ayush Patel</h3>
-          <div class="role">Principal</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CONTACT ===================== -->
-  <section class="sec contact" id="contact">
-    <div class="wrap">
-      <div class="box">
+      <div class="cbox">
         <div>
           <p class="eyebrow">Request the materials</p>
           <h2>We will send the memorandum and walk you through the book.</h2>
-          <p class="prose" style="margin-top:16px">If you are a family office or an accredited investor considering a
-            preferred equity allocation, write to us. You will get the private placement memorandum, the current
-            screened book, and a conversation with both principals &mdash; not a deck.</p>
-          <div class="mailrow">
-            <a class="cta" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20preferred%20equity%20materials">Request the memorandum</a>
-            <a class="cta ghost" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20a%20conversation">Arrange a call</a>
+          <p class="prose" style="margin-top:16px">If you are a family office or an accredited investor considering a preferred
+            equity allocation, write to us. You will get the private placement memorandum, the current screened book, and a
+            conversation with both principals &mdash; not a deck.</p>
+          <div class="acts">
+            <a class="cta lg" href="contact/">Request the memorandum</a>
+            <a class="cta ghost lg" href="principals/">Who we are</a>
           </div>
         </div>
         <div class="where">
@@ -446,21 +196,36 @@ a { color: inherit; text-decoration: none; }
 
 <footer class="foot">
   <div class="wrap">
-    <div class="legal">
-      <p><b>Not an offer.</b> This website is for informational purposes only and does not constitute an offer to sell,
-        or a solicitation of an offer to buy, any security. Any offering of preferred equity will be made only to
-        accredited investors and qualified purchasers, only by means of a confidential private placement memorandum,
-        and only in jurisdictions where such an offering is permitted. The memorandum, not this website, controls.</p>
-      <p><b>No operating history.</b> Trident is newly formed and has no operating history and no assets under
-        management. Figures describing the screened book describe Trident&rsquo;s screening process and are not
-        indicative of future results. A preferred return is a target, not a guarantee; an investment may lose value,
-        including the entire amount invested. Sheriff&rsquo;s-sale acquisitions carry title, occupancy, condition and
-        statutory risk, including surviving liens and owner-occupant rights of first refusal. Consult your own legal,
-        tax and investment advisers.</p>
+    <div class="foot-grid">
+      <div>
+        <div class="brand"><span class="g">&#936;</span>TRIDENT<small>A Pursuit Lending Partners company</small></div>
+        <p class="legal"><b>Not an offer.</b> This site is informational. Any offering of preferred equity is made only to
+          accredited investors and qualified purchasers, only by confidential private placement memorandum, and only where
+          permitted. Trident is newly formed and has no operating history or assets under management. Figures describing
+          the screened book describe the screen, not returns. <a href="legal/">Full disclosures</a>.</p>
+      </div>
+      <div>
+        <h4>The program</h4>
+        <ul>
+          <li><a href="strategy/">Strategy</a></li>
+          <li><a href="preferred/">Preferred equity</a></li>
+          <li><a href="method/">Method</a></li>
+          <li><a href="markets/">Markets</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The firm</h4>
+        <ul>
+          <li><a href="principals/">Principals</a></li>
+          <li><a href="contact/">Request the materials</a></li>
+          <li><a href="legal/">Disclosures</a></li>
+          <li><a href="desk/">Deal room &middot; partners only</a></li>
+        </ul>
+      </div>
     </div>
     <div class="row">
       <span>&copy; 2026 Trident &middot; A Pursuit Lending Partners company</span>
-      <span><a href="desk/">Deal room</a> &middot; partners only</span>
+      <span>New York &middot; New Jersey &middot; Pennsylvania &middot; Connecticut &middot; Florida</span>
     </div>
   </div>
 </footer>
