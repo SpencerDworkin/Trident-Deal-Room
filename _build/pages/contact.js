@@ -4,95 +4,48 @@ module.exports = {
   title: 'Request the materials — Trident',
   description: 'Request the Trident private placement memorandum and the current screened book, and arrange a call with both principals.',
   body: r => `
-  <section class="phead">
+  <section class="dochead">
     <div class="wrap">
-      <p class="eyebrow">Request the materials</p>
-      <h1>We will send the memorandum and walk you through the book.</h1>
-      <p class="lead">If you are a family office or an accredited investor considering a commitment to the fund, write to
-        us. There is no form to fill in and no gate to pass; an email reaches a principal.</p>
-      <div class="acts" style="margin-top:28px">
-        <a class="cta lg" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20fund%20materials&body=Please%20send%20the%20memorandum%20and%20the%20current%20book.%0A%0AName%3A%0AFamily%20office%20%2F%20firm%3A%0AState%3A%0A">Request the memorandum</a>
-        <a class="cta ghost lg" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20a%20conversation&body=I%27d%20like%20to%20arrange%20a%20call.%0A%0AName%3A%0AFamily%20office%20%2F%20firm%3A%0AGood%20times%3A%0A">Arrange a call</a>
-      </div>
+      <p class="label">Request the materials</p>
+      <h1>Write to a principal.</h1>
+      <p class="lead">There is no form and no gate. An email reaches Spencer Dworkin directly. Within a day you will have the
+        confidential private placement memorandum and the current screened book; then a call with both principals, built
+        around the questions the materials raised rather than a presentation.</p>
+    </div>
+  </section>
+
+  <section class="write" style="border-top:0;padding-top:0">
+    <div class="wrap">
+      <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20fund%20materials&body=Please%20send%20the%20memorandum%20and%20the%20current%20book.%0A%0AName%3A%0AFamily%20office%20%2F%20firm%3A%0AState%3A%0A">sgd3210@gmail.com</a>
+      <p class="also">Subject line &ldquo;Trident &mdash; fund materials&rdquo; reaches the right inbox fastest.</p>
     </div>
   </section>
 
   <section class="sec">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <p class="eyebrow">What happens next</p>
-          <h2>Three steps, no sales process.</h2>
-        </div>
-        <div class="prose">
-          <p>We would rather have a few investors who have read the book and walked a property than many who have seen a
-            deck. The sequence is built for that.</p>
-        </div>
+    <div class="wrap"><div class="sec-n"><span class="n">1</span>
+      <div>
+        <h2>What happens next</h2>
+        <dl class="rows" style="margin-top:18px">
+          <div><dt>Within a day</dt><dd>The memorandum and the current screened book &mdash; every filing in the covered counties, how the screen sorted it, and the files being worked.</dd></div>
+          <div><dt>Then</dt><dd>A call with both principals. We walk through specific files on the calendar and show how the ceiling on each was set.</dd></div>
+          <div><dt>If it fits</dt><dd>Accredited-investor or qualified-purchaser verification, subscription documents, and your commitment to the fund. Capital is drawn as files clear the screen and the checklist.</dd></div>
+        </dl>
       </div>
-      <div class="after">
-        <div class="a">
-          <div class="n">01</div>
-          <h3>The memorandum and the book</h3>
-          <p>Within a day you receive the confidential private placement memorandum and the current screened book &mdash;
-            every filing in the covered counties, how the screen sorted it, and the files being worked.</p>
-        </div>
-        <div class="a">
-          <div class="n">02</div>
-          <h3>A call with both principals</h3>
-          <p>Not a presentation. Bring the questions the materials raised. We will walk through specific files on the
-            calendar and show how the ceiling on each was set.</p>
-        </div>
-        <div class="a">
-          <div class="n">03</div>
-          <h3>Subscription, if it fits</h3>
-          <p>Accredited-investor or qualified-purchaser verification, subscription documents, and your commitment to the
-            fund. Capital is drawn as files clear the screen and the checklist.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec paper">
-    <div class="wrap">
-      <div class="cbox">
-        <div>
-          <p class="eyebrow">Who we are raising from</p>
-          <h2>Family offices along the corridor, and Florida.</h2>
-          <p class="prose" style="margin-top:16px">Accredited investors and qualified purchasers, by private placement.
-            Minimum commitment of $1,000,000. The <a href="${r}fund/">fund page</a> sets out the structure; the
-            <a href="${r}legal/">disclosures</a> set out the risks.</p>
-        </div>
-        <div class="where">
-          <div class="k">Where we are raising</div>
-          <div class="states">New York &middot; New Jersey &middot; Pennsylvania &middot; Connecticut &middot; Florida</div>
-          <p>Write from anywhere; these are the states we are organised to raise in.</p>
-        </div>
-      </div>
-    </div>
+    </div></div>
   </section>
 
   <section class="sec">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <p class="eyebrow">Principals</p>
-          <h2>Who answers.</h2>
-        </div>
-        <div class="people" style="margin-top:0">
-          <div class="person">
-            <div class="mark">SD</div>
-            <h3>Spencer Dworkin</h3>
-            <div class="role">Principal</div>
-            <a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>
-          </div>
-          <div class="person">
-            <div class="mark">AP</div>
-            <h3>Ayush Patel</h3>
-            <div class="role">Principal</div>
-          </div>
-        </div>
+    <div class="wrap"><div class="sec-n"><span class="n">2</span>
+      <div class="prose">
+        <h2>Who we are raising from</h2>
+        <p>Family offices and accredited investors in New York, New Jersey, Pennsylvania, Connecticut and Florida, by private
+          placement, with a minimum commitment of $1,000,000. Write from anywhere; those are the states we are organised to
+          raise in. The <a href="${r}fund/">fund page</a> sets out the structure and the <a href="${r}legal/">disclosures</a>
+          the risks.</p>
       </div>
-    </div>
+    </div></div>
   </section>
+
+  <nav class="cont"><div class="wrap"><a href="${r}fund/">The fund &rarr;</a> <a href="${r}strategy/">Strategy &rarr;</a> <a href="${r}method/">Method &rarr;</a></div></nav>
 `,
 };

@@ -27,16 +27,12 @@ const NAV = [
   ['method', 'Method'],
   ['markets', 'Markets'],
   ['principals', 'Principals'],
+  ['contact', 'Contact'],
 ];
 
 /* Paths that were once live and now live elsewhere. A link in someone's
    inbox should land, not 404. */
 const MOVED = { preferred: 'fund' };
-
-const FAVICON = 'data:image/svg+xml,' + encodeURIComponent(
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">' +
-  '<rect width="32" height="32" rx="6" fill="#0d1520"/>' +
-  '<text x="16" y="23" font-size="19" text-anchor="middle" fill="#7fb0e0">Ψ</text></svg>');
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -52,30 +48,23 @@ function shell(p) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(p.title)}</title>
 <meta name="description" content="${esc(p.description)}">
-<meta name="theme-color" content="#0d1520">
-<link rel="icon" href="${FAVICON}">
+<meta name="theme-color" content="#15171a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%2315171a%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2222%22%20font-family%3D%22Georgia%2Cserif%22%20font-weight%3D%22600%22%20font-size%3D%2218%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%3ET%3C%2Ftext%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Public+Sans:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="${r}assets/site.css">
 </head>
 <body>
 
-<header class="nav">
-  <div class="nav-in">
-    <a class="brand" href="${r}"><span class="g">&#936;</span>TRIDENT<small>A Pursuit Lending Partners company</small></a>
-    <nav class="links" aria-label="Sections">
+<header class="mast">
+  <div class="wrap">
+    <a class="wordmark" href="${r}">Trident<small>A Pursuit Lending Partners company</small></a>
+    <nav aria-label="Sections">
       ${links}
     </nav>
-    <a class="cta ghost" href="${r}contact/">Request the materials</a>
   </div>
 </header>
-<nav class="subnav" aria-label="Sections">
-  <div class="wrap">
-    ${NAV.map(([k, t]) => `<a href="${r}${k}/"${cur(k)}>${t}</a>`).join('\n    ')}
-    <a href="${r}contact/"${cur('contact')}>Contact</a>
-  </div>
-</nav>
 
 <main>
 ${p.body(r)}
@@ -83,37 +72,8 @@ ${p.body(r)}
 
 <footer class="foot">
   <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="brand"><span class="g">&#936;</span>TRIDENT<small>A Pursuit Lending Partners company</small></div>
-        <p class="legal"><b>Not an offer.</b> This site is informational. Any offering of interests in the fund is made only to
-          accredited investors and qualified purchasers, only by confidential private placement memorandum, and only where
-          permitted. Trident is newly formed and has no operating history or assets under management. Figures describing
-          the screened book describe the screen, not returns. <a href="${r}legal/">Full disclosures</a>.</p>
-      </div>
-      <div>
-        <h4>The program</h4>
-        <ul>
-          <li><a href="${r}strategy/">Strategy</a></li>
-          <li><a href="${r}fund/">The fund</a></li>
-          <li><a href="${r}method/">Method</a></li>
-          <li><a href="${r}markets/">Markets</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>The firm</h4>
-        <ul>
-          <li><a href="${r}principals/">Principals</a></li>
-          <li><a href="${r}contact/">Request the materials</a></li>
-          <li><a href="${r}legal/">Disclosures</a></li>
-          <li><a href="${r}desk/">Deal room &middot; partners only</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <span>&copy; 2026 Trident &middot; A Pursuit Lending Partners company</span>
-      <span>New York &middot; New Jersey &middot; Pennsylvania &middot; Connecticut &middot; Florida</span>
-    </div>
+    <span>&copy; 2026 Trident. Not an offer; see the <a href="${r}legal/">disclosures</a>. Newly formed, no assets under management.</span>
+    <span><a href="${r}desk/">Deal room</a> &middot; partners only</span>
   </div>
 </footer>
 
