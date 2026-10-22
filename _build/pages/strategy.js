@@ -245,7 +245,7 @@ module.exports = {
   <section class="next">
     <div class="wrap">
       <div class="cols">
-        <div class="col"><div class="k">NEXT</div><h3>The capital</h3><p>How preferred equity sits in the stack, the terms, and what reporting looks like.</p><a class="more" href="${r}preferred/">Preferred equity &rarr;</a></div>
+        <div class="col"><div class="k">NEXT</div><h3>The fund</h3><p>How capital moves through the fund, the terms, and what reporting looks like.</p><a class="more" href="${r}fund/">The fund &rarr;</a></div>
         <div class="col"><div class="k">NEXT</div><h3>The method</h3><p>Every rule in the buy box, the current book, the refusals, the lenders and the checklist.</p><a class="more" href="${r}method/">Method &rarr;</a></div>
         <div class="col"><div class="k">NEXT</div><h3>The counties</h3><p>Where we buy, with each county&rsquo;s median, Fair Market Rent and modelled yield.</p><a class="more" href="${r}markets/">Markets &rarr;</a></div>
       </div>

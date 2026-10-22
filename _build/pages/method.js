@@ -198,7 +198,7 @@ module.exports = {
     <div class="wrap">
       <div class="cols">
         <div class="col"><div class="k">NEXT</div><h3>The counties</h3><p>Each county&rsquo;s median, Fair Market Rent, modelled yield and coverage status.</p><a class="more" href="${r}markets/">Markets &rarr;</a></div>
-        <div class="col"><div class="k">NEXT</div><h3>The capital</h3><p>How preferred equity sits in the stack, and what the terms are.</p><a class="more" href="${r}preferred/">Preferred equity &rarr;</a></div>
+        <div class="col"><div class="k">NEXT</div><h3>The fund</h3><p>How capital moves through the fund, and what the terms are.</p><a class="more" href="${r}fund/">The fund &rarr;</a></div>
         <div class="col"><div class="k">NEXT</div><h3>The memorandum</h3><p>Request it, with the current book and a call with both principals.</p><a class="more" href="${r}contact/">Request the materials &rarr;</a></div>
       </div>
     </div>

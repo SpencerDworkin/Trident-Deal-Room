@@ -18,8 +18,8 @@ module.exports = {
       <div class="legal-body">
         <h2>This website is not an offer</h2>
         <p>This website is for informational purposes only. Nothing on it constitutes an offer to sell, or a solicitation of
-          an offer to buy, any security, and nothing on it should be relied upon in making an investment decision. Any
-          offering of preferred equity or any other interest in a Trident vehicle will be made only by means of a
+          an offer to buy, any security or any interest in any fund, and nothing on it should be relied upon in making an
+          investment decision. Any offering of interests in a fund managed by Trident will be made only by means of a
           confidential private placement memorandum and related subscription documents, which will contain the complete
           terms of the offering, a full description of the risks, and information that is not on this website. The
           memorandum controls over anything written here in every respect. If anything on this website is inconsistent
@@ -29,24 +29,25 @@ module.exports = {
         <p>Any offering will be made only to persons who qualify as accredited investors under Regulation D of the
           Securities Act of 1933 and, where applicable, qualified purchasers under the Investment Company Act of 1940, and
           only in jurisdictions where such an offering is permitted. Interests will not be registered under the Securities
-          Act or any state securities law and will be offered in reliance on exemptions from registration. Interests may
-          not be transferred or resold except as permitted under the memorandum and applicable law, and there is no public
-          market for them and none is expected to develop.</p>
+          Act or any state securities law and will be offered in reliance on exemptions from registration. The fund will
+          not be registered under the Investment Company Act. Interests may not be transferred or resold except as
+          permitted under the fund&rsquo;s governing documents and applicable law, and there is no public market for them
+          and none is expected to develop.</p>
 
         <h2>No operating history</h2>
         <p>Trident is newly formed. It has no operating history, no assets under management, and no completed acquisitions.
-          The figures on this website describing the screened book &mdash; the number of filings, how they sort into bands,
-          what is refused and why, the lenders behind them, the county medians and Fair Market Rents &mdash; describe
-          Trident&rsquo;s screening process applied to public foreclosure calendars. They are not a record of properties
-          acquired, rents collected or returns earned, and they are not indicative of future results. The screen can be
-          applied consistently and still produce poor outcomes.</p>
+          The fund described on this website has not yet held a closing. The figures on this website describing the
+          screened book &mdash; the number of filings, how they sort into bands, what is refused and why, the lenders behind
+          them, the county medians and Fair Market Rents &mdash; describe Trident&rsquo;s screening process applied to public
+          foreclosure calendars. They are not a record of properties acquired, rents collected or returns earned, and they
+          are not indicative of future results. The screen can be applied consistently and still produce poor outcomes.</p>
 
-        <h2>A preferred return is a priority, not a guarantee</h2>
-        <p>A preferred return is a contractual right to be paid before another class of equity. It is paid only to the
-          extent the vehicle generates cash available to pay it. If the properties do not produce sufficient cash, the
-          preferred return will not be paid in full or at all, whatever has accrued. Trident&rsquo;s common equity absorbing
-          the first loss reduces the chance that the preferred is impaired; it does not eliminate it. An investor may lose
-          some or all of the amount invested.</p>
+        <h2>Distributions are not guaranteed</h2>
+        <p>Distributions to investors depend on the fund acquiring properties, leasing them, and collecting rent in excess
+          of operating costs and reserves, and on the terms set out in the memorandum. None of that is assured. An investor
+          may receive no distributions for extended periods, may receive less than projected, and may lose some or all of
+          the amount invested. Any yield figure on this website describes a screening threshold, not an expected or
+          targeted return to investors.</p>
 
         <h2>Risk factors</h2>
         <p>The memorandum will contain a complete discussion of risks. Among the risks specific to this strategy:</p>
@@ -64,7 +65,8 @@ module.exports = {
           <li><b>Condition.</b> There is no interior access before a sheriff&rsquo;s sale. Properties are purchased as-is and
             may have defects, environmental conditions or damage that materially exceed make-ready estimates.</li>
           <li><b>Adjournment and withdrawal.</b> Sales are frequently adjourned, often without re-advertisement, or withdrawn
-            when a borrower reinstates, refinances or files for bankruptcy. Capital may remain undeployed for extended periods.</li>
+            when a borrower reinstates, refinances or files for bankruptcy. Capital may remain undeployed for extended periods,
+            reducing returns.</li>
           <li><b>Deposit forfeiture.</b> A winning bidder who fails to pay the balance within the required period forfeits the
             deposit.</li>
           <li><b>Valuation.</b> County medians and assessor-derived values are estimates. Independent valuation may also be
@@ -74,18 +76,21 @@ module.exports = {
             could reduce rents, delay leasing or make properties ineligible.</li>
           <li><b>Make-ready and leasing.</b> Properties must pass housing authority inspection before a voucher tenant may
             occupy them. Make-ready may cost more and take longer than estimated, during which the property produces no income.</li>
-          <li><b>Concentration.</b> The vehicle will hold a limited number of properties in a limited number of counties in
-            one state, and will be exposed to local economic, regulatory and legal conditions.</li>
-          <li><b>Illiquidity.</b> Interests are not transferable except as permitted by the memorandum. There is no market
-            for them. An investor should expect to hold for the full term.</li>
+          <li><b>Concentration.</b> The fund will hold a limited number of properties in a limited number of counties in one
+            state, and will be exposed to local economic, regulatory and legal conditions.</li>
+          <li><b>Illiquidity.</b> Interests are not transferable except as permitted by the fund&rsquo;s governing documents.
+            There is no market for them. An investor should expect to hold for the full term of the fund.</li>
           <li><b>Key persons.</b> The strategy depends on two principals. The loss or unavailability of either could materially
-            affect the vehicle.</li>
+            affect the fund.</li>
           <li><b>Regulatory and legal change.</b> Foreclosure procedure, tenant protection, the Community Wealth Preservation
             Program and the voucher program are all subject to legislative, regulatory and judicial change.</li>
-          <li><b>Conflicts of interest.</b> Trident and its principals hold common equity in the vehicle, may have interests in
-            other ventures, and may face conflicts in allocating time and opportunities. The memorandum describes these.</li>
-          <li><b>Leverage.</b> The base structure uses no senior debt. If the vehicle later borrows, lenders would rank ahead
-            of the preferred equity.</li>
+          <li><b>Conflicts of interest.</b> Trident and its principals will receive compensation from the fund as set out in
+            the memorandum, will invest in the fund, may have interests in other ventures, and may face conflicts in
+            allocating time and opportunities. The memorandum describes these.</li>
+          <li><b>Leverage.</b> The base structure uses no acquisition debt. If the fund later borrows within the limits the
+            memorandum permits, lenders would rank ahead of investors on the properties concerned.</li>
+          <li><b>Fees and expenses.</b> The fund will bear management fees, organisational and operating expenses, and the
+            manager&rsquo;s participation in profits, all as set out in the memorandum. These reduce returns to investors.</li>
         </ul>
 
         <h2>Forward-looking statements</h2>

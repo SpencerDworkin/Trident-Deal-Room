@@ -8,10 +8,10 @@ module.exports = {
     <div class="wrap">
       <p class="eyebrow">Request the materials</p>
       <h1>We will send the memorandum and walk you through the book.</h1>
-      <p class="lead">If you are a family office or an accredited investor considering a preferred equity allocation, write
-        to us. There is no form to fill in and no gate to pass; an email reaches a principal.</p>
+      <p class="lead">If you are a family office or an accredited investor considering a commitment to the fund, write to
+        us. There is no form to fill in and no gate to pass; an email reaches a principal.</p>
       <div class="acts" style="margin-top:28px">
-        <a class="cta lg" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20preferred%20equity%20materials&body=Please%20send%20the%20memorandum%20and%20the%20current%20book.%0A%0AName%3A%0AFamily%20office%20%2F%20firm%3A%0AState%3A%0A">Request the memorandum</a>
+        <a class="cta lg" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20fund%20materials&body=Please%20send%20the%20memorandum%20and%20the%20current%20book.%0A%0AName%3A%0AFamily%20office%20%2F%20firm%3A%0AState%3A%0A">Request the memorandum</a>
         <a class="cta ghost lg" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20a%20conversation&body=I%27d%20like%20to%20arrange%20a%20call.%0A%0AName%3A%0AFamily%20office%20%2F%20firm%3A%0AGood%20times%3A%0A">Arrange a call</a>
       </div>
     </div>
@@ -45,8 +45,8 @@ module.exports = {
         <div class="a">
           <div class="n">03</div>
           <h3>Subscription, if it fits</h3>
-          <p>Accredited-investor or qualified-purchaser verification, subscription documents, and funding into the
-            vehicle&rsquo;s account. Capital is deployed as files clear the screen and the checklist.</p>
+          <p>Accredited-investor or qualified-purchaser verification, subscription documents, and your commitment to the
+            fund. Capital is drawn as files clear the screen and the checklist.</p>
         </div>
       </div>
     </div>
@@ -59,8 +59,8 @@ module.exports = {
           <p class="eyebrow">Who we are raising from</p>
           <h2>Family offices along the corridor, and Florida.</h2>
           <p class="prose" style="margin-top:16px">Accredited investors and qualified purchasers, by private placement.
-            Minimum preferred investment of $1,000,000. The <a href="${r}preferred/">preferred equity page</a> sets out
-            the structure; the <a href="${r}legal/">disclosures</a> set out the risks.</p>
+            Minimum commitment of $1,000,000. The <a href="${r}fund/">fund page</a> sets out the structure; the
+            <a href="${r}legal/">disclosures</a> set out the risks.</p>
         </div>
         <div class="where">
           <div class="k">Where we are raising</div>

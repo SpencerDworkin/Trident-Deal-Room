@@ -23,8 +23,8 @@ module.exports = {
         </div>
         <div class="prose">
           <p>There is no acquisitions team between you and the courthouse. The two people below decide what gets bid on,
-            how much, and when to walk away &mdash; and their own capital sits beneath yours in the stack, so they live with
-            the consequences first.</p>
+            how much, and when to walk away &mdash; and they invest in the fund alongside you, so they live with the
+            consequences too.</p>
         </div>
       </div>
       <div class="people">
@@ -62,7 +62,7 @@ module.exports = {
             book itself, quarterly, property by property. There is nothing to reconcile because there is only one
             document.</p>
           <p><strong>Pursuit Lending Partners.</strong> Trident is a subsidiary of PLP and draws on its lending and real-estate
-            underwriting background. The sheriff&rsquo;s-sale program is Trident&rsquo;s own, with its own vehicle and its own
+            underwriting background. The sheriff&rsquo;s-sale fund is Trident&rsquo;s own, with its own vehicle and its own
             capital.</p>
         </div>
       </div>
@@ -85,7 +85,7 @@ module.exports = {
         <div class="where">
           <div class="k">Trident</div>
           <div class="states">A Pursuit Lending Partners company</div>
-          <p>New Jersey sheriff&rsquo;s-sale acquisition. Preferred equity from family offices in NY, NJ, PA, CT and FL.</p>
+          <p>New Jersey sheriff&rsquo;s-sale acquisition. A private fund raised from family offices in NY, NJ, PA, CT and FL.</p>
         </div>
       </div>
     </div>

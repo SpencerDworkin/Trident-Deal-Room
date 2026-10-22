@@ -18,16 +18,20 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const read = f => fs.readFileSync(path.join(__dirname, f), 'utf8');
 
-const PAGES = ['home', 'strategy', 'preferred', 'method', 'markets', 'principals', 'contact', 'legal']
+const PAGES = ['home', 'strategy', 'fund', 'method', 'markets', 'principals', 'contact', 'legal']
   .map(n => require('./pages/' + n));
 
 const NAV = [
   ['strategy', 'Strategy'],
-  ['preferred', 'Preferred equity'],
+  ['fund', 'The fund'],
   ['method', 'Method'],
   ['markets', 'Markets'],
   ['principals', 'Principals'],
 ];
+
+/* Paths that were once live and now live elsewhere. A link in someone's
+   inbox should land, not 404. */
+const MOVED = { preferred: 'fund' };
 
 const FAVICON = 'data:image/svg+xml,' + encodeURIComponent(
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">' +
@@ -82,7 +86,7 @@ ${p.body(r)}
     <div class="foot-grid">
       <div>
         <div class="brand"><span class="g">&#936;</span>TRIDENT<small>A Pursuit Lending Partners company</small></div>
-        <p class="legal"><b>Not an offer.</b> This site is informational. Any offering of preferred equity is made only to
+        <p class="legal"><b>Not an offer.</b> This site is informational. Any offering of interests in the fund is made only to
           accredited investors and qualified purchasers, only by confidential private placement memorandum, and only where
           permitted. Trident is newly formed and has no operating history or assets under management. Figures describing
           the screened book describe the screen, not returns. <a href="${r}legal/">Full disclosures</a>.</p>
@@ -91,7 +95,7 @@ ${p.body(r)}
         <h4>The program</h4>
         <ul>
           <li><a href="${r}strategy/">Strategy</a></li>
-          <li><a href="${r}preferred/">Preferred equity</a></li>
+          <li><a href="${r}fund/">The fund</a></li>
           <li><a href="${r}method/">Method</a></li>
           <li><a href="${r}markets/">Markets</a></li>
         </ul>
@@ -129,4 +133,22 @@ for (const p of PAGES) {
   if (/\{\{|\{%/.test(html)) { console.error(`REFUSING ${p.path || '/'}: Liquid-like braces in output`); process.exit(1); }
   fs.writeFileSync(out, html);
   console.log(`${(p.path || '/').padEnd(12)} ${(html.length / 1024).toFixed(0).padStart(3)}KB  ${p.title}`);
+}
+
+for (const [from, to] of Object.entries(MOVED)) {
+  const out = path.join(ROOT, from, 'index.html');
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=../${to}/">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="../${to}/">
+<title>Trident</title>
+</head>
+<body><p>This page has moved to <a href="../${to}/">../${to}/</a>.</p></body>
+</html>
+`);
+  console.log(`${from.padEnd(12)}   → ${to}/  (redirect)`);
 }

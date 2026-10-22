@@ -1,0 +1,208 @@
+module.exports = {
+  path: 'fund',
+  nav: 'fund',
+  title: 'The fund — Trident',
+  description: 'Trident is raising a private fund to acquire one-to-four-unit homes at New Jersey sheriff\'s sales and hold them under voucher tenancy. Terms, reporting and the questions investors ask first.',
+  body: r => `
+  <section class="phead">
+    <div class="wrap">
+      <p class="eyebrow">The fund</p>
+      <h1>A private fund that buys at the courthouse and holds for income.</h1>
+      <p class="lead">Trident is raising its first fund from family offices. The fund acquires one-to-four-unit homes at New
+        Jersey sheriff&rsquo;s sales, priced against recorded debt rather than market value, and holds them under Housing
+        Choice Voucher tenancy. This page sets out how it is built, how capital moves through it, and what you receive as
+        an investor. The confidential memorandum controls; this is the shape of it.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">How capital moves</p>
+          <h2>Commitments in. Properties bought for cash. Rents out.</h2>
+        </div>
+        <div class="prose">
+          <p>Investors commit capital to the fund. The fund buys properties outright at sheriff&rsquo;s sale &mdash; the
+            auction requires cash, so there is no acquisition debt in the base structure &mdash; brings each one to the
+            housing authority&rsquo;s inspection standard, leases it to a voucher holder, and holds it. Rents pay operating
+            costs and reserves first; what remains is distributed to investors on the terms in the memorandum.</p>
+          <p>The principals invest in the fund alongside you. The pace of deployment is set by the sheriff&rsquo;s calendar
+            and the screen, not by a quota: capital that has not found a property that clears the buy box stays in cash.</p>
+        </div>
+      </div>
+
+      <div class="stack">
+        <div class="stack-draw" aria-label="How capital flows through the fund">
+          <div class="tier pref"><div><div class="t">Investors &mdash; family offices</div><div class="d">Capital commitments to the fund; the principals commit alongside</div></div><span class="tag">COMMIT</span></div>
+          <div class="stack-arrow">&darr; drawn as properties clear the screen</div>
+          <div class="tier assets"><div><div class="t">The fund</div><div class="d">Buys for cash at sheriff&rsquo;s sale; holds cash it has not deployed</div></div><span class="tag">VEHICLE</span></div>
+          <div class="stack-arrow">&darr; acquires, makes ready, leases</div>
+          <div class="tier assets"><div><div class="t">The properties</div><div class="d">1&ndash;4 unit homes under voucher tenancy; rent paid largely by the housing authority</div></div><span class="tag">ASSETS</span></div>
+          <div class="stack-arrow">&uarr; rents, after costs and reserves</div>
+          <div class="tier common"><div><div class="t">Distributions</div><div class="d">To investors, on the terms and schedule in the memorandum</div></div><span class="tag">RETURN</span></div>
+        </div>
+        <div class="prose">
+          <p><strong>Why cash, not debt.</strong> A sheriff&rsquo;s sale takes twenty percent at the gavel and the balance in
+            thirty days, in certified funds. There is no financing contingency and no lender at the table. Buying for cash
+            is not a choice the fund makes; it is the only way to buy at the courthouse. It also means no lender ranks
+            ahead of investors on the properties.</p>
+          <p><strong>Why cash sits undeployed.</strong> The screen refuses 37% of the current calendar and the checklist
+            blocks bids on files that are not ready. Some quarters there will be more capital than qualifying sales. The
+            fund holds it rather than bending the screen to spend it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">The terms</p>
+          <h2>What is on offer.</h2>
+          <p class="side">A summary. The private placement memorandum sets out every term in full and controls over
+            anything written here.</p>
+        </div>
+        <div class="prose">
+          <p>Economic terms &mdash; the distribution waterfall, fees, term and the manager&rsquo;s participation &mdash; are
+            stated in the memorandum and discussed in person rather than published here. Ask, and we will walk you through
+            them.</p>
+        </div>
+      </div>
+
+      <div class="tbl-wrap tw">
+        <table class="t">
+          <tr><th style="width:28%">Term</th><th>Summary</th></tr>
+          <tr><td><b>Vehicle</b></td><td>A private investment fund. Interests offered by private placement.</td></tr>
+          <tr><td><b>Strategy</b></td><td>Acquisition of one-to-four-unit residential property at New Jersey sheriff&rsquo;s sales, screened on recorded debt against county median value, held under Housing Choice Voucher tenancy for income.</td></tr>
+          <tr><td><b>Minimum commitment</b></td><td><span class="num">$1,000,000</span></td></tr>
+          <tr><td><b>Use of proceeds</b></td><td>Acquisition for cash at sheriff&rsquo;s sale, surviving-lien reserves, make-ready to the housing authority&rsquo;s inspection standard, and carry to stabilised tenancy.</td></tr>
+          <tr><td><b>Leverage</b></td><td>None in the base structure. Properties are bought for cash.</td></tr>
+          <tr><td><b>Deployment</b></td><td>As properties clear the screen and the pre-bid checklist. Undeployed capital is held in cash. Pace follows the sheriff&rsquo;s calendar.</td></tr>
+          <tr><td><b>Distributions, fees, term</b></td><td>Set out in the memorandum.</td></tr>
+          <tr><td><b>Reporting</b></td><td>Quarterly, property by property: each acquisition, its basis, its surviving liens, its tenancy, its rent. The same book Trident runs the business from.</td></tr>
+          <tr><td><b>Alignment</b></td><td>The principals invest in the fund alongside investors, attend every sale, and bid every property personally.</td></tr>
+          <tr><td><b>Eligible investors</b></td><td>Accredited investors and qualified purchasers. Trident is raising from family offices in New York, New Jersey, Pennsylvania, Connecticut and Florida.</td></tr>
+        </table>
+        <p class="tcap">Trident is newly formed and has no operating history or assets under management. Distributions are
+          paid only to the extent the properties generate cash to pay them; an investment may lose value, including the
+          entire amount invested. See the <a href="${r}legal/" style="color:var(--accent)">disclosures</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec paper">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Reporting</p>
+          <h2>You see the book, not a summary of it.</h2>
+        </div>
+        <div class="prose">
+          <p>Trident runs on one working book: every filing in the covered counties, its screen result, and for every
+            property the fund pursues, the file &mdash; title findings, lien reserve, occupancy, bid ceiling, what it paid,
+            what it cost to make ready, when it leased and at what rent. Investor reporting is that book, quarterly,
+            property by property.</p>
+          <p>There is nothing to reconcile between what we tell you and what we look at ourselves, because they are the
+            same document. If a property disappoints, you will see it on the same page we do, in the same quarter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Questions investors ask</p>
+          <h2>The ones that come up on the first call.</h2>
+        </div>
+        <div class="prose">
+          <p>Answered plainly here so the call can go further. Anything not covered, ask.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>What am I actually invested in?</summary>
+          <div class="a"><p>An interest in the fund, which owns the properties. Distributions come from the rents those
+            properties generate after operating costs and reserves, and from any eventual sale. The fund is the owner of
+            record; you own the fund.</p></div>
+        </details>
+        <details>
+          <summary>Where does my money sit before it is deployed?</summary>
+          <div class="a"><p>In cash, in the fund&rsquo;s account. Properties are bought as they clear the screen and the
+            pre-bid checklist, which means deployment follows the sheriff&rsquo;s calendar rather than a schedule we set.
+            We would rather hold cash than bid on a file the screen refused.</p></div>
+        </details>
+        <details>
+          <summary>Are distributions guaranteed?</summary>
+          <div class="a"><p>No. They are paid from the properties&rsquo; cash flow on the terms in the memorandum. If the
+            properties do not produce it, it is not paid. Trident is newly formed; there is no track record behind the
+            projections, only the method.</p></div>
+        </details>
+        <details>
+          <summary>Is there debt on the properties?</summary>
+          <div class="a"><p>Not in the base structure. A sheriff&rsquo;s sale requires certified funds, so the fund buys for
+            cash. If the fund were ever to borrow, the memorandum sets out the limits and you would be told.</p></div>
+        </details>
+        <details>
+          <summary>What happens when a sale is adjourned, or we are outbid?</summary>
+          <div class="a"><p>Nothing is spent. Capital for a property is committed only at the gavel. An adjourned sale moves
+            on the calendar and the file waits; a sale where bidding passes our ceiling is walked away from. Most of the
+            work on a file happens before the sale and costs time, not capital.</p></div>
+        </details>
+        <details>
+          <summary>What are the main risks?</summary>
+          <div class="a"><p>Surviving liens, occupancy and possession, condition unseen before purchase, the owner-occupant
+            right of first refusal under New Jersey&rsquo;s Community Wealth Preservation Program, adjournment, dependence on
+            the voucher program, and the general risks of a newly formed manager. The <a href="${r}strategy/">strategy
+            page</a> sets out what the process does about each; the <a href="${r}legal/">disclosures</a> list them in
+            full.</p></div>
+        </details>
+        <details>
+          <summary>Who can invest, and what is the minimum?</summary>
+          <div class="a"><p>Accredited investors and qualified purchasers, by private placement. The minimum commitment is
+            $1,000,000. We are raising from family offices in New York, New Jersey, Pennsylvania, Connecticut and
+            Florida.</p></div>
+        </details>
+        <details>
+          <summary>Can I see the properties?</summary>
+          <div class="a"><p>Yes, after acquisition. Before the sale there is no interior access for anyone, including us.
+            After the deed you are welcome to walk any property the fund owns. You will also see each one in the quarterly
+            book, with its photographs.</p></div>
+        </details>
+        <details>
+          <summary>How are you paid?</summary>
+          <div class="a"><p>The manager&rsquo;s compensation and participation are set out in the memorandum. The principals
+            also invest in the fund on the same terms as other investors, and attend every sale themselves. We would rather
+            explain the economics on a call than reduce them to a line here.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec paper">
+    <div class="wrap">
+      <div class="cbox">
+        <div>
+          <p class="eyebrow">Next step</p>
+          <h2>Request the memorandum.</h2>
+          <p class="prose" style="margin-top:16px">You will receive the private placement memorandum and the current screened
+            book, and a call with both principals.</p>
+          <div class="acts">
+            <a class="cta lg" href="${r}contact/">Request the memorandum</a>
+            <a class="cta ghost lg" href="${r}method/">See the method first</a>
+          </div>
+        </div>
+        <div class="where">
+          <div class="k">Minimum commitment</div>
+          <div class="states num">$1,000,000</div>
+          <p>Accredited investors and qualified purchasers. Family offices in NY, NJ, PA, CT and FL.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+`,
+};

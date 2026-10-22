@@ -87,13 +87,13 @@ module.exports = {
           <h2>Family offices, within reach of the properties.</h2>
         </div>
         <div class="prose">
-          <p>Trident is raising preferred equity from family offices in <strong>New York, New Jersey, Pennsylvania,
+          <p>Trident is raising its first fund from family offices in <strong>New York, New Jersey, Pennsylvania,
             Connecticut and Florida</strong> &mdash; the first four because an allocator who can drive to a property in an
             afternoon is an allocator who understands what they own, and Florida because a good many of them are there
             for part of the year.</p>
-          <p>The offering is private, to accredited investors and qualified purchasers, with a minimum of $1,000,000. We
-            are not raising from the public, and we would rather have a small number of investors who have walked a
-            property than a large number who have read a deck.</p>
+          <p>The offering is private, to accredited investors and qualified purchasers, with a minimum commitment of
+            $1,000,000. We are not raising from the public, and we would rather have a small number of investors who have
+            walked a property than a large number who have read a deck.</p>
         </div>
       </div>
       <div class="terms">
@@ -103,7 +103,7 @@ module.exports = {
         <div class="term"><div class="k">Connecticut</div><div class="v">Family offices</div></div>
         <div class="term wide"><div class="k">Florida</div><div class="v">Family offices</div><div class="n">Many of the same families, part of the year.</div></div>
       </div>
-      <div class="acts"><a class="cta" href="${r}contact/">Request the memorandum</a><a class="cta ghost" href="${r}preferred/">The preferred terms</a></div>
+      <div class="acts"><a class="cta" href="${r}contact/">Request the memorandum</a><a class="cta ghost" href="${r}fund/">The fund</a></div>
     </div>
   </section>
 `,
