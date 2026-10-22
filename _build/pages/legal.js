@@ -1,20 +1,18 @@
 module.exports = {
   path: 'legal',
   nav: 'legal',
-  title: 'Disclosures — Trident',
+  title: 'Disclosures · Trident',
   description: 'Important disclosures: this site is not an offer; eligibility; no operating history; risk factors; forward-looking statements; privacy.',
   body: r => `
-  <section class="dochead">
-    <div class="wrap">
-      <p class="label">Disclosures</p>
-      <h1>Read this before you read anything else here as a reason to invest.</h1>
-      <p class="lead">What this website is and is not, who may invest, what Trident is and is not yet, and the ways an
-        investment can go wrong.</p>
-    </div>
-  </section>
+  <section class="phead"><div class="wrap">
+    <p class="kicker">Disclosures</p>
+    <h1>Read this before you read anything else here as a reason to invest.</h1>
+    <p class="lead">What this website is and is not, who may invest, what Trident is and is not yet, and the ways an
+      investment can go wrong.</p>
+  </div></section>
 
-  <section class="sec">
-    <div class="wrap"><div class="col legal">
+  <section class="scene">
+    <div class="wrap"><div class="legal">
       <h2>This website is not an offer</h2>
       <p>This website is for informational purposes only. Nothing on it constitutes an offer to sell, or a solicitation of an
         offer to buy, any security or any interest in any fund, and nothing on it should be relied upon in making an
