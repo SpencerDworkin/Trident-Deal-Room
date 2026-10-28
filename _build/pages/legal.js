@@ -4,7 +4,7 @@ module.exports = {
   title: 'Disclosures · Trident',
   description: 'Important disclosures: this site is not an offer; eligibility; no operating history; risk factors; forward-looking statements; privacy.',
   body: r => `
-  <section class="phead" style="background-image:url(${r}assets/img/courthouse.jpg)"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/courthouse.webp)"><div class="wrap">
     <p class="kicker">Disclosures</p>
     <h1>Read this before you read anything else here as a reason to invest.</h1>
     <p class="lead">What this website is and is not, who may invest, what Trident is and is not yet, and the ways an
@@ -87,7 +87,7 @@ module.exports = {
         Google Fonts, which receives the request for the font files.</p>
 
       <h2>Contact</h2>
-      <p>Trident, a Pursuit Lending Partners company. <a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>.</p>
+      <p>Trident, a Patel Legacy Properties company. <a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>.</p>
     </div></div>
   </section>
 `,

@@ -4,12 +4,12 @@ module.exports = {
   title: 'Contact · Trident',
   description: 'Reach a Trident principal directly. Investors receive the private placement memorandum and the current screened book, then a call with both principals.',
   body: r => `
-  <section class="phead" style="background-image:url(${r}assets/img/hero-street.jpg)"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">Contact</p>
     <h1>Write to a principal.</h1>
     <p class="lead">There is no form and no gate. An email reaches Spencer Dworkin directly.</p>
     <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>
-    <p class="also">Spencer Dworkin and Ayush Patel, principals. Trident, a Pursuit Lending Partners company.</p>
+    <p class="also">Spencer Dworkin and Ayush Patel, principals. Trident, a Patel Legacy Properties company.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">

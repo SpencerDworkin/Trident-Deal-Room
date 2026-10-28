@@ -4,7 +4,7 @@ module.exports = {
   title: 'Where · Trident',
   description: 'Where Trident buys: six New Jersey counties with their medians, Fair Market Rents and modelled yields, two more coming on, and why New Jersey first.',
   body: r => `
-  <section class="phead" style="background-image:url(${r}assets/img/aerial.jpg)"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/aerial.webp)"><div class="wrap">
     <p class="kicker">Where</p>
     <h1>Six New Jersey counties today. Two more coming on. National in ambition.</h1>
     <p class="lead">Trident buys where the foreclosure process is judicial, public and calendared, and where the housing

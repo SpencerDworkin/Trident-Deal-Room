@@ -6,7 +6,7 @@ module.exports = {
   title: 'How we buy · Trident',
   description: 'The buy box as nine rules, how the current book of filings sorts, what is refused and why, who is filing, the ten-item pre-bid checklist, and the four statutory dates.',
   body: r => `
-  <section class="phead" style="background-image:url(${r}assets/img/aerial.jpg)"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/aerial.webp)"><div class="wrap">
     <p class="kicker">How we buy</p>
     <h1>The buy box is written as rules. It runs on every filing, the same way, every time.</h1>
     <p class="lead">A screen that lives in someone&rsquo;s head drifts. Trident&rsquo;s is written down with numbers in it,

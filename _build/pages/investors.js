@@ -4,7 +4,7 @@ module.exports = {
   title: 'Investors · Trident',
   description: 'Trident is raising its first private fund to acquire one-to-four-unit homes at New Jersey sheriff\'s sales and hold them under voucher tenancy. How capital moves, the terms, reporting, who we raise from, and the questions investors ask first.',
   body: r => `
-  <section class="phead" style="background-image:url(${r}assets/img/two-family.jpg)"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/two-family.webp)"><div class="wrap">
     <p class="kicker">Investors</p>
     <h1>Trident is raising its first fund.</h1>
     <p class="lead">A private fund that buys at the courthouse, for cash, and holds for income. Raised from family offices
@@ -92,7 +92,7 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="band" style="background-image:url(${r}assets/img/two-family.jpg)"><div class="wrap">
+  <section class="band" style="background-image:url(${r}assets/img/two-family.webp)"><div class="wrap">
     <p class="kicker">Request the memorandum</p>
     <h2 style="margin-top:12px">Write to a principal.</h2>
     <p class="lead">You will receive the private placement memorandum and the current screened book, and a call with both

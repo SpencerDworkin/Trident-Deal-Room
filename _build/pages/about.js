@@ -2,12 +2,12 @@ module.exports = {
   path: 'about',
   nav: 'about',
   title: 'About · Trident',
-  description: 'Trident is a Pursuit Lending Partners company run by two principals, Spencer Dworkin and Ayush Patel, who screen every filing, set every ceiling and attend every sale themselves.',
+  description: 'Trident is a Patel Legacy Properties company run by two principals, Spencer Dworkin and Ayush Patel, who screen every filing, set every ceiling and attend every sale themselves.',
   body: r => `
-  <section class="phead" style="background-image:url(${r}assets/img/hero-street.jpg)"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">About</p>
     <h1>Two principals. One book. Every sale attended.</h1>
-    <p class="lead">Trident is a subsidiary of Pursuit Lending Partners. It is run by its two principals, who screen every
+    <p class="lead">Trident is a subsidiary of Patel Legacy Properties. It is run by its two principals, who screen every
       filing, read every title, set every ceiling and stand at every sale themselves. There is no acquisitions team
       between the firm and the courthouse.</p>
   </div></section>
@@ -39,9 +39,9 @@ module.exports = {
   </div></div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">03</p><h2>Pursuit Lending Partners</h2></div>
+    <div class="sh"><p class="kicker">03</p><h2>Patel Legacy Properties</h2></div>
     <div class="prose">
-      <p>Trident draws on Pursuit Lending Partners&rsquo; lending and real-estate underwriting background: reading a title,
+      <p>Trident draws on Patel Legacy PropertiesPatel Legacy Properties&rsquo;rsquo; lending and real-estate underwriting background: reading a title,
         sizing a lien, pricing a make-ready, setting a number and holding to it. The sheriff&rsquo;s-sale business is
         Trident&rsquo;s own, with its own vehicle and its own capital.</p>
       <p>The firm is newly formed. It has no operating history and no assets under management, and it would rather say so
@@ -49,7 +49,7 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="band" style="background-image:url(${r}assets/img/hero-street.jpg)"><div class="wrap">
+  <section class="band" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">Contact</p>
     <h2 style="margin-top:12px">Write and you will hear from a principal.</h2>
     <p class="lead">Not a placement agent, not an inbox someone else reads.</p>
