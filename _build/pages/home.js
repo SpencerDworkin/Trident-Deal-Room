@@ -87,7 +87,7 @@ module.exports = {
       </div>
       <div class="actions"><a class="btn" href="${r}how-we-buy/">How We Buy</a></div>
     </div>
-    <figure class="photo"><img src="${r}assets/img/courthouse.webp" alt="Stone steps and columned entrance of a county courthouse" loading="lazy"></figure>
+    <figure class="photo"><img src="${r}assets/img/hero-street.webp" alt="Stone steps and columned entrance of a county courthouse" loading="lazy"></figure>
   </div></div></section>
 
   <section class="band navy"><div class="wrap">

@@ -4,7 +4,7 @@ module.exports = {
   title: 'What we do · Trident',
   description: 'How a New Jersey sheriff\'s sale sets its price, why Trident bids against recorded debt rather than market value, the process from calendar to deed, and the voucher-backed hold.',
   body: r => `
-  <section class="phead" style="background-image:url(${r}assets/img/courthouse.webp)"><div class="wrap">
+  <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">What we do</p>
     <h1>The opening bid is the debt. Everything Trident does follows from that.</h1>
     <p class="lead">A sheriff&rsquo;s sale is the one place in residential property where the price is set by a number on a
