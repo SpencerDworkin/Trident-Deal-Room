@@ -3,7 +3,7 @@ const STAGES = [
   ['Source', 'Our platform reads the market daily and flags property priced below its worth'],
   ['Underwrite', 'A principal walks the property, reads the leases and sets the price we will pay'],
   ['Acquire', 'We close with our own capital and a small group of investors we know'],
-  ['Operate', 'Patel Legacy Properties manages the asset. Distributions come from income'],
+  ['Operate', 'We manage the building ourselves. Distributions come from income'],
 ];
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 function wrap(d, max) { const out = []; let line = ''; for (const w of d.split(' ')) { if ((line + ' ' + w).trim().length > max) { out.push(line.trim()); line = w; } else line += ' ' + w; } out.push(line.trim()); return out; }

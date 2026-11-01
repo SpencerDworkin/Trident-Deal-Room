@@ -15,17 +15,18 @@ module.exports = {
   <section class="scene"><div class="wrap">
     <div class="sechead"><p class="kicker">Principals</p><h2>Who we are</h2></div>
     <div class="people">
-      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Spencer built the software Trident uses to find property and leads sourcing, data and underwriting. Before Trident he founded an artificial intelligence consulting practice working with businesses across industries.</p><p><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></p></div></div>
-      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Ayush is a principal of Patel Legacy Properties, a real estate owner and operator in the Northeast. He leads acquisitions, operations and investor relations, and his team manages every property Trident buys.</p></div></div>
+      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Spencer built the software Trident uses to find property and leads sourcing, data and underwriting. He studied real estate at New York University&rsquo;s Schack Institute of Real Estate, where he served as co-portfolio manager of the student run NYU Schack REIT Investment Fund, a public real estate portfolio that the team concentrated from roughly twenty positions into ten high conviction names during his tenure. Before NYU he was part of the student managed real estate investment trust at American University&rsquo;s Kogod School of Business. He also runs an artificial intelligence consulting practice that builds systems for businesses across industries.</p><p><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></p></div></div>
+      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Ayush is a commercial real estate broker and investor who has spent his career in Northeast retail. At NAI James E. Hanson in Teterboro, New Jersey, he specializes in shopping centers, retail pad sites, mixed use buildings and highest and best use redevelopment, and he is licensed in New Jersey, New York and Pennsylvania. Before that he worked for a Bergen County developer of grocery anchored shopping centers, where he supported the refinancing of three centers and worked alongside JLL on a $110 million sale of five grocery anchored properties. He founded Patel Legacy Properties in 2024. He holds an M.S. in Real Estate from NYU&rsquo;s Schack Institute, where he served on the SPS Dean&rsquo;s Advisory Council, and a B.S. in real estate finance from Rutgers Business School. He is a member of ULI and ICSC.</p></div></div>
     </div>
   </div></section>
 
   <section class="scene alt"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">Patel Legacy Properties</p><h2>The operating company</h2></div>
+    <div class="sh"><p class="kicker">Patel Legacy Properties</p><h2>The parent company</h2></div>
     <div class="prose">
-      <p>Patel Legacy Properties owns and operates real estate across the Northeast. Its experience in buying, improving
-        and managing property is the foundation Trident is built on. Trident is a separate company with its own
-        technology and its own deals; Patel Legacy Properties operates what Trident buys.</p>
+      <p>Patel Legacy Properties is the real estate investment firm Ayush Patel founded in 2024, focused on the
+        acquisition and disposition of retail and mixed use property in the Northeast and on working with private and
+        institutional capital. Its market knowledge and relationships, built over years in Northeast retail, are the
+        foundation Trident is built on. Trident is a separate company with its own technology and its own deals.</p>
     </div>
   </div></div></section>
 

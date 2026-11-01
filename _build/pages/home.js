@@ -43,8 +43,8 @@ module.exports = {
           area every day and flags the property that is priced below its worth, often before it is widely marketed.</p>
         <p><strong>A principal underwrites every deal.</strong> We walk the building, read the leases, set the price we will
           pay and do not go above it.</p>
-        <p><strong>We invest alongside our partners.</strong> Our own capital goes into every deal on the same terms. Patel
-          Legacy Properties operates the property. Distributions come from income.</p>
+        <p><strong>We invest alongside our partners.</strong> Our own capital goes into every deal on the same terms. We
+          manage the property ourselves. Distributions come from income.</p>
       </div>
       <div class="actions"><a class="btn" href="${r}what-we-do/">Our Approach</a></div>
     </div>
@@ -55,8 +55,8 @@ module.exports = {
     <p class="kicker">Principals</p>
     <h2>Two principals. You deal with us directly.</h2>
     <div class="people">
-      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Built the Trident platform. Leads sourcing, data and underwriting.</p></div></div>
-      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Real estate owner and operator in the Northeast. Leads acquisitions, operations and investor relations.</p></div></div>
+      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Built the Trident platform. Leads sourcing, data and underwriting. NYU Schack Institute of Real Estate.</p></div></div>
+      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Commercial broker and investor in Northeast retail. Leads acquisitions, operations and investor relations. NAI James E. Hanson; NYU Schack; Rutgers.</p></div></div>
     </div>
     <div class="actions" style="justify-content:center"><a class="btn btn-solid" href="${r}about/">About Us</a></div>
   </div></section>

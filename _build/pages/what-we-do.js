@@ -44,8 +44,8 @@ module.exports = {
   <section class="scene alt"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">03</p><h2>Buying and operating</h2></div>
     <div class="prose">
-      <p>Each property is bought in its own entity with our own capital and a small group of investors. Patel Legacy
-        Properties manages the building: leasing, tenants, maintenance, the roof. Investors receive distributions from
+      <p>Each property is bought in its own entity with our own capital and a small group of investors. We manage the
+        building ourselves: leasing, tenants, maintenance, the roof. Investors receive distributions from
         the property&rsquo;s income and a plain report on how it is doing.</p>
       <p>We hold for income. We sell when it is the right thing for the property and the people who own it with us, not
         because a calendar says so.</p>
