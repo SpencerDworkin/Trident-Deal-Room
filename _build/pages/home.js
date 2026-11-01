@@ -27,10 +27,10 @@ module.exports = {
   </div></section>
 
   <section class="figures"><div class="wrap">
-    <div><b>100<sup>%</sup></b><span>All cash acquisitions. No lender at the table.</span></div>
-    <div><b>0</b><span>Leverage at the fund or the property.</span></div>
-    <div><b>Daily</b><span>Market coverage by our proprietary platform.</span></div>
-    <div><b>5</b><span>States in which we raise and invest: NJ, NY, PA, CT and FL.</span></div>
+    <div class="f"><div class="n">100<sup>%</sup></div><div class="l">All cash acquisitions. No lender at the table.</div></div>
+    <div class="f"><div class="n">0</div><div class="l">Leverage at the fund or the property.</div></div>
+    <div class="f"><div class="n">Daily</div><div class="l">Market coverage by our proprietary platform.</div></div>
+    <div class="f"><div class="n">5</div><div class="l">States where we raise and invest: NJ, NY, PA, CT and FL.</div></div>
   </div></section>
 
   <section class="scene center"><div class="wrap">
