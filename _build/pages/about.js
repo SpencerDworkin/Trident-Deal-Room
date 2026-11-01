@@ -1,53 +1,48 @@
 module.exports = {
   path: 'about',
   nav: 'about',
-  title: 'Team · Trident',
-  description: 'Trident is led by principals Spencer Dworkin and Ayush Patel and is a Patel Legacy Properties company.',
+  title: 'About · Trident',
+  description: 'Trident is a Patel Legacy Properties company led by principals Spencer Dworkin and Ayush Patel.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
-    <p class="kicker">Team</p>
-    <h1>Technology and operators, under one roof.</h1>
-    <p class="lead">Trident was formed to bring a proprietary sourcing platform together with hands on residential operating
-      experience, so that the opportunities our technology finds are acquired and run by people who have done it before.</p>
+    <p class="kicker">About</p>
+    <h1>A small firm, run by its owners.</h1>
+    <p class="lead">Trident is a Patel Legacy Properties company, formed in 2026 to buy commercial property in New Jersey and
+      the surrounding states with a small group of private investors. There are two principals, and they are the people
+      you will deal with.</p>
   </div></section>
 
   <section class="scene"><div class="wrap">
-    <div class="sechead"><p class="kicker">Principals</p><h2>Two principals. One standard.</h2></div>
+    <div class="sechead"><p class="kicker">Principals</p><h2>Who we are</h2></div>
     <div class="people">
-      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Founder of the Trident platform. Spencer leads technology, data and underwriting. He built the platform that reads our markets daily and ranks every opportunity, and he reviews each one the platform surfaces. Before Trident he founded an artificial intelligence consulting practice serving businesses across industries.</p><p><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></p></div></div>
-      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Principal of Patel Legacy Properties, a residential real estate owner and operator in the Northeast. Ayush leads acquisitions, operations and investor relations, and brings the firm&rsquo;s experience in acquiring, renovating and leasing homes, and in working with the housing authorities that support them.</p></div></div>
+      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Spencer built the software Trident uses to find property and leads sourcing, data and underwriting. Before Trident he founded an artificial intelligence consulting practice working with businesses across industries.</p><p><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></p></div></div>
+      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Ayush is a principal of Patel Legacy Properties, a real estate owner and operator in the Northeast. He leads acquisitions, operations and investor relations, and his team manages every property Trident buys.</p></div></div>
     </div>
   </div></section>
 
   <section class="scene alt"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">How We Work</p><h2>Principles</h2></div>
+    <div class="sh"><p class="kicker">Patel Legacy Properties</p><h2>The operating company</h2></div>
     <div class="prose">
-      <p><strong>Technology sources. People decide.</strong> Our platform reads the whole market and ranks what it finds.
-        A principal underwrites every opportunity and sets the price in advance. The platform never commits capital.</p>
-      <p><strong>Discipline over volume.</strong> We would rather pass on ten homes than overpay for one. A ceiling set
-        before a commitment is a ceiling, and it does not move.</p>
-      <p><strong>Alignment.</strong> The principals invest in the fund on the same terms as investors. We eat what we cook.</p>
-      <p><strong>Transparency.</strong> Investors see the portfolio property by property every quarter, and can reach either
-        principal directly.</p>
+      <p>Patel Legacy Properties owns and operates real estate across the Northeast. Its experience in buying, improving
+        and managing property is the foundation Trident is built on. Trident is a separate company with its own
+        technology and its own deals; Patel Legacy Properties operates what Trident buys.</p>
     </div>
   </div></div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">Operating Partner</p><h2>Patel Legacy Properties</h2></div>
+    <div class="sh"><p class="kicker">How We Think</p><h2>Three rules</h2></div>
     <div class="prose">
-      <p>Patel Legacy Properties is a residential real estate owner and operator in the Northeast. Its experience in acquiring,
-        renovating and leasing homes, and in working with the housing authorities that support them, is the operating
-        foundation of Trident. The technology is Trident&rsquo;s own. The fund is a separate vehicle with its own capital.</p>
-      <p>Trident is newly formed and does not yet have an operating history or assets under management. What it has is a
-        platform that is already running, an operating partner that already operates, and a strategy that can be explained
-        in a sentence.</p>
+      <p><strong>Our money goes in first.</strong> We invest in every deal on the same terms as our partners.</p>
+      <p><strong>Price is the strategy.</strong> A good building at the wrong price is a bad investment. We would rather miss
+        ten than overpay for one.</p>
+      <p><strong>Say it plainly.</strong> Our investors get a straight report every quarter and a principal on the phone
+        when they want one.</p>
     </div>
   </div></div></section>
 
   <section class="band" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">Contact</p>
-    <h2 style="margin-top:12px">Speak with a principal.</h2>
-    <p class="lead">Every inquiry is answered by one of us.</p>
+    <h2 style="margin-top:12px">Talk to a principal.</h2>
     <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>
   </div></section>
 `,
