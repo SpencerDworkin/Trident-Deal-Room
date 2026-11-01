@@ -13,7 +13,29 @@ module.exports = {
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">01</p><h2>How capital moves</h2></div>
+    <div class="sh"><p class="kicker">01</p><h2>Why this, and why now</h2></div>
+    <div>
+      <p class="prose"><strong>The opportunity is public and nobody reads all of it.</strong> New Jersey foreclosures move
+        through the courts and are sold by county sheriffs on published calendars. At the sale the lender opens the
+        bidding at its own judgment, a court record, not a seller&rsquo;s asking price. On the current calendar the
+        models find 96 homes where that judgment is under forty cents on the dollar of the county median.</p>
+      <p class="prose"><strong>The edge is coverage and discipline, not a secret.</strong> The engine reads every filing on
+        six county calendars every day, joins it to six public sources and applies the same nine rules to all of them. A
+        person could do this for a handful of files. The models do it for all 468, and refuse 37% of them before a
+        principal spends an hour.</p>
+      <p class="prose"><strong>The product is simple.</strong> Modest 1&ndash;4 unit homes, bought for cash with no
+        leverage, made ready, and leased under Housing Choice Voucher tenancy where a housing authority pays most of the
+        rent on a published schedule. Distributions come from rent, not from a sale.</p>
+      <ul class="flags" style="margin-top:14px">
+        <li><b>No leverage</b> at the fund or the property.</li>
+        <li><b>A principal at every sale</b>, bidding to a written ceiling.</li>
+        <li><b>The screened book is reported to investors</b> every quarter, not just the acquisitions.</li>
+      </ul>
+    </div>
+  </div></div></section>
+
+  <section class="scene alt"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">02</p><h2>How capital moves</h2></div>
     <div class="prose">
       <p>Investors commit capital to the fund. The sourcing engine reads the calendars and ranks the filings; the principals
         underwrite the shortlist and bid. The fund buys properties outright at sheriff&rsquo;s sale, brings each to
@@ -31,7 +53,7 @@ module.exports = {
   </div></div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">02</p><h2>Terms</h2></div>
+    <div class="sh"><p class="kicker">03</p><h2>Terms</h2></div>
     <div>
       <p class="prose">Economic terms &mdash; the distribution waterfall, fees, term and the manager&rsquo;s participation
         &mdash; are stated in the memorandum and discussed in person rather than published here.</p>
@@ -54,8 +76,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">03</p><h2>Who we raise from</h2></div>
+  <section class="scene alt"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">04</p><h2>Who we raise from</h2></div>
     <div class="prose">
       <p>Family offices in New York, New Jersey, Pennsylvania and Connecticut, because an allocator who can drive to a
         property in an afternoon is an allocator who understands what they own; and Florida, because a good many of the
@@ -67,7 +89,7 @@ module.exports = {
   </div></div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">04</p><h2>Reporting</h2></div>
+    <div class="sh"><p class="kicker">05</p><h2>Reporting</h2></div>
     <div class="prose">
       <p>Trident runs on one working book: every filing in the covered counties, its screen result, and for every property
         the fund pursues, the file &mdash; title findings, lien reserve, occupancy, ceiling, what it paid, what make-ready
@@ -77,8 +99,8 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">05</p><h2>Questions investors ask first</h2></div>
+  <section class="scene alt"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">06</p><h2>Questions investors ask first</h2></div>
     <div>
       <div class="faq" style="margin-top:0">
         <details><summary>What am I invested in?</summary><div class="a"><p>An interest in the fund, which owns the properties. Distributions come from the rents those properties generate after costs and reserves, and from any eventual sale. The fund is the owner of record; you own the fund.</p></div></details>

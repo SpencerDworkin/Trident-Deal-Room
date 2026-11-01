@@ -1,3 +1,4 @@
+const { pipeline } = require('../diagram');
 const SEAL = `<svg class="seal" viewBox="0 0 240 240" aria-hidden="true">
   <defs><path id="sealArc" d="M120,120 m-92,0 a92,92 0 1,1 184,0 a92,92 0 1,1 -184,0"/></defs>
   <circle cx="120" cy="120" r="112" fill="none" stroke="#fff" stroke-width="2"/>
@@ -20,9 +21,9 @@ module.exports = {
     <div class="wrap">
       ${SEAL}
       <div class="copy">
-        <h1>AI-sourced real estate investing</h1>
-        <p class="lede">We are raising a fund that buys homes our AI finds at New Jersey sheriff&rsquo;s sales, priced
-          against the debt rather than the market, and holds them for income.</p>
+        <h1>the fund that reads every foreclosure</h1>
+        <p class="lede">Our AI reads every scheduled sheriff&rsquo;s sale in New Jersey, every day, and finds the homes where the
+          lender&rsquo;s opening bid sits furthest below the house. We buy them for cash and hold them for income.</p>
         <div class="actions onnavy">
           <a class="btn" href="${r}investors/">Invest With Us</a>
           <a class="btn" href="${r}how-we-buy/">How It Works</a>
@@ -47,6 +48,17 @@ module.exports = {
     <div class="f"><div class="n">96</div><div class="l">Homes surfaced at a deep discount: debt under 0.4 of county median</div></div>
     <div class="f"><div class="n">6</div><div class="l">New Jersey counties covered daily; two more coming on</div></div>
     <p class="asof">Current pull of the county sheriffs&rsquo; calendars. Figures describe the sourcing engine, not acquisitions.</p>
+  </div></section>
+
+  <section class="band navy"><div class="wrap">
+    <p class="kicker">The Engine</p>
+    <h2 style="margin-top:10px">How the AI sources deals</h2>
+    <p class="lead wide">A person can open a few dozen files a week. Hundreds of sales are scheduled across our counties every
+      month. Our models read all of them, match each to its docket, judgment, plaintiff and assessor record, score it
+      against the debt the lender will open at, refuse the files where the discount is an illusion, and hand the
+      principals a ranked shortlist with the reasons attached. The model proposes. A person underwrites and bids.</p>
+    ${pipeline()}
+    <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}how-we-buy/">The Technology</a></div>
   </div></section>
 
   <section class="scene center"><div class="wrap">
