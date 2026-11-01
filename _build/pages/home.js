@@ -95,8 +95,8 @@ module.exports = {
     <p class="kicker">Leadership</p>
     <h2>Two principals. One standard.</h2>
     <div class="people">
-      <div class="person"><div class="mono">SD</div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Built the Trident platform. Leads technology, sourcing and underwriting.</p></div>
-      <div class="person"><div class="mono">AP</div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Real estate operator across the Northeast. Leads acquisitions, operations and investor relations.</p></div>
+      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Built the Trident platform. Leads technology, sourcing and underwriting.</p></div></div>
+      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Real estate operator across the Northeast. Leads acquisitions, operations and investor relations.</p></div></div>
     </div>
     <div class="actions" style="justify-content:center"><a class="btn btn-solid" href="${r}about/">About Trident</a></div>
   </div></section>

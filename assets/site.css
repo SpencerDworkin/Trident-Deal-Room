@@ -125,7 +125,8 @@ a.tile:hover{border-top-color:var(--accent)}
 
 /* leadership */
 .people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:40px}
-.person{background:var(--white);border:1px solid var(--rule);padding:30px;display:flex;gap:22px;align-items:flex-start}
+.person{background:var(--white);border:1px solid var(--rule);padding:30px;display:flex;gap:22px;align-items:flex-start;min-width:0}
+.person > div:last-child,.person > div:not(.mono){min-width:0}
 .person .mono{flex:0 0 72px;width:72px;height:72px;border-radius:50%;background:var(--navy);color:#fff;font-family:var(--serif);font-size:1.5rem;display:flex;align-items:center;justify-content:center}
 .person h3{font-size:1.45rem}
 .person .role{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:4px}
@@ -237,6 +238,7 @@ footer .legal a{color:var(--onnavy2);text-decoration:underline;text-underline-of
   .phead{min-height:360px}
   .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
   .people{grid-template-columns:1fr}
+  .person{flex-direction:column;gap:14px;padding:24px}
   .rows > div{grid-template-columns:1fr;gap:4px}
   .ruled.steps li{grid-template-columns:1fr;gap:4px}
   .ruled.steps li.sale{margin:0;padding-left:10px;padding-right:10px}
