@@ -2,36 +2,35 @@ module.exports = {
   path: 'contact',
   nav: 'contact',
   title: 'Contact · Trident',
-  description: 'Reach a Trident principal directly. Investors receive the private placement memorandum and the current screened book, then a call with both principals.',
+  description: 'Contact a Trident principal. Qualified investors receive the private placement memorandum, a presentation of the platform and a meeting with both principals.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">Contact</p>
-    <h1>Write to a principal.</h1>
-    <p class="lead">There is no form and no gate. An email reaches Spencer Dworkin directly.</p>
+    <h1>Speak with a principal.</h1>
+    <p class="lead">Every inquiry reaches Spencer Dworkin and Ayush Patel directly.</p>
     <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>
-    <p class="also">Spencer Dworkin and Ayush Patel, principals. Trident, a Patel Legacy Properties company.</p>
+    <p class="also">Trident, a Patel Legacy Properties company.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">Investors</p><h2>What happens next</h2></div>
     <div>
-      <p class="prose">Write with &ldquo;fund materials&rdquo; in the subject line and this is the sequence.</p>
       <dl class="rows">
-        <div><dt>Within a day</dt><dd>The confidential private placement memorandum and the current screened book &mdash; every filing in the covered counties, how the screen sorted it, and the files being worked.</dd></div>
-        <div><dt>Then</dt><dd>A call with both principals, built around the questions the materials raised rather than a presentation. We walk through specific files on the calendar and show how the ceiling on each was set.</dd></div>
-        <div><dt>If it fits</dt><dd>Accredited-investor or qualified-purchaser verification, subscription documents, and your commitment to the fund. Capital is drawn as files clear the screen and the checklist.</dd></div>
+        <div><dt>Within a business day</dt><dd>A reply from a principal and a time to speak.</dd></div>
+        <div><dt>Materials</dt><dd>Qualified investors receive the private placement memorandum and a presentation of the platform and the current pipeline.</dd></div>
+        <div><dt>Meeting</dt><dd>A conversation with both principals, built around your questions.</dd></div>
+        <div><dt>Subscription</dt><dd>Investor verification, subscription documents and commitment.</dd></div>
       </dl>
-      <p class="cap" style="margin-top:14px">Family offices and accredited investors in New York, New Jersey, Pennsylvania, Connecticut and Florida, by
-        private placement, with a minimum commitment of $1,000,000. <a href="${r}investors/">The fund &rarr;</a></p>
+      <p class="cap" style="margin-top:14px">Trident Fund I is offered by invitation to accredited investors and qualified purchasers in New Jersey, New York,
+        Pennsylvania, Connecticut and Florida. Minimum commitment $1,000,000. <a href="${r}investors/">The fund &rarr;</a></p>
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">Everyone else</p><h2>Counsel, title, housing authorities, sellers</h2></div>
+  <section class="scene alt"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">Partners</p><h2>Counsel, title, housing authorities and owners</h2></div>
     <div class="prose">
-      <p>If you are plaintiff&rsquo;s counsel on a scheduled sale, a title company, a housing authority, a contractor who
-        does make-ready to inspection standard, or an owner who would rather sell before the sale than at it, the same
-        address reaches the same people.</p>
+      <p>If you are an attorney, a title company, a housing authority, a contractor or a property owner who would like to
+        work with Trident, the same address reaches the same people.</p>
     </div>
   </div></div></section>
 

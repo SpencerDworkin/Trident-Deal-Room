@@ -2,103 +2,70 @@ module.exports = {
   path: 'what-we-do',
   nav: 'what-we-do',
   title: 'Strategy · Trident',
-  description: 'How a New Jersey sheriff\'s sale sets its price, why Trident bids against recorded debt rather than market value, the process from calendar to deed, and the voucher-backed hold.',
+  description: 'Trident acquires residential real estate across the Northeast at a structural discount, for cash, and holds it without leverage for durable, government supported income.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">Strategy</p>
-    <h1>The AI finds the filing. We buy the house.</h1>
-    <p class="lead">A sheriff&rsquo;s sale is the one place in residential property where the price is set by a number on a
-      court record rather than by a seller. Our models read every filing on every covered calendar and surface the ones
-      where that number sits far below the house. The fund buys only those, and holds them for the rent.</p>
+    <h1>Buy below value. Hold for income.</h1>
+    <p class="lead">Trident pursues a single strategy and executes it with discipline: acquire residential real estate at a
+      structural discount to its value, pay cash, and hold it for long term income supported by public housing programs.
+      Our proprietary platform finds the opportunities. Our principals decide which ones to pursue.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">01</p><h2>How a sheriff&rsquo;s sale works</h2></div>
+    <div class="sh"><p class="kicker">01</p><h2>The opportunity</h2></div>
     <div class="prose">
-      <p>New Jersey is a judicial-foreclosure state. A lender that wants to take a house must sue, obtain a <strong>final
-        judgment of foreclosure</strong> for what it is owed &mdash; principal, interest, fees and costs &mdash; and have the
-        court direct the county sheriff to sell the property at public auction. The sale is scheduled weeks out and listed
-        on the county&rsquo;s calendar with the case number, the address, the plaintiff and the judgment amount.</p>
-      <p>At the auction the lender opens the bidding at its judgment, or at an &ldquo;upset&rdquo; figure it announces, and
-        anyone may bid above it. The winner pays twenty percent in certified funds at the gavel and the balance within
-        thirty days. The former owner has ten days to redeem. Then the sheriff&rsquo;s deed is delivered, and the buyer owns
-        what the sale conveyed &mdash; and what it did not extinguish.</p>
-      <p>None of this is hidden. The judgment is on the docket, the sale is on the calendar, the plaintiff is named. A
-        buyer who reads the record knows the price floor before walking in.</p>
+      <p>Every year a meaningful share of residential real estate in the Northeast changes hands through processes where
+        the price is set by circumstance rather than by a willing seller. These assets rarely reach the open market. They
+        are scattered across public records, they move on tight timelines, and they are too numerous for any team of people
+        to follow comprehensively.</p>
+      <p>That is the gap Trident was built to close. Our platform reads the whole market continuously, so that nothing
+        of interest escapes our attention and nothing of interest is bought in haste.</p>
     </div>
   </div></div></section>
 
-  <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">02</p><h2>Why the debt, not the market</h2></div>
+  <section class="scene alt"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">02</p><h2>The discount</h2></div>
     <div class="prose">
-      <p>The judgment is the borrower&rsquo;s debt, not the house&rsquo;s worth. A house bought in 2004 and foreclosed in 2026
-        may carry a judgment of $120,000 against a county median of $540,000; the lender bids to its $120,000 and is
-        generally content to be made whole. A house bought in 2022 with three percent down carries a judgment at or above
-        what it would sell for; the lender bids to that, and there is nothing to win.</p>
-      <p>So the single most useful number about a filing is <strong>recorded debt as a fraction of county median
-        value</strong>. Our models compute it for every scheduled sale in our counties, every day, and sort the calendar by it. Below
-        0.4 is a deep discount; 0.4 to 0.6 a discount; 0.6 to 0.8 possible. From 0.8 up there is no margin for a title,
-        occupancy or make-ready surprise, and the screen refuses the file.</p>
-      <p>This is not a claim that the market is wrong. It is an observation that the auction&rsquo;s reserve price is set
-        by a different variable than the asset&rsquo;s value, and that the two can be compared in advance from public
-        records. <a href="${r}how-we-buy/">How the AI sources deals &rarr;</a></p>
+      <p>We do not negotiate our discount. We find it. The assets we pursue are priced by a process that has nothing to do
+        with what the home is worth, which is precisely why value can sit so far from price. Our platform measures that gap
+        for every asset in our markets and ranks them.</p>
+      <p>Because the margin is built in at acquisition, our returns do not depend on appreciation, on refinancing, or on a
+        market that keeps rising. They depend on paying the right price, which is the one thing we control completely.</p>
     </div>
   </div></div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">03</p><h2>From the calendar to the deed</h2></div>
-    <div>
-      <p class="prose">Every property runs the same sequence. The dates hang off the sale date, so when a sale is adjourned
-        the whole schedule moves. Nine of the ten checklist items block a bid until done; a file that reaches sale day
-        with one open is not bid on, whatever the discount.</p>
-      <ul class="ruled steps">
-        <li><span class="when">Daily<small>the AI</small></span><span><b>Read the calendar.</b><span class="d">Every scheduled sale is pulled from the county sheriff; the models match it to its docket, judgment and assessor record, apply the buy box, and score it on debt to median. A changed date or judgment is recorded as an event on the file, so an adjournment is a fact rather than a surprise at the courthouse.</span></span></li>
-        <li><span class="when">T&minus;21</span><span><b>Order the sixty-year title search.</b><span class="d">Senior liens, municipal charges and federal tax liens survive the sheriff&rsquo;s deed. Whatever the search finds is carried in the basis, not discovered afterwards.</span></span></li>
-        <li><span class="when">T&minus;14</span><span><b>Independent valuation.</b><span class="d">County medians and assessor data are estimates. The exit value is confirmed before a deposit is exposed, and the ratio recomputed.</span></span></li>
-        <li><span class="when">T&minus;10</span><span><b>Municipal search, occupancy, first-refusal status.</b><span class="d">Open violations and unpaid utilities ride with the parcel. Occupancy is established from the outside, because there is no interior access and New Jersey is a good-cause eviction state. And the Community Wealth Preservation Program is checked: a foreclosed owner-occupant may take the property at the opening bid, which ends the file.</span></span></li>
-        <li><span class="when">T&minus;7</span><span><b>Read the title, set the lien reserve.</b><span class="d">What the deed extinguishes is separated from what survives. The surviving total goes into the basis and the ceiling is recomputed. Several files end here.</span></span></li>
-        <li><span class="when">T&minus;3</span><span><b>Set the ceiling and the walk-away.</b><span class="d">From the underwriting, not the room: the bid at which the property still clears a 5% unlevered yield on the county&rsquo;s Fair Market Rent after surviving liens, make-ready and carry. Written down. Never raised at the auction.</span></span></li>
-        <li><span class="when">T&minus;1</span><span><b>Confirm the sale is going forward.</b><span class="d">Plaintiff&rsquo;s counsel is called. Adjournments are not re-advertised. Certified funds are staged.</span></span></li>
-        <li class="sale"><span class="when">Sale</span><span><b>Bid to the ceiling, and no further.</b><span class="d">A principal attends. If bidding passes the walk-away, we stop. Twenty percent of the winning bid at the gavel.</span></span></li>
-        <li><span class="when">T+10</span><span><b>Redemption lapses.</b><span class="d">Until it does, the deposit rides.</span></span></li>
-        <li><span class="when">T+30</span><span><b>Balance paid, deed delivered.</b><span class="d">Missing the window forfeits the deposit, which is why the funds are in hand before the bid.</span></span></li>
-        <li><span class="when">After</span><span><b>Make-ready, inspection, lease.</b><span class="d">Possession is resolved according to what the occupancy screen found. The property is brought to the housing authority&rsquo;s inspection standard and leased to a voucher holder.</span></span></li>
-      </ul>
-    </div>
-  </div></div></section>
-
-  <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">04</p><h2>The hold: Housing Choice Vouchers</h2></div>
+    <div class="sh"><p class="kicker">03</p><h2>The asset</h2></div>
     <div class="prose">
-      <p>Trident does not flip. Each property is leased under the federal Housing Choice Voucher program, in which the
-        local housing authority pays the larger part of the rent directly to the owner each month and the tenant pays the
-        remainder. The rent is anchored to the county&rsquo;s published Fair Market Rent.</p>
-      <p>The appeal is not a premium rent. It is the reliability of the payer and the length of the tenancy. A voucher
-        tenant who has found a home that passes inspection tends to stay, and the authority&rsquo;s share arrives whether
-        or not the tenant has had a good month.</p>
-      <p>Every county is modelled on its own Fair Market Rent against a 5% unlevered stabilised yield. A county that
-        cannot clear the hurdle at its FMR is excluded from the voucher strategy whatever its discounts; Burlington
-        currently models at 3.98% and is out. <a href="${r}where/">Each county&rsquo;s figures &rarr;</a></p>
+      <p>We buy modest homes of one to four units in established neighborhoods. They are the most liquid form of real estate
+        in America, the easiest to lease, and the easiest to sell. They attract the deepest pool of tenants and the deepest
+        pool of buyers, which protects both our income and our exit.</p>
+      <p>We avoid what we cannot underwrite with confidence. Complexity is not a source of return for us. Price is.</p>
+    </div>
+  </div></div></section>
+
+  <section class="scene alt"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">04</p><h2>The income</h2></div>
+    <div class="prose">
+      <p>Once stabilized, our homes are leased for the long term under tenancies supported by public housing programs, in
+        which the greater part of the rent is paid directly by a housing authority on a published schedule. The result is
+        income that is steady, inspected, and largely insulated from the credit of any single tenant.</p>
+      <p>We hold without leverage. There is no lender to satisfy, no maturity to refinance, and no reason to sell into a
+        bad market. Distributions come from rent.</p>
     </div>
   </div></div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">05</p><h2>What survives the sale</h2></div>
-    <div>
-      <p class="prose">A sheriff&rsquo;s deed conveys the property subject to whatever the judgment did not extinguish. The
-        discount is real only after these are priced. Each is paired with the step that handles it; the
-        <a href="${r}legal/">disclosures</a> list the risks in full.</p>
-      <ul class="ruled">
-        <li><span><b>Surviving liens.</b><span class="d">Senior mortgages, municipal charges, unpaid utilities and federal tax liens can all survive the deed. &mdash; The sixty-year search at T&minus;21 and the lien reserve at T&minus;7; surviving totals go into the basis before the ceiling is set.</span></span></li>
-        <li><span><b>It was never a first mortgage.</b><span class="d">Debt at six percent of median is likelier a subordinate lien, a private judgment or an association action, with the senior mortgage surviving. &mdash; A $20,000 floor, a flag below 0.12, and the title search as the final word on position.</span></span></li>
-        <li><span><b>Owner-occupant first refusal.</b><span class="d">Under New Jersey&rsquo;s Community Wealth Preservation Program a foreclosed owner-occupant may take the property at the opening bid. &mdash; Checked at T&minus;10 before funds are committed.</span></span></li>
-        <li><span><b>Occupancy and possession.</b><span class="d">No interior access before the sale; a good-cause eviction state. &mdash; An exterior and records-based occupancy screen, with possession costs priced into make-ready before the ceiling is set.</span></span></li>
-        <li><span><b>Condition unseen.</b><span class="d">Make-ready is an estimate until the door opens. &mdash; A make-ready allowance in every ceiling and a yield hurdle that leaves room for the estimate to be wrong.</span></span></li>
-        <li><span><b>Adjournment.</b><span class="d">Sales move, often without re-advertisement. &mdash; The daily pull records every date change and moves the schedule; the call to counsel at T&minus;1 catches the rest.</span></span></li>
-      </ul>
+    <div class="sh"><p class="kicker">05</p><h2>The discipline</h2></div>
+    <div class="prose">
+      <p>Our platform proposes. It never commits capital. Every opportunity it surfaces is underwritten by a principal,
+        who confirms title, condition, occupancy and value before setting a ceiling. The ceiling is set in advance and it is
+        not raised. We would rather lose a home than overpay for it, and we do, regularly.</p>
+      <p>The full methodology is proprietary. We walk qualified investors through it in person.</p>
     </div>
   </div></div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}how-we-buy/">Technology &rarr;</a> <a href="${r}where/">Where &rarr;</a> <a href="${r}investors/">The Fund &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}how-we-buy/">The Technology &rarr;</a> <a href="${r}where/">Markets &rarr;</a> <a href="${r}investors/">The Fund &rarr;</a></div></nav>
 `,
 };

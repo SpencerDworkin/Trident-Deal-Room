@@ -2,126 +2,101 @@ module.exports = {
   path: 'investors',
   nav: 'investors',
   title: 'The Fund · Trident',
-  description: 'Trident is raising its first private fund to acquire one-to-four-unit homes at New Jersey sheriff\'s sales and hold them under voucher tenancy. How capital moves, the terms, reporting, who we raise from, and the questions investors ask first.',
+  description: 'Trident Fund I: a private, unlevered residential real estate fund sourced by Trident\'s proprietary platform. Offered by invitation to accredited investors and qualified purchasers. Minimum commitment $1,000,000.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">Trident Fund I</p>
-    <h1>An AI-sourced residential fund.</h1>
-    <p class="lead">Trident Fund I buys homes our AI finds at New Jersey sheriff&rsquo;s sales, for cash, and holds them for
-      income. It is raising from family offices in New York, New Jersey, Pennsylvania, Connecticut and Florida. The
-      confidential memorandum sets out every term and controls over anything here; this is the shape of it.</p>
+    <h1>Residential income, sourced by technology.</h1>
+    <p class="lead">Trident Fund I acquires residential real estate across the Northeast at a structural discount, using our
+      proprietary sourcing platform, and holds it without leverage for durable, government supported income. It is offered
+      by invitation to accredited investors and qualified purchasers.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">01</p><h2>Why this, and why now</h2></div>
+    <div class="sh"><p class="kicker">01</p><h2>Why Trident</h2></div>
     <div>
-      <p class="prose"><strong>The opportunity is public and nobody reads all of it.</strong> New Jersey foreclosures move
-        through the courts and are sold by county sheriffs on published calendars. At the sale the lender opens the
-        bidding at its own judgment, a court record, not a seller&rsquo;s asking price. On the current calendar the
-        models find 96 homes where that judgment is under forty cents on the dollar of the county median.</p>
-      <p class="prose"><strong>The edge is coverage and discipline, not a secret.</strong> The engine reads every filing on
-        six county calendars every day, joins it to six public sources and applies the same nine rules to all of them. A
-        person could do this for a handful of files. The models do it for all 468, and refuse 37% of them before a
-        principal spends an hour.</p>
-      <p class="prose"><strong>The product is simple.</strong> Modest 1&ndash;4 unit homes, bought for cash with no
-        leverage, made ready, and leased under Housing Choice Voucher tenancy where a housing authority pays most of the
-        rent on a published schedule. Distributions come from rent, not from a sale.</p>
+      <p class="prose"><strong>Proprietary deal flow.</strong> Our platform reads the whole of each market we cover, every
+        day. We are not waiting for a broker, a listing or an introduction. The opportunities we pursue are ones most
+        investors never see.</p>
+      <p class="prose"><strong>A discount built in at acquisition.</strong> We buy where price has come apart from value. The
+        margin is captured on the day we buy, not hoped for on the day we sell.</p>
+      <p class="prose"><strong>Income that does not flinch.</strong> Unlevered ownership and rents paid largely by housing
+        authorities on a published schedule. No refinancing risk, no forced sales, no dependence on a rising market.</p>
+      <p class="prose"><strong>Operators, not allocators.</strong> The principals built the platform, underwrite every
+        acquisition and run the portfolio. You deal with the people who make the decisions.</p>
       <ul class="flags" style="margin-top:14px">
-        <li><b>No leverage</b> at the fund or the property.</li>
-        <li><b>A principal at every sale</b>, bidding to a written ceiling.</li>
-        <li><b>The screened book is reported to investors</b> every quarter, not just the acquisitions.</li>
+        <li><b>All cash.</b> No leverage at the fund or the property.</li>
+        <li><b>Principal underwriting.</b> Every acquisition is approved by a principal against a ceiling set in advance.</li>
+        <li><b>Quarterly distributions</b> from rental income, with full property level reporting.</li>
       </ul>
     </div>
   </div></div></section>
 
   <section class="scene alt"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">02</p><h2>How capital moves</h2></div>
-    <div class="prose">
-      <p>Investors commit capital to the fund. The sourcing engine reads the calendars and ranks the filings; the principals
-        underwrite the shortlist and bid. The fund buys properties outright at sheriff&rsquo;s sale, brings each to
-        the housing authority&rsquo;s inspection standard, leases it to a voucher holder and holds it. Rents pay operating
-        costs and reserves first; what remains is distributed on the terms in the memorandum. The principals invest in
-        the fund alongside investors.</p>
-      <p><strong>Cash, not debt.</strong> A sheriff&rsquo;s sale takes twenty percent at the gavel and the balance in thirty
-        days, in certified funds. There is no financing contingency and no lender at the table. Buying for cash is not a
-        choice the fund makes; it is the only way to buy at the courthouse. It also means no lender ranks ahead of
-        investors on the properties.</p>
-      <p><strong>Cash that waits.</strong> The screen refuses 37% of the current calendar and the checklist blocks bids on
-        files that are not ready. Some quarters there will be more capital than qualifying sales. The fund holds it
-        rather than bending the screen to spend it.</p>
+    <div class="sh"><p class="kicker">02</p><h2>Summary of terms</h2></div>
+    <div>
+      <dl class="rows" style="margin-top:0">
+        <div><dt>Vehicle</dt><dd>Trident Fund I, a private investment fund managed by Trident, a Patel Legacy Properties company.</dd></div>
+        <div><dt>Strategy</dt><dd>Acquire residential real estate of one to four units across the Northeast at a structural discount, for cash, and hold for income.</dd></div>
+        <div><dt>Sourcing</dt><dd>Trident&rsquo;s proprietary platform. Methodology disclosed to investors in the memorandum and in person.</dd></div>
+        <div><dt>Leverage</dt><dd>None, at the fund or at the property.</dd></div>
+        <div><dt>Income</dt><dd>Long term tenancies supported by public housing programs. Distributions quarterly from net rental income.</dd></div>
+        <div><dt>Investors</dt><dd>Accredited investors and qualified purchasers, by private placement.</dd></div>
+        <div><dt>Minimum commitment</dt><dd>$1,000,000.</dd></div>
+        <div><dt>Offered in</dt><dd>New Jersey, New York, Pennsylvania, Connecticut and Florida.</dd></div>
+        <div><dt>Sponsor commitment</dt><dd>The principals invest in the fund on the same terms as investors.</dd></div>
+        <div><dt>Reporting</dt><dd>Quarterly, property by property, with annual audited financial statements.</dd></div>
+        <div><dt>Term and economics</dt><dd>Set out in the private placement memorandum.</dd></div>
+      </dl>
+      <p class="cap" style="margin-top:14px">This summary is qualified in its entirety by the private placement memorandum and the fund&rsquo;s governing
+        documents.</p>
     </div>
   </div></div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">03</p><h2>Terms</h2></div>
+    <div class="sh"><p class="kicker">03</p><h2>How to invest</h2></div>
     <div>
-      <p class="prose">Economic terms &mdash; the distribution waterfall, fees, term and the manager&rsquo;s participation
-        &mdash; are stated in the memorandum and discussed in person rather than published here.</p>
-      <dl class="rows">
-        <div><dt>Vehicle</dt><dd>A private investment fund. Interests offered by private placement.</dd></div>
-        <div><dt>Strategy</dt><dd>1&ndash;4 unit residential property at New Jersey sheriff&rsquo;s sales, sourced and screened by Trident&rsquo;s models on recorded debt against county median value, held under Housing Choice Voucher tenancy.</dd></div>
-        <div><dt>Minimum commitment</dt><dd class="num">$1,000,000</dd></div>
-        <div><dt>Use of proceeds</dt><dd>Acquisition for cash, surviving-lien reserves, make-ready to inspection standard, carry to stabilised tenancy.</dd></div>
-        <div><dt>Leverage</dt><dd>None in the base structure.</dd></div>
-        <div><dt>Deployment</dt><dd>As properties clear the screen and the checklist. Undeployed capital held in cash.</dd></div>
-        <div><dt>Distributions, fees, term</dt><dd>Set out in the memorandum.</dd></div>
-        <div><dt>Reporting</dt><dd>Quarterly, property by property: basis, surviving liens, tenancy, rent. The working book itself.</dd></div>
-        <div><dt>Sourcing</dt><dd>Proprietary AI engine covering six counties daily. The model proposes and ranks; a principal reviews every shortlisted file and bids in person.</dd></div>
-        <div><dt>Alignment</dt><dd>Principals invest in the fund, attend every sale, bid every property personally.</dd></div>
-        <div><dt>Eligible investors</dt><dd>Accredited investors and qualified purchasers, by private placement.</dd></div>
+      <dl class="rows" style="margin-top:0">
+        <div><dt>Introduction</dt><dd>Write to a principal. We respond within a business day and arrange a call.</dd></div>
+        <div><dt>Materials</dt><dd>Qualified investors receive the private placement memorandum and a presentation of the platform.</dd></div>
+        <div><dt>Diligence</dt><dd>A meeting with both principals, built around your questions. We show the platform, the pipeline and the operating model in detail.</dd></div>
+        <div><dt>Subscription</dt><dd>Investor verification, subscription documents and commitment. Capital is called as acquisitions are made.</dd></div>
       </dl>
-      <p class="cap" style="margin-top:14px">Trident is newly formed, with no operating history or assets under management. Distributions are paid only
-        to the extent the properties generate cash to pay them. An investment may lose value, including the entire
-        amount invested. <a href="${r}legal/">Disclosures.</a></p>
     </div>
   </div></div></section>
 
   <section class="scene alt"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">04</p><h2>Who we raise from</h2></div>
     <div class="prose">
-      <p>Family offices in New York, New Jersey, Pennsylvania and Connecticut, because an allocator who can drive to a
-        property in an afternoon is an allocator who understands what they own; and Florida, because a good many of the
-        same families are there for part of the year.</p>
-      <p>The offering is private, to accredited investors and qualified purchasers, with a minimum commitment of
-        $1,000,000. We are not raising from the public, and we would rather have a small number of investors who have
-        walked a property than a large number who have read a deck.</p>
+      <p>Trident Fund I is built for family offices and private investors who want direct exposure to residential real
+        estate with a clear source of return, no leverage and an income that does not depend on the cycle. Our investors
+        tend to value transparency, access to the principals and a strategy they can explain in a sentence.</p>
+      <p>Commitments begin at $1,000,000. We are deliberately raising from a small number of investors so that each has
+        the access and reporting of a partner.</p>
     </div>
   </div></div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">05</p><h2>Reporting</h2></div>
-    <div class="prose">
-      <p>Trident runs on one working book: every filing in the covered counties, its screen result, and for every property
-        the fund pursues, the file &mdash; title findings, lien reserve, occupancy, ceiling, what it paid, what make-ready
-        cost, when it leased and at what rent. Investor reporting is that book, quarterly. There is nothing to reconcile
-        between what you are told and what we look at, because it is the same document. A property that disappoints shows
-        up on the same page, the same quarter.</p>
+    <div class="sh"><p class="kicker">05</p><h2>Questions investors ask</h2></div>
+    <div class="faq">
+      <details><summary>Where does the return come from?</summary><p>From buying below value and holding for income. The discount is captured at acquisition and the income is paid largely by housing authorities. We do not rely on appreciation, leverage or a timed exit.</p></details>
+      <details><summary>What does the technology actually do?</summary><p>It reads public records across our markets every day, identifies residential assets priced well below their value, and ranks them for our principals. It is a sourcing and screening platform. It does not commit capital.</p></details>
+      <details><summary>Who decides what to buy?</summary><p>A principal, every time, against a ceiling set from the underwriting before any commitment is made.</p></details>
+      <details><summary>Why no leverage?</summary><p>Because the strategy does not need it and the income is better without it. Unlevered ownership means no refinancing risk, no lender covenants and no forced sale in a down market.</p></details>
+      <details><summary>How is the portfolio operated?</summary><p>By Patel Legacy Properties and its operating partners, which have run residential property across the Northeast for years. Homes are brought to inspection standard and leased for the long term.</p></details>
+      <details><summary>What do investors receive?</summary><p>Quarterly distributions from net rental income, quarterly property level reporting, annual audited financial statements and direct access to both principals.</p></details>
+      <details><summary>What are the main risks?</summary><p>Real estate, title, occupancy, regulatory and model risk, among others. Trident is newly formed and has no operating history. The memorandum sets out the risk factors in full, and so does our <a href="${r}legal/">disclosures page</a>.</p></details>
+      <details><summary>Can I see the pipeline before committing?</summary><p>Yes. Qualified investors are shown the platform and the current pipeline in person as part of diligence.</p></details>
     </div>
   </div></div></section>
 
-  <section class="scene alt"><div class="wrap"><div class="split r3 start">
-    <div class="sh"><p class="kicker">06</p><h2>Questions investors ask first</h2></div>
-    <div>
-      <div class="faq" style="margin-top:0">
-        <details><summary>What am I invested in?</summary><div class="a"><p>An interest in the fund, which owns the properties. Distributions come from the rents those properties generate after costs and reserves, and from any eventual sale. The fund is the owner of record; you own the fund.</p></div></details>
-        <details><summary>Where does my money sit before it is deployed?</summary><div class="a"><p>In cash, in the fund&rsquo;s account. Deployment follows the sheriff&rsquo;s calendar and the screen, not a schedule we set. We would rather hold cash than bid on a file the screen refused.</p></div></details>
-        <details><summary>Are distributions guaranteed?</summary><div class="a"><p>No. They are paid from the properties&rsquo; cash flow on the terms in the memorandum. Trident is newly formed; there is no track record behind any projection, only the method.</p></div></details>
-        <details><summary>Is there debt on the properties?</summary><div class="a"><p>Not in the base structure. A sheriff&rsquo;s sale requires certified funds, so the fund buys for cash. If the fund were ever to borrow, the memorandum sets the limits and you would be told.</p></div></details>
-        <details><summary>What happens when a sale is adjourned, or we are outbid?</summary><div class="a"><p>Nothing is spent. Capital for a property is committed only at the gavel. An adjourned sale moves and the file waits; where bidding passes our ceiling we walk away. Most of the work on a file happens before the sale and costs time, not capital.</p></div></details>
-        <details><summary>What are the main risks?</summary><div class="a"><p>Surviving liens, occupancy and possession, condition unseen before purchase, the owner-occupant right of first refusal, adjournment, dependence on the voucher program, and a newly formed manager. <a href="${r}what-we-do/">The strategy page</a> pairs each with the step that handles it; the <a href="${r}legal/">disclosures</a> list them in full.</p></div></details>
-        <details><summary>Who can invest, and what is the minimum?</summary><div class="a"><p>Accredited investors and qualified purchasers, by private placement. The minimum commitment is $1,000,000.</p></div></details>
-        <details><summary>Can I see the properties?</summary><div class="a"><p>After acquisition, yes &mdash; walk any property the fund owns. Before the sale there is no interior access for anyone, including us. Each property also appears in the quarterly book with photographs.</p></div></details>
-        <details><summary>How are you paid?</summary><div class="a"><p>The manager&rsquo;s compensation and participation are in the memorandum. The principals also invest in the fund on the same terms as other investors. We would rather explain the economics on a call than reduce them to a line here.</p></div></details>
-      </div>
-    </div>
-  </div></div></section>
-
-  <section class="band" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
+  <section class="band navy"><div class="wrap">
     <p class="kicker">Request the memorandum</p>
-    <h2 style="margin-top:12px">Write to a principal.</h2>
-    <p class="lead">You will receive the private placement memorandum and the current screened book, and a call with both
-      principals.</p>
-    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20fund%20materials">sgd3210@gmail.com</a>
+    <h2 style="margin-top:12px">Speak with a principal.</h2>
+    <p class="lead">Qualified investors receive the private placement memorandum, a presentation of the platform, and a
+      meeting with both principals.</p>
+    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20Fund%20I">sgd3210@gmail.com</a>
+    <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}contact/">Contact Us</a><a class="btn" href="${r}legal/">Disclosures</a></div>
   </div></section>
 `,
 };
