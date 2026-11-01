@@ -1,15 +1,15 @@
 module.exports = {
   path: 'what-we-do',
   nav: 'what-we-do',
-  title: 'What we do · Trident',
+  title: 'Strategy · Trident',
   description: 'How a New Jersey sheriff\'s sale sets its price, why Trident bids against recorded debt rather than market value, the process from calendar to deed, and the voucher-backed hold.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
-    <p class="kicker">What we do</p>
-    <h1>The opening bid is the debt. Everything Trident does follows from that.</h1>
+    <p class="kicker">Strategy</p>
+    <h1>The AI finds the filing. We buy the house.</h1>
     <p class="lead">A sheriff&rsquo;s sale is the one place in residential property where the price is set by a number on a
-      court record rather than by a seller. Trident finds the filings where that number sits far below the house, buys
-      only those, and holds them for the rent.</p>
+      court record rather than by a seller. Our models read every filing on every covered calendar and surface the ones
+      where that number sits far below the house. The fund buys only those, and holds them for the rent.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
@@ -36,12 +36,12 @@ module.exports = {
         generally content to be made whole. A house bought in 2022 with three percent down carries a judgment at or above
         what it would sell for; the lender bids to that, and there is nothing to win.</p>
       <p>So the single most useful number about a filing is <strong>recorded debt as a fraction of county median
-        value</strong>. Trident computes it for every scheduled sale in its counties and sorts the calendar by it. Below
+        value</strong>. Our models compute it for every scheduled sale in our counties, every day, and sort the calendar by it. Below
         0.4 is a deep discount; 0.4 to 0.6 a discount; 0.6 to 0.8 possible. From 0.8 up there is no margin for a title,
         occupancy or make-ready surprise, and the screen refuses the file.</p>
       <p>This is not a claim that the market is wrong. It is an observation that the auction&rsquo;s reserve price is set
         by a different variable than the asset&rsquo;s value, and that the two can be compared in advance from public
-        records. <a href="${r}how-we-buy/">How the current book sorts &rarr;</a></p>
+        records. <a href="${r}how-we-buy/">How the AI sources deals &rarr;</a></p>
     </div>
   </div></div></section>
 
@@ -52,7 +52,7 @@ module.exports = {
         the whole schedule moves. Nine of the ten checklist items block a bid until done; a file that reaches sale day
         with one open is not bid on, whatever the discount.</p>
       <ul class="ruled steps">
-        <li><span class="when">Daily<small>every pull</small></span><span><b>Screen the calendar.</b><span class="d">Every scheduled sale is pulled from the county sheriff, matched against the buy box, and scored on debt to median. A changed date or judgment is recorded as an event on the file, so an adjournment is a fact rather than a surprise at the courthouse.</span></span></li>
+        <li><span class="when">Daily<small>the AI</small></span><span><b>Read the calendar.</b><span class="d">Every scheduled sale is pulled from the county sheriff; the models match it to its docket, judgment and assessor record, apply the buy box, and score it on debt to median. A changed date or judgment is recorded as an event on the file, so an adjournment is a fact rather than a surprise at the courthouse.</span></span></li>
         <li><span class="when">T&minus;21</span><span><b>Order the sixty-year title search.</b><span class="d">Senior liens, municipal charges and federal tax liens survive the sheriff&rsquo;s deed. Whatever the search finds is carried in the basis, not discovered afterwards.</span></span></li>
         <li><span class="when">T&minus;14</span><span><b>Independent valuation.</b><span class="d">County medians and assessor data are estimates. The exit value is confirmed before a deposit is exposed, and the ratio recomputed.</span></span></li>
         <li><span class="when">T&minus;10</span><span><b>Municipal search, occupancy, first-refusal status.</b><span class="d">Open violations and unpaid utilities ride with the parcel. Occupancy is established from the outside, because there is no interior access and New Jersey is a good-cause eviction state. And the Community Wealth Preservation Program is checked: a foreclosed owner-occupant may take the property at the opening bid, which ends the file.</span></span></li>
@@ -99,6 +99,6 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}how-we-buy/">How we buy &rarr;</a> <a href="${r}where/">Where &rarr;</a> <a href="${r}investors/">Investors &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}how-we-buy/">Technology &rarr;</a> <a href="${r}where/">Where &rarr;</a> <a href="${r}investors/">The Fund &rarr;</a></div></nav>
 `,
 };

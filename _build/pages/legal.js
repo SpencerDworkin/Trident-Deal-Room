@@ -34,7 +34,7 @@ module.exports = {
       <p>Trident is newly formed. It has no operating history, no assets under management, and no completed acquisitions. The
         fund described on this website has not yet held a closing. Figures on this website describing the screened book
         &mdash; the number of filings, how they sort, what is refused and why, the lenders behind them, county medians and
-        Fair Market Rents &mdash; describe Trident&rsquo;s screening process applied to public foreclosure calendars. They are
+        Fair Market Rents &mdash; describe Trident&rsquo;s sourcing models applied to public foreclosure calendars. They are
         not a record of properties acquired, rents collected or returns earned, and are not indicative of future results. A
         screen can be applied consistently and still produce poor outcomes.</p>
 
@@ -59,6 +59,7 @@ module.exports = {
         <li><b>Make-ready and leasing.</b> Properties must pass housing authority inspection before a voucher tenant may occupy them. Make-ready may cost more and take longer than estimated, during which the property produces no income.</li>
         <li><b>Concentration.</b> A limited number of properties in a limited number of counties in one state.</li>
         <li><b>Illiquidity.</b> Interests are not transferable except as the governing documents permit. There is no market for them. Expect to hold for the full term.</li>
+        <li><b>Model and data risk.</b> Sourcing depends on software and models that read public calendars, dockets and assessor records. Those sources may be incomplete, late or wrong, and a model may misread, misscore or omit a filing. Every shortlisted file is reviewed by a principal before any bid, but the review may not catch every error.</li>
         <li><b>Key persons.</b> The strategy depends on two principals.</li>
         <li><b>Regulatory and legal change.</b> Foreclosure procedure, tenant protection, the Community Wealth Preservation Program and the voucher program are subject to legislative, regulatory and judicial change.</li>
         <li><b>Conflicts of interest.</b> Trident and its principals will receive compensation from the fund as set out in the memorandum, will invest in the fund, may have interests in other ventures, and may face conflicts in allocating time and opportunities.</li>

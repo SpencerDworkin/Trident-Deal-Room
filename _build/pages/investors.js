@@ -1,21 +1,22 @@
 module.exports = {
   path: 'investors',
   nav: 'investors',
-  title: 'Investors · Trident',
+  title: 'The Fund · Trident',
   description: 'Trident is raising its first private fund to acquire one-to-four-unit homes at New Jersey sheriff\'s sales and hold them under voucher tenancy. How capital moves, the terms, reporting, who we raise from, and the questions investors ask first.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
-    <p class="kicker">Investors</p>
-    <h1>Trident is raising its first fund.</h1>
-    <p class="lead">A private fund that buys at the courthouse, for cash, and holds for income. Raised from family offices
-      in New York, New Jersey, Pennsylvania, Connecticut and Florida. The confidential memorandum sets out every term and
-      controls over anything here; this is the shape of it.</p>
+    <p class="kicker">Trident Fund I</p>
+    <h1>An AI-sourced residential fund.</h1>
+    <p class="lead">Trident Fund I buys homes our AI finds at New Jersey sheriff&rsquo;s sales, for cash, and holds them for
+      income. It is raising from family offices in New York, New Jersey, Pennsylvania, Connecticut and Florida. The
+      confidential memorandum sets out every term and controls over anything here; this is the shape of it.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">01</p><h2>How capital moves</h2></div>
     <div class="prose">
-      <p>Investors commit capital to the fund. The fund buys properties outright at sheriff&rsquo;s sale, brings each to
+      <p>Investors commit capital to the fund. The sourcing engine reads the calendars and ranks the filings; the principals
+        underwrite the shortlist and bid. The fund buys properties outright at sheriff&rsquo;s sale, brings each to
         the housing authority&rsquo;s inspection standard, leases it to a voucher holder and holds it. Rents pay operating
         costs and reserves first; what remains is distributed on the terms in the memorandum. The principals invest in
         the fund alongside investors.</p>
@@ -36,13 +37,14 @@ module.exports = {
         &mdash; are stated in the memorandum and discussed in person rather than published here.</p>
       <dl class="rows">
         <div><dt>Vehicle</dt><dd>A private investment fund. Interests offered by private placement.</dd></div>
-        <div><dt>Strategy</dt><dd>1&ndash;4 unit residential property at New Jersey sheriff&rsquo;s sales, screened on recorded debt against county median value, held under Housing Choice Voucher tenancy.</dd></div>
+        <div><dt>Strategy</dt><dd>1&ndash;4 unit residential property at New Jersey sheriff&rsquo;s sales, sourced and screened by Trident&rsquo;s models on recorded debt against county median value, held under Housing Choice Voucher tenancy.</dd></div>
         <div><dt>Minimum commitment</dt><dd class="num">$1,000,000</dd></div>
         <div><dt>Use of proceeds</dt><dd>Acquisition for cash, surviving-lien reserves, make-ready to inspection standard, carry to stabilised tenancy.</dd></div>
         <div><dt>Leverage</dt><dd>None in the base structure.</dd></div>
         <div><dt>Deployment</dt><dd>As properties clear the screen and the checklist. Undeployed capital held in cash.</dd></div>
         <div><dt>Distributions, fees, term</dt><dd>Set out in the memorandum.</dd></div>
         <div><dt>Reporting</dt><dd>Quarterly, property by property: basis, surviving liens, tenancy, rent. The working book itself.</dd></div>
+        <div><dt>Sourcing</dt><dd>Proprietary AI engine covering six counties daily. The model proposes and ranks; a principal reviews every shortlisted file and bids in person.</dd></div>
         <div><dt>Alignment</dt><dd>Principals invest in the fund, attend every sale, bid every property personally.</dd></div>
         <div><dt>Eligible investors</dt><dd>Accredited investors and qualified purchasers, by private placement.</dd></div>
       </dl>
@@ -84,7 +86,7 @@ module.exports = {
         <details><summary>Are distributions guaranteed?</summary><div class="a"><p>No. They are paid from the properties&rsquo; cash flow on the terms in the memorandum. Trident is newly formed; there is no track record behind any projection, only the method.</p></div></details>
         <details><summary>Is there debt on the properties?</summary><div class="a"><p>Not in the base structure. A sheriff&rsquo;s sale requires certified funds, so the fund buys for cash. If the fund were ever to borrow, the memorandum sets the limits and you would be told.</p></div></details>
         <details><summary>What happens when a sale is adjourned, or we are outbid?</summary><div class="a"><p>Nothing is spent. Capital for a property is committed only at the gavel. An adjourned sale moves and the file waits; where bidding passes our ceiling we walk away. Most of the work on a file happens before the sale and costs time, not capital.</p></div></details>
-        <details><summary>What are the main risks?</summary><div class="a"><p>Surviving liens, occupancy and possession, condition unseen before purchase, the owner-occupant right of first refusal, adjournment, dependence on the voucher program, and a newly formed manager. <a href="${r}what-we-do/">What we do</a> pairs each with the step that handles it; the <a href="${r}legal/">disclosures</a> list them in full.</p></div></details>
+        <details><summary>What are the main risks?</summary><div class="a"><p>Surviving liens, occupancy and possession, condition unseen before purchase, the owner-occupant right of first refusal, adjournment, dependence on the voucher program, and a newly formed manager. <a href="${r}what-we-do/">The strategy page</a> pairs each with the step that handles it; the <a href="${r}legal/">disclosures</a> list them in full.</p></div></details>
         <details><summary>Who can invest, and what is the minimum?</summary><div class="a"><p>Accredited investors and qualified purchasers, by private placement. The minimum commitment is $1,000,000.</p></div></details>
         <details><summary>Can I see the properties?</summary><div class="a"><p>After acquisition, yes &mdash; walk any property the fund owns. Before the sale there is no interior access for anyone, including us. Each property also appears in the quarterly book with photographs.</p></div></details>
         <details><summary>How are you paid?</summary><div class="a"><p>The manager&rsquo;s compensation and participation are in the memorandum. The principals also invest in the fund on the same terms as other investors. We would rather explain the economics on a call than reduce them to a line here.</p></div></details>

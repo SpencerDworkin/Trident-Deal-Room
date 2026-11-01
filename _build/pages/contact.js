@@ -35,6 +35,6 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}what-we-do/">What we do &rarr;</a> <a href="${r}investors/">Investors &rarr;</a> <a href="${r}about/">About &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}what-we-do/">Strategy &rarr;</a> <a href="${r}investors/">The Fund &rarr;</a> <a href="${r}about/">About &rarr;</a></div></nav>
 `,
 };

@@ -6,18 +6,18 @@ module.exports = {
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">About</p>
-    <h1>Two principals. One book. Every sale attended.</h1>
-    <p class="lead">Trident is a subsidiary of Patel Legacy Properties. It is run by its two principals, who screen every
-      filing, read every title, set every ceiling and stand at every sale themselves. There is no acquisitions team
-      between the firm and the courthouse.</p>
+    <h1>An AI sourcing engine, and two principals who stand at every sale.</h1>
+    <p class="lead">Trident is a Patel Legacy Properties company. Its models read every filing on six county calendars each
+      day; its two principals underwrite what the models surface, read every title, set every ceiling and stand at every
+      sale themselves. There is no acquisitions team between the fund and the courthouse.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">01</p><h2>The principals</h2></div>
     <div>
       <dl class="rows" style="margin-top:0">
-        <div><dt>Spencer Dworkin</dt><dd>Principal<small><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></small></dd></div>
-        <div><dt>Ayush Patel</dt><dd>Principal</dd></div>
+        <div><dt>Spencer Dworkin</dt><dd>Principal &middot; built the sourcing engine<small><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></small></dd></div>
+        <div><dt>Ayush Patel</dt><dd>Principal &middot; Patel Legacy Properties</dd></div>
       </dl>
     </div>
   </div></div></section>
@@ -25,9 +25,9 @@ module.exports = {
   <section class="scene"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">02</p><h2>How the firm operates</h2></div>
     <div class="prose">
-      <p><strong>The screen is code.</strong> The buy box is written as rules with numbers in them and run on every filing in
-        every covered county. Neither principal can override a verdict for a property they like; the rules change for
-        everyone or not at all.</p>
+      <p><strong>The sourcing is AI; the buying is human.</strong> The models read every filing in every covered county,
+        apply a written buy box, and rank what survives with the reasons attached. Neither principal can override a
+        verdict for a property they like; the rules change for everyone or not at all. And the model never bids.</p>
       <p><strong>Every file carries the checklist.</strong> Ten items, nine of them blocking, each with a date that hangs
         off the sale. A file with a blocking item open on sale day is not bid on.</p>
       <p><strong>A principal attends every sale.</strong> Ceilings are set from the underwriting three days out and written

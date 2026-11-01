@@ -24,10 +24,10 @@ const PAGES = ['home', 'what-we-do', 'how-we-buy', 'where', 'investors', 'about'
 /* [slug, label, icon] — the icon is a 24-box line drawing, stroked in currentColor. */
 const NAV = [
   ['', 'Home', '<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>'],
-  ['what-we-do', 'What we do', '<path d="M3 21h8"/><path d="M7 21v-4"/><path d="M13.5 4.5l6 6-5 5-6-6z"/><path d="M11 10l-7 7"/>'],
-  ['how-we-buy', 'How we buy', '<path d="M4 6h3M4 12h3M4 18h3M10 6h10M10 12h10M10 18h10"/>'],
+  ['what-we-do', 'Strategy', '<path d="M3 21h8"/><path d="M7 21v-4"/><path d="M13.5 4.5l6 6-5 5-6-6z"/><path d="M11 10l-7 7"/>'],
+  ['how-we-buy', 'Technology', '<path d="M4 6h3M4 12h3M4 18h3M10 6h10M10 12h10M10 18h10"/>'],
   ['where', 'Where', '<path d="M12 21s7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>'],
-  ['investors', 'Investors', '<path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M3 10l9-6 9 6"/>'],
+  ['investors', 'Fund', '<path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M3 10l9-6 9 6"/>'],
   ['about', 'About', '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-5-6.3"/>'],
   ['contact', 'Contact', '<path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/>'],
 ];

@@ -13,18 +13,19 @@ const SEAL = `<svg class="seal" viewBox="0 0 240 240" aria-hidden="true">
 module.exports = {
   path: '',
   nav: '',
-  title: 'Trident · Residential real estate investment at New Jersey sheriff\'s sales',
-  description: 'Trident is a Patel Legacy Properties company that acquires one-to-four-unit homes at New Jersey sheriff\'s sales, priced against recorded debt rather than market value, and holds them under Housing Choice Voucher tenancy.',
+  title: 'Trident · An AI-sourced residential real estate fund',
+  description: 'Trident is raising a private fund that uses AI to source one-to-four-unit homes at New Jersey sheriff\'s sales, priced against recorded debt rather than market value, and holds them under Housing Choice Voucher tenancy. A Patel Legacy Properties company.',
   body: r => `
   <section class="hero" style="background-image:url(${r}assets/img/hero-street.webp)">
     <div class="wrap">
       ${SEAL}
       <div class="copy">
-        <h1>residential real estate investment</h1>
-        <p class="lede">We are committed to buying modest homes at New Jersey sheriff&rsquo;s sales and holding them for our investors.</p>
+        <h1>AI-sourced real estate investing</h1>
+        <p class="lede">We are raising a fund that buys homes our AI finds at New Jersey sheriff&rsquo;s sales, priced
+          against the debt rather than the market, and holds them for income.</p>
         <div class="actions onnavy">
-          <a class="btn" href="${r}contact/">Contact Us</a>
-          <a class="btn" href="${r}about/">About Trident</a>
+          <a class="btn" href="${r}investors/">Invest With Us</a>
+          <a class="btn" href="${r}how-we-buy/">How It Works</a>
         </div>
       </div>
     </div>
@@ -32,42 +33,43 @@ module.exports = {
 
   <section class="band"><div class="wrap">
     <h2>Who We Are</h2>
-    <p class="lead">Trident acquires one-to-four-unit homes at New Jersey sheriff&rsquo;s sales, where the opening bid is the
-      lender&rsquo;s judgment rather than the house&rsquo;s value, and holds them under Housing Choice Voucher tenancy.
-      Our expertise encompasses foreclosure-calendar screening, title and lien underwriting, and voucher-tenancy
-      management across six New Jersey counties. We are a Patel Legacy Properties company.</p>
+    <p class="lead">Trident is a residential real estate fund with an AI sourcing engine. Our models read every county
+      sheriff&rsquo;s calendar in New Jersey each day, pull the docket, the judgment and the assessor record behind every
+      filing, and rank the homes where the lender&rsquo;s opening bid sits furthest below what the house is worth. Our
+      principals underwrite the shortlist, attend the sale, and hold what we buy under Housing Choice Voucher tenancy.
+      We are a Patel Legacy Properties company.</p>
     <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}what-we-do/">Read About Us</a></div>
   </div></section>
 
   <section class="figures"><div class="wrap">
-    <div class="f"><div class="n">468</div><div class="l">Filings screened on the calendars of six New Jersey counties</div></div>
-    <div class="f"><div class="n">37<sup>%</sup></div><div class="l">Of the calendar refused by our screen before any work is done</div></div>
-    <div class="f"><div class="n">96</div><div class="l">Filings at a deep discount: recorded debt under 0.4 of county median</div></div>
-    <div class="f"><div class="n">10</div><div class="l">Items on our pre-bid checklist; nine of them block the bid</div></div>
-    <p class="asof">Current pull of the county sheriffs&rsquo; calendars. Figures describe the screen, not acquisitions.</p>
+    <div class="f"><div class="n">468</div><div class="l">Filings read and scored by our models on the current pull</div></div>
+    <div class="f"><div class="n">37<sup>%</sup></div><div class="l">Of the calendar the models refuse before a person opens the file</div></div>
+    <div class="f"><div class="n">96</div><div class="l">Homes surfaced at a deep discount: debt under 0.4 of county median</div></div>
+    <div class="f"><div class="n">6</div><div class="l">New Jersey counties covered daily; two more coming on</div></div>
+    <p class="asof">Current pull of the county sheriffs&rsquo; calendars. Figures describe the sourcing engine, not acquisitions.</p>
   </div></section>
 
   <section class="scene center"><div class="wrap">
     <p class="kicker">What We Do</p>
-    <h2 style="margin-top:10px">Screen. Buy. Hold.</h2>
-    <p class="lead">Three jobs, in that order, done the same way for every property.</p>
+    <h2 style="margin-top:10px">Source. Underwrite. Hold.</h2>
+    <p class="lead">The AI does the reading. The principals do the buying. The fund does the holding.</p>
     <div class="tiles" style="text-align:left">
       <a class="tile" href="${r}how-we-buy/">
-        <span class="k">01 &middot; Screen</span>
-        <h3>Every filing, the same rules</h3>
-        <p>Each scheduled sale in six counties is pulled daily, matched against a nine-rule buy box and scored on recorded debt against county median value.</p>
-        <span class="more">How we buy</span>
+        <span class="k">01 &middot; Source</span>
+        <h3>AI reads every filing</h3>
+        <p>Every scheduled sale in six counties is pulled daily. The models match each filing to its docket, judgment, plaintiff and assessor value, score it on recorded debt against county median, and refuse the files where the discount is an illusion.</p>
+        <span class="more">How it works</span>
       </a>
       <a class="tile" href="${r}what-we-do/">
-        <span class="k">02 &middot; Buy</span>
-        <h3>For cash, to a written ceiling</h3>
-        <p>Title, valuation, occupancy and liens are worked on a dated checklist before the sale. A principal attends, bids to a ceiling set from the underwriting, and stops there.</p>
-        <span class="more">What we do</span>
+        <span class="k">02 &middot; Underwrite</span>
+        <h3>People buy, to a written ceiling</h3>
+        <p>Title, liens, occupancy and valuation are worked on a dated checklist for every shortlisted home. A principal sets the ceiling from the underwriting, attends the sale in person, and stops at the number.</p>
+        <span class="more">Strategy</span>
       </a>
       <a class="tile" href="${r}investors/">
         <span class="k">03 &middot; Hold</span>
         <h3>Voucher tenancy, for income</h3>
-        <p>Each home is brought to the housing authority&rsquo;s inspection standard and leased to a Housing Choice Voucher holder. The authority pays the larger part of the rent directly, every month.</p>
+        <p>Each home is brought to the housing authority&rsquo;s inspection standard and leased to a Housing Choice Voucher holder. The authority pays the larger part of the rent directly, every month. Investors see the same book we run on.</p>
         <span class="more">For investors</span>
       </a>
     </div>
@@ -76,34 +78,37 @@ module.exports = {
   <section class="scene alt"><div class="wrap"><div class="split">
     <div>
       <p class="kicker">Why Work with Us</p>
-      <h2 style="margin-top:10px">Discipline is the product.</h2>
+      <h2 style="margin-top:10px">Deal flow is the edge.</h2>
       <div class="prose" style="margin-top:18px">
-        <p><strong>The screen is written down.</strong> Nine rules with numbers in them, run on every filing in every covered
-          county in the same order. Neither principal can override a verdict for a property they like.</p>
-        <p><strong>Cash, not debt.</strong> A sheriff&rsquo;s sale takes twenty percent at the gavel and the balance in thirty
-          days, in certified funds. There is no lender at the table and no lender ahead of investors.</p>
-        <p><strong>A principal at every sale.</strong> The ceiling is set from the underwriting three days out and written
-          down. The person in the room is the person who set the number, and the number does not move.</p>
+        <p><strong>Nobody else reads the whole calendar.</strong> Hundreds of sales are scheduled every month across our
+          counties. A person can open a few dozen files. Our models read all of them, every day, and hand the principals
+          a ranked shortlist with the reasons attached.</p>
+        <p><strong>The price is set by a court record, not a seller.</strong> At a sheriff&rsquo;s sale the lender opens
+          the bidding at its judgment. The AI&rsquo;s job is to find the filings where that number sits far below the
+          house; our job is to confirm it and buy.</p>
+        <p><strong>Cash, discipline, and a person in the room.</strong> No lender at the table, a ceiling written down
+          before the sale, and a principal standing at every auction. The model proposes; it never bids.</p>
       </div>
-      <div class="actions"><a class="btn" href="${r}how-we-buy/">How We Buy</a></div>
+      <div class="actions"><a class="btn" href="${r}how-we-buy/">How the AI Sources Deals</a></div>
     </div>
-    <figure class="photo"><img src="${r}assets/img/hero-street.webp" alt="Stone steps and columned entrance of a county courthouse" loading="lazy"></figure>
+    <figure class="photo"><img src="${r}assets/img/hero-street.webp" alt="A street of modest homes in New Jersey at dusk" loading="lazy"></figure>
   </div></div></section>
 
   <section class="band navy"><div class="wrap">
     <p class="kicker">Investments</p>
     <h2 style="margin-top:10px">Trident Fund I</h2>
-    <p class="lead">Invitation-only basis &middot; Accredited investors and qualified purchasers only &middot; Private
-      placement &middot; Minimum commitment $1,000,000. Raising from family offices in New York, New Jersey, Pennsylvania,
-      Connecticut and Florida.</p>
-    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20%E2%80%94%20fund%20materials">sgd3210@gmail.com</a>
+    <p class="lead">An AI-sourced residential fund. Invitation-only basis &middot; Accredited investors and qualified
+      purchasers only &middot; Private placement &middot; Minimum commitment $1,000,000. Raising from family offices in
+      New York, New Jersey, Pennsylvania, Connecticut and Florida.</p>
+    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20Fund%20I%20%E2%80%94%20materials">sgd3210@gmail.com</a>
     <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}investors/">The Fund</a><a class="btn" href="${r}legal/">Disclosures</a></div>
   </div></section>
 
   <section class="band"><div class="wrap">
     <h2>Markets</h2>
-    <p class="lead">We buy in New Jersey &mdash; Bergen, Burlington, Hunterdon, Mercer, Middlesex and Monmouth, with Ocean and
-      Somerset coming on &mdash; and raise along the corridor.</p>
+    <p class="lead">The engine covers Bergen, Burlington, Hunterdon, Mercer, Middlesex and Monmouth today, with Ocean and
+      Somerset coming on. Any judicial-foreclosure state with public calendars is a county away. We raise along the
+      corridor.</p>
     <div class="states"><span>NJ</span><span>NY</span><span>PA</span><span>CT</span><span>FL</span></div>
     <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}where/">Where We Buy</a></div>
   </div></section>
@@ -114,8 +119,8 @@ module.exports = {
       <h2>Two principals. Every sale attended.</h2>
     </div>
     <div class="people">
-      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><div class="role">Principal</div><p>Screens the calendar, reads the titles, sets the ceilings and stands at the sale. <a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></p></div></div>
-      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><div class="role">Principal &middot; Patel Legacy Properties</div><p>Screens the calendar, reads the titles, sets the ceilings and stands at the sale.</p></div></div>
+      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><div class="role">Principal</div><p>Built the sourcing engine. Underwrites the shortlist, sets the ceilings and stands at the sale. <a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></p></div></div>
+      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><div class="role">Principal &middot; Patel Legacy Properties</div><p>Real estate operator across the Northeast. Underwrites the shortlist, sets the ceilings and stands at the sale.</p></div></div>
     </div>
   </div></section>
 `,

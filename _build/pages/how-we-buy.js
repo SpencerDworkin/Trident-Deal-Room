@@ -3,22 +3,23 @@ const { chart, N } = require('../chart');
 module.exports = {
   path: 'how-we-buy',
   nav: 'how-we-buy',
-  title: 'How we buy · Trident',
-  description: 'The buy box as nine rules, how the current book of filings sorts, what is refused and why, who is filing, the ten-item pre-bid checklist, and the four statutory dates.',
+  title: 'Technology · Trident',
+  description: 'How Trident\'s AI sources deals: what the models read, the nine rules they apply, how the current book sorts, what they refuse and why, who is filing, and the human checklist that follows.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
-    <p class="kicker">How we buy</p>
-    <h1>The buy box is written as rules. It runs on every filing, the same way, every time.</h1>
-    <p class="lead">A screen that lives in someone&rsquo;s head drifts. Trident&rsquo;s is written down with numbers in it,
-      run on every filing in every covered county in the same order, and cannot be bent for a property we happen to
-      like. This page shows the rules and how the current book sorts under them.</p>
+    <p class="kicker">Technology</p>
+    <h1>How the AI sources deals.</h1>
+    <p class="lead">Every day the engine pulls each scheduled sale from six county sheriffs, pulls the docket and judgment
+      behind it, matches the address to the assessor record and the county median, reads the plaintiff, and applies a
+      written buy box in the same order to every file. What survives is ranked and handed to the principals with the
+      reasons attached. A person reviews every shortlisted file and a person bids. The model never does.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">01</p><h2>The buy box</h2></div>
     <div>
-      <p class="prose">Nine rules, in order. A principal cannot override a verdict; the only way to change it is to change
-        the rule, for everyone, and say so.</p>
+      <p class="prose">The models apply nine rules, in order, to every filing. A principal cannot override a verdict for a
+        property they like; the only way to change it is to change the rule, for everyone, and say so.</p>
       <div class="tw"><table class="t">
         <tr><th style="width:30px">#</th><th>Rule</th><th>Threshold</th><th>Verdict</th></tr>
         <tr><td class="num soft">1</td><td><b>Hard ceiling.</b> Above this it is not a modest home.</td><td class="num">$1,500,000</td><td class="soft">Routed to commercial</td></tr>
@@ -39,7 +40,7 @@ module.exports = {
   <section class="scene"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">02</p><h2>How the current book sorts</h2></div>
     <div>
-      <p class="prose">Every filing on the calendars of six counties at the last pull, run through the rules above. Not a
+      <p class="prose">Every filing on the calendars of six counties at the last pull, as the engine scored it. Not a
         sample.</p>
       <div class="chart">${chart()}</div>
       <p class="cap" style="margin-top:10px">${N} residential filings with a published judgment, by recorded debt as a share of county median value.</p>
@@ -135,6 +136,6 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}where/">Where &rarr;</a> <a href="${r}investors/">Investors &rarr;</a> <a href="${r}contact/">Contact &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}where/">Where &rarr;</a> <a href="${r}investors/">The Fund &rarr;</a> <a href="${r}contact/">Contact &rarr;</a></div></nav>
 `,
 };
