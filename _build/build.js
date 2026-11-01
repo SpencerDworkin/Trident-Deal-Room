@@ -25,10 +25,10 @@ const PAGES = ['home', 'what-we-do', 'how-we-buy', 'where', 'investors', 'about'
 const NAV = [
   ['', 'Home', '<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>'],
   ['what-we-do', 'Strategy', '<path d="M3 21h8"/><path d="M7 21v-4"/><path d="M13.5 4.5l6 6-5 5-6-6z"/><path d="M11 10l-7 7"/>'],
-  ['how-we-buy', 'Technology', '<path d="M4 6h3M4 12h3M4 18h3M10 6h10M10 12h10M10 18h10"/>'],
-  ['where', 'Markets', '<path d="M12 21s7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>'],
-  ['investors', 'Fund', '<path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M3 10l9-6 9 6"/>'],
-  ['about', 'About', '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-5-6.3"/>'],
+  ['how-we-buy', 'Platform', '<path d="M4 6h3M4 12h3M4 18h3M10 6h10M10 12h10M10 18h10"/>'],
+  ['where', 'Opportunity', '<path d="M12 21s7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>'],
+  ['investors', 'Investors', '<path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M3 10l9-6 9 6"/>'],
+  ['about', 'Team', '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-5-6.3"/>'],
   ['contact', 'Contact', '<path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/>'],
 ];
 
@@ -100,7 +100,7 @@ ${p.body(r)}
     <a class="brand" href="${r}"><span><b>Trident</b><i>A Patel Legacy Properties company</i></span>${MARK}</a>
     <div class="fl">${foot}<a href="${r}legal/">Disclosures</a><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></div>
     <p class="cop">&copy; 2026 Trident, All Rights Reserved.</p>
-    <p class="legal">Nothing on this website constitutes an offer to sell, or a solicitation of an offer to buy, any security or interest in any fund. Any offering is made only by a confidential private placement memorandum to accredited investors and qualified purchasers. Trident is newly formed and has no operating history and no assets under management. Descriptions of Trident&rsquo;s platform and process are not a record of acquisitions or returns. <a href="${r}legal/">Full disclosures.</a></p>
+    <p class="legal">This website is for informational purposes only. Nothing on it constitutes an offer to sell, or a solicitation of an offer to buy, any security. Any offer will be made only through a confidential private placement memorandum and subscription documents, to accredited investors and qualified purchasers whose status is verified. Trident is newly formed, has no operating history and no assets under management, and is not a registered investment adviser or broker dealer. Private real estate investments are illiquid and involve risk, including the loss of the entire investment. Market data cited on this site is from third party sources and is not a projection of any return. <a href="${r}legal/">Full disclosures.</a></p>
   </div>
 </footer>
 

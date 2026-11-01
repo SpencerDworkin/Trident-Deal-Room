@@ -6,9 +6,10 @@ module.exports = {
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">Contact</p>
-    <h1>Speak with a principal.</h1>
-    <p class="lead">Every inquiry reaches Spencer Dworkin and Ayush Patel directly.</p>
-    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>
+    <h1>Schedule a call.</h1>
+    <p class="lead">Every inquiry reaches Spencer Dworkin and Ayush Patel directly. Write with a few words about yourself and a
+      time that suits you, and a principal will reply within a business day.</p>
+    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20Fund%20I%20introduction">sgd3210@gmail.com</a>
     <p class="also">Trident, a Patel Legacy Properties company.</p>
   </div></section>
 
@@ -21,8 +22,8 @@ module.exports = {
         <div><dt>Meeting</dt><dd>A conversation with both principals, built around your questions.</dd></div>
         <div><dt>Subscription</dt><dd>Investor verification, subscription documents and commitment.</dd></div>
       </dl>
-      <p class="cap" style="margin-top:14px">Trident Fund I is offered by invitation to accredited investors and qualified purchasers in New Jersey, New York,
-        Pennsylvania, Connecticut and Florida. Minimum commitment $1,000,000. <a href="${r}investors/">The fund &rarr;</a></p>
+      <p class="cap" style="margin-top:14px">Trident Fund I is offered to accredited investors and qualified purchasers wherever they are.
+        Minimum commitment $1,000,000. <a href="${r}investors/">Investor overview &rarr;</a></p>
     </div>
   </div></div></section>
 
@@ -34,6 +35,6 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}what-we-do/">Strategy &rarr;</a> <a href="${r}investors/">The Fund &rarr;</a> <a href="${r}about/">About &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}what-we-do/">Strategy &rarr;</a> <a href="${r}investors/">Investors &rarr;</a> <a href="${r}about/">Team &rarr;</a></div></nav>
 `,
 };

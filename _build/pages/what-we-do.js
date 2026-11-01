@@ -66,6 +66,6 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}how-we-buy/">The Technology &rarr;</a> <a href="${r}where/">Markets &rarr;</a> <a href="${r}investors/">The Fund &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}how-we-buy/">The Platform &rarr;</a> <a href="${r}where/">The Opportunity &rarr;</a> <a href="${r}investors/">Investors &rarr;</a></div></nav>
 `,
 };

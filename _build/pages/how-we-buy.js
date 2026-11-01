@@ -3,11 +3,11 @@ const { pipeline } = require('../diagram');
 module.exports = {
   path: 'how-we-buy',
   nav: 'how-we-buy',
-  title: 'Technology · Trident',
+  title: 'The Platform · Trident',
   description: 'Trident\'s proprietary platform reads public records across its markets daily, identifies residential assets priced below value, and ranks them for underwriting by the principals.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
-    <p class="kicker">Technology</p>
+    <p class="kicker">The Platform</p>
     <h1>A platform that reads the whole market.</h1>
     <p class="lead">Real estate has always rewarded whoever sees the opportunity first. Trident built a proprietary
       platform so that we see all of them. It gathers public records across our markets every day, identifies the
@@ -71,9 +71,9 @@ module.exports = {
     <h2 style="margin-top:10px">The platform proposes. People commit capital.</h2>
     <p class="lead">That sentence governs everything we do. It is why our deal flow is proprietary and why our discipline
       never depends on a good day in the room.</p>
-    <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}investors/">The Fund</a><a class="btn" href="${r}contact/">Contact Us</a></div>
+    <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}investors/">Invest With Us</a><a class="btn" href="${r}contact/">Contact Us</a></div>
   </div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}what-we-do/">Strategy &rarr;</a> <a href="${r}investors/">The Fund &rarr;</a> <a href="${r}about/">About &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}what-we-do/">Strategy &rarr;</a> <a href="${r}investors/">Investors &rarr;</a> <a href="${r}about/">Team &rarr;</a></div></nav>
 `,
 };
