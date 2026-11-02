@@ -1,7 +1,7 @@
 module.exports = {
   path: 'legal',
   nav: 'legal',
-  title: 'Disclosures · Trident',
+  title: 'Disclosures · Trident National',
   description: 'What this website is and is not.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
@@ -12,12 +12,12 @@ module.exports = {
   <section class="scene">
     <div class="wrap"><div class="legal">
       <h2>Not an offer</h2>
-      <p>This website describes Trident and how it works. It is for information only. Nothing on it is an offer to sell, or a
+      <p>This website describes Trident National and how it works. It is for information only. Nothing on it is an offer to sell, or a
         solicitation of an offer to buy, any security or any interest in any property or entity, and nothing on it should
         be relied on in making an investment decision.</p>
 
       <h2>Private investments</h2>
-      <p>Trident does not offer investments to the public. Any opportunity to invest alongside Trident is made available
+      <p>Trident National does not offer investments to the public. Any opportunity to invest alongside Trident National is made available
         only to a limited number of qualified investors with whom Trident has an existing relationship, and only through
         definitive offering and subscription documents that set out the complete terms and the risks. Those documents
         control over anything written here. Interests in any Trident entity are not registered under the Securities Act of
@@ -26,16 +26,16 @@ module.exports = {
         them.</p>
 
       <h2>No operating history</h2>
-      <p>Trident was formed in 2026. It has no operating history and no completed acquisitions of its own. References to the
+      <p>Trident National was formed in 2026. It has no operating history and no completed acquisitions of its own. References to the
         experience of Patel Legacy Properties or its principals describe that company and those individuals, not any
-        result Trident has achieved.</p>
+        result Trident National has achieved.</p>
 
       <h2>Risks</h2>
       <p>Real estate investments are illiquid and involve risk, including the loss of the entire amount invested. Among the
-        risks of the properties Trident pursues: tenant default and vacancy; lease rollover and the cost of re-leasing;
+        risks of the properties Trident National pursues: tenant default and vacancy; lease rollover and the cost of re-leasing;
         property condition and capital expenditure; environmental conditions; changes in local markets, taxes and
         regulation; any financing used on a property and the lender&rsquo;s rights ahead of investors; reliance on two
-        principals; errors in the data and software Trident uses to find
+        principals; errors in the data and software Trident National uses to find
         property; and the possibility that a property cannot be sold when its owners wish. Offering documents for any
         specific investment set out its risks in full.</p>
 
@@ -48,10 +48,10 @@ module.exports = {
 
       <h2>Privacy</h2>
       <p>This website sets no cookies, runs no analytics and collects no information about visitors. The only way to contact
-        Trident from it is by email. Typefaces are loaded from Google Fonts, which receives the request for the font files.</p>
+        Trident National from it is by email. Typefaces are loaded from Google Fonts, which receives the request for the font files.</p>
 
       <h2>Contact</h2>
-      <p>Trident, a Patel Legacy Properties company. <a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>.</p>
+      <p>Trident National, a Patel Legacy Properties company. <a href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a>.</p>
     </div></div>
   </section>
 `,

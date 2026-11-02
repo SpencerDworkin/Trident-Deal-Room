@@ -304,3 +304,13 @@ footer .legal a{color:var(--onnavy2);text-decoration:underline;text-underline-of
 .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:1080px){.tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.tiles.four{grid-template-columns:1fr}}
+
+.person .photo{flex:0 0 96px;width:96px;height:96px;border-radius:50%;overflow:hidden;background:var(--navy);margin:0}
+.person .photo img{width:100%;height:100%;object-fit:cover;display:block}
+footer .plp{display:block;margin:22px auto 0;width:96px;opacity:.9}
+footer .plp img{display:block;width:96px;height:96px}
+.pipe-list{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pipe-list li{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);padding:22px}
+.pipe-list b{display:block;font-family:var(--serif);font-size:1.2rem;color:var(--navy);margin-bottom:8px}
+.pipe-list span{font-size:14.5px;color:var(--ink2);line-height:1.55}
+@media (max-width:900px){.pipe-list{grid-template-columns:1fr}}

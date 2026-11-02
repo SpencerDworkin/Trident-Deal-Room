@@ -63,7 +63,7 @@ function shell(p) {
 <title>${esc(p.title)}</title>
 <meta name="description" content="${esc(p.description)}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Trident">
+<meta property="og:site_name" content="Trident National">
 <meta property="og:title" content="${esc(p.title)}">
 <meta property="og:description" content="${esc(p.description)}">
 <meta property="og:image" content="${r}assets/img/hero-street.webp">
@@ -79,15 +79,15 @@ function shell(p) {
 <header class="top" id="top">
   <div class="wrap">
     <nav aria-label="Sections">
-      <a href="${r}"${p.nav === '' ? ' class="on" aria-current="page"' : ''}>Trident</a>
+      <a href="${r}"${p.nav === '' ? ' class="on" aria-current="page"' : ''}>Trident National</a>
       ${rail}
     </nav>
     <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
-<nav class="mnav" id="mnav" aria-label="Sections"><button class="close" type="button" aria-label="Close">&times;</button><a href="${r}">Trident</a>${strip}</nav>
+<nav class="mnav" id="mnav" aria-label="Sections"><button class="close" type="button" aria-label="Close">&times;</button><a href="${r}">Trident National</a>${strip}</nav>
 <div class="brandband"><div class="wrap">
-  <a class="brand" href="${r}" aria-label="Trident home"><span><b>Trident</b><i>A Patel Legacy Properties company</i></span>${MARK}</a>
+  <a class="brand" href="${r}" aria-label="Trident National home"><span><b>Trident National</b><i>A Patel Legacy Properties company</i></span>${MARK}</a>
   <a class="tcta" href="${r}contact/">Contact Us</a>
 </div></div>
 
@@ -97,10 +97,11 @@ ${p.body(r)}
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="${r}"><span><b>Trident</b><i>A Patel Legacy Properties company</i></span>${MARK}</a>
+    <a class="brand" href="${r}"><span><b>Trident National</b><i>A Patel Legacy Properties company</i></span>${MARK}</a>
+    <a class="plp" href="https://patel-legacyproperties.com/" rel="noopener"><img src="${r}assets/img/plp-seal-white.png" alt="Patel Legacy Properties" width="96" height="96" loading="lazy"></a>
     <div class="fl">${foot}<a href="${r}legal/">Disclosures</a><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></div>
-    <p class="cop">&copy; 2026 Trident, All Rights Reserved.</p>
-    <p class="legal">This website is for informational purposes only. Nothing on it is an offer to sell, or a solicitation of an offer to buy, any security. Trident does not offer investments to the public. Any opportunity to invest is made available only to qualified investors with whom Trident has an existing relationship, through definitive offering documents. Trident is not a registered investment adviser or broker dealer. Real estate investments are illiquid and involve risk, including loss of the amount invested. <a href="${r}legal/">Disclosures.</a></p>
+    <p class="cop">&copy; 2026 Trident National, a Patel Legacy Properties company. All Rights Reserved.</p>
+    <p class="legal">This website is for informational purposes only. Nothing on it is an offer to sell, or a solicitation of an offer to buy, any security. Trident National does not offer investments to the public. Any opportunity to invest is made available only to qualified investors with whom Trident has an existing relationship, through definitive offering documents. Trident National is not a registered investment adviser or broker dealer. Real estate investments are illiquid and involve risk, including loss of the amount invested. <a href="${r}legal/">Disclosures.</a></p>
   </div>
 </footer>
 
@@ -141,7 +142,7 @@ for (const [from, to] of Object.entries(MOVED)) {
 <meta http-equiv="refresh" content="0; url=../${to}/">
 <meta name="robots" content="noindex">
 <link rel="canonical" href="../${to}/">
-<title>Trident</title>
+<title>Trident National</title>
 </head>
 <body><p>This page has moved to <a href="../${to}/">../${to}/</a>.</p></body>
 </html>

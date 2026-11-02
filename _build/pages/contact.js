@@ -1,7 +1,7 @@
 module.exports = {
   path: 'contact',
   nav: 'contact',
-  title: 'Contact · Trident',
+  title: 'Contact · Trident National',
   description: 'Reach a Trident principal directly.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
@@ -9,8 +9,8 @@ module.exports = {
     <h1>Talk to a principal.</h1>
     <p class="lead">Email reaches Spencer Dworkin and Ayush Patel directly. Tell us a little about yourself and how you found
       us, and one of us will reply within a business day.</p>
-    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a>
-    <p class="also">Trident, a Patel Legacy Properties company. New Jersey.</p>
+    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a>
+    <p class="also">Trident National, a Patel Legacy Properties company. New Jersey.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">

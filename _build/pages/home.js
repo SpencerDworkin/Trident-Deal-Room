@@ -3,13 +3,13 @@ const SEAL = `<svg class="seal" viewBox="0 0 200 200" aria-hidden="true"><defs><
 module.exports = {
   path: '',
   nav: '',
-  title: 'Trident · Private commercial real estate',
-  description: 'Trident is a private real estate investment company. We buy well priced mixed use and retail property in New Jersey and nearby, one deal at a time, with a small group of private investors. A Patel Legacy Properties company.',
+  title: 'Trident National · Private commercial real estate',
+  description: 'Trident National is a private real estate investment company. We buy well priced mixed use and retail property in New Jersey and nearby, one deal at a time, with a small group of private investors. A Patel Legacy Properties company.',
   body: r => `
-  <section class="hero" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
+  <section class="hero" style="background-image:url(${r}assets/img/hero-skyline.webp)"><div class="wrap">
     <div class="copy">
       <h1>one good property at a time</h1>
-      <p class="lede">Trident is a private real estate investment company. We buy well priced mixed use and retail property
+      <p class="lede">Trident National is a private real estate investment company. We buy well priced mixed use and retail property
         in New Jersey and the surrounding states, deal by deal, with a small group of investors we know.</p>
       <div class="actions"><a class="btn" href="${r}what-we-do/">How We Work</a><a class="btn" href="${r}contact/">Contact</a></div>
     </div>
@@ -19,19 +19,20 @@ module.exports = {
   <section class="band"><div class="wrap">
     <p class="kicker">Who We Are</p>
     <h2 style="margin-top:10px">Operators, with our own capital in every deal.</h2>
-    <p class="lead">Trident is a Patel Legacy Properties company. We find commercial property that is priced below what it is
+    <p class="lead">Trident National is a Patel Legacy Properties company. We find commercial property that is priced below what it is
       worth, buy it with our own money alongside a few investors, and run it for income. Our technology finds the deals.
       Our experience decides which ones to buy.</p>
   </div></section>
 
   <section class="scene center"><div class="wrap">
     <p class="kicker">What We Buy</p>
-    <h2>Mixed use and retail, close to home.</h2>
+    <h2>Class B retail, mixed use, and the right house.</h2>
     <div class="tiles">
+      <article class="tile"><p class="kicker">Retail</p><h3>Class B retail</h3><p>Neighborhood centers and single tenant buildings with service tenants people visit every week, often held by owners who have let the rents fall behind. Irreplaceable at today&rsquo;s construction costs.</p></article>
       <article class="tile"><p class="kicker">Mixed Use</p><h3>Storefronts with apartments above</h3><p>Buildings on established main streets where a shop pays the ground floor and homes pay the rest. Two kinds of income under one roof.</p></article>
-      <article class="tile"><p class="kicker">Retail</p><h3>Neighborhood and single tenant retail</h3><p>Small centers and single tenant buildings with tenants people visit every week. Bought at a price that works on the rent in place.</p></article>
-      <article class="tile"><p class="kicker">Where</p><h3>New Jersey and nearby</h3><p>Our home market first, and New York, Pennsylvania and Connecticut as the right properties appear. We buy where we can drive to the building.</p></article>
+      <article class="tile"><p class="kicker">Residential</p><h3>Houses where the land is the deal</h3><p>Select homes bought through court supervised sales where the lot is worth more than the house: a second buildable lot, an assemblage, or frontage on a commercial corridor.</p></article>
     </div>
+    <p class="cap" style="margin-top:22px;text-align:center">New Jersey first, and New York, Pennsylvania and Connecticut as the right properties appear. We buy where we can drive to the building.</p>
   </div></section>
 
   <section class="scene alt"><div class="wrap"><div class="split r2">
@@ -48,15 +49,15 @@ module.exports = {
       </div>
       <div class="actions"><a class="btn" href="${r}what-we-do/">Our Approach</a></div>
     </div>
-    <figure class="photo"><img src="${r}assets/img/hero-street.webp" alt="A New Jersey street at dusk" loading="lazy"></figure>
+    <figure class="photo"><img src="${r}assets/img/hero-street.webp" alt="A New Jersey street at dusk" ></figure>
   </div></div></section>
 
   <section class="scene center"><div class="wrap">
     <p class="kicker">Principals</p>
     <h2>Two principals. You deal with us directly.</h2>
     <div class="people">
-      <div class="person"><div class="mono">SD</div><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Built the Trident platform. Leads sourcing, data and underwriting. Head of AI and underwriter at Sustainable Credit Partners. M.S. in Real Estate, NYU Schack.</p></div></div>
-      <div class="person"><div class="mono">AP</div><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Investment sales at NAI James E. Hanson; formerly asset management at Heidenberg Properties. Leads acquisitions, operations and investor relations. M.S. in Real Estate, NYU Schack; B.S., Rutgers.</p></div></div>
+      <div class="person"><figure class="photo"><img src="${r}assets/img/spencer.jpg" alt="Spencer Dworkin" ></figure><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Built the Trident platform. Leads sourcing, data and underwriting. Head of AI and underwriter at Sustainable Credit Partners. M.S. in Real Estate, NYU Schack.</p></div></div>
+      <div class="person"><figure class="photo"><img src="${r}assets/img/ayush.jpg" alt="Ayush Patel" ></figure><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Investment sales at NAI James E. Hanson; formerly asset management at Heidenberg Properties. Leads acquisitions, operations and investor relations. M.S. in Real Estate, NYU Schack; B.S., Rutgers.</p></div></div>
     </div>
     <div class="actions" style="justify-content:center"><a class="btn btn-solid" href="${r}about/">About Us</a></div>
   </div></section>
@@ -64,8 +65,9 @@ module.exports = {
   <section class="band navy"><div class="wrap">
     <p class="kicker">Investing With Us</p>
     <h2 style="margin-top:10px">A small group, one deal at a time.</h2>
-    <p class="lead">We bring a small number of private investors into each property we buy. Most are people we know or have
-      been introduced to. If that is you, we would like to hear from you.</p>
+    <p class="lead">We bring a small number of private investors into each property we buy, in its own entity, with our own
+      capital alongside theirs. Investments begin at $250,000 and are open to accredited investors. Most of our partners
+      are people we know or have been introduced to. If that is you, we would like to hear from you.</p>
     <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}contact/">Get in Touch</a></div>
   </div></section>
 `,

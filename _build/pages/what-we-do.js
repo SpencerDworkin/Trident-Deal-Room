@@ -3,7 +3,7 @@ const { pipeline } = require('../diagram');
 module.exports = {
   path: 'what-we-do',
   nav: 'what-we-do',
-  title: 'Approach · Trident',
+  title: 'Approach · Trident National',
   description: 'How Trident finds, underwrites, buys and operates mixed use and retail property in New Jersey and nearby, one deal at a time.',
   body: r => `
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
@@ -13,6 +13,24 @@ module.exports = {
       works on the income in place, and we hold it. The discipline is simple to state and hard to keep, which is why it
       is the whole business.</p>
   </div></section>
+
+  <section class="scene"><div class="wrap"><div class="split r3 start">
+    <div class="sh"><p class="kicker">What We Buy</p><h2>The case for Class B retail</h2></div>
+    <div class="prose">
+      <p><strong>Owned by amateurs.</strong> Much of it is held by small landlords who under manage, leaving rents below
+        market and operations loose. Professional leasing, cosmetic work and a better tenant mix create value without a
+        construction loan.</p>
+      <p><strong>Cannot be replaced.</strong> Building new costs three times or more the price of an existing Class B
+        building, and the sites are already taken. Nobody is building the competition.</p>
+      <p><strong>Well located.</strong> These buildings sit where people already are: near homes, highways, hospitals and
+        campuses, in established corridors with construction barriers.</p>
+      <p><strong>Tenants people visit.</strong> We favor service tenants with a reason to be in the building every week,
+        leases below market with term remaining, a guarantor behind them and increases built in. Underused parking can
+        carry ancillary income on smaller deals.</p>
+      <p>Alongside retail we buy mixed use buildings on main streets and, selectively, houses sold through the courts
+        where the lot is worth more than the house.</p>
+    </div>
+  </div></div></section>
 
   <section class="scene"><div class="wrap">
     <div class="sechead"><p class="kicker">A Deal, Start to Finish</p><h2>Four steps, in the same order every time</h2></div>
@@ -51,6 +69,17 @@ module.exports = {
         because a calendar says so.</p>
     </div>
   </div></div></section>
+
+  <section class="scene alt"><div class="wrap">
+    <div class="sechead"><p class="kicker">Pipeline</p><h2>What we are working on</h2>
+      <p class="lead">Three properties in Mercer and Middlesex counties are in underwriting. Addresses, records and our
+        analysis are shared with qualified investors in person.</p></div>
+    <ul class="pipe-list">
+      <li><b>86,000 SF health club on seven acres</b><span>Mercer County. A single story building with 300 parking spaces on a regional retail corridor, across from a major mall, leased to a fitness operator and a hospital system. In a court supervised sale with a judgment well above the assessed value.</span></li>
+      <li><b>Corner lot with a second buildable parcel</b><span>Middlesex County. A house on a large lakeside corner lot where a subdivision creates a second lot. The house alone does not justify the price; the land does.</span></li>
+      <li><b>House beside a highway outparcel</b><span>Middlesex County. An estate owned house on a small lot directly behind a national fast food outparcel on a state highway. An assemblage play, not a rental.</span></li>
+    </ul>
+  </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
     <div class="sh"><p class="kicker">04</p><h2>What we will not do</h2></div>
