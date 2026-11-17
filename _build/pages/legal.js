@@ -39,6 +39,13 @@ module.exports = {
         property; and the possibility that a property cannot be sold when its owners wish. Offering documents for any
         specific investment set out its risks in full.</p>
 
+      <h2>Preferred equity terms</h2>
+      <p>The preferred equity terms described on this website, including minimum investment, preferred return and fees,
+        are the terms on which Trident National expects to offer interests in individual property entities. They are
+        indicative only. The offering documents for a specific property control and may differ. A preferred return is a
+        priority of payment from the income of one property, is paid only if and when that property produces it, and is
+        not a guarantee, a projection or a target.</p>
+
       <h2>No projections</h2>
       <p>Nothing on this website is a projection of, or a target for, any return. Statements about strategy and plans
         reflect current intentions and may change.</p>

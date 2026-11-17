@@ -90,6 +90,6 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}about/">About Us &rarr;</a> <a href="${r}contact/">Contact &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}preferred/">Preferred Equity &rarr;</a> <a href="${r}about/">About Us &rarr;</a> <a href="${r}contact/">Contact &rarr;</a></div></nav>
 `,
 };

@@ -9,8 +9,9 @@ module.exports = {
   <section class="hero" style="background-image:url(${r}assets/img/hero-skyline.webp)"><div class="wrap">
     <div class="copy">
       <h1>one good property at a time</h1>
-      <p class="lede">Trident National is a private real estate investment company. We buy well priced mixed use and retail property
-        in New Jersey and the surrounding states, deal by deal, with a small group of investors we know.</p>
+      <p class="lede">Trident National is a private real estate investment company. We buy well priced commercial and
+        residential property in New Jersey and the surrounding states, deal by deal, with a small group of investors we
+        know.</p>
       <div class="actions"><a class="btn" href="${r}what-we-do/">How We Work</a><a class="btn" href="${r}contact/">Contact</a></div>
     </div>
     ${SEAL}
@@ -68,7 +69,7 @@ module.exports = {
     <p class="lead">We bring a small number of private investors into each property we buy, in its own entity, with our own
       capital alongside theirs. Investments begin at $250,000 and are open to accredited investors. Most of our partners
       are people we know or have been introduced to. If that is you, we would like to hear from you.</p>
-    <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}contact/">Get in Touch</a></div>
+    <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}preferred/">Preferred Equity</a><a class="btn" href="${r}contact/">Get in Touch</a></div>
   </div></section>
 `,
 };

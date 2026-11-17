@@ -18,13 +18,14 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const read = f => fs.readFileSync(path.join(__dirname, f), 'utf8');
 
-const PAGES = ['home', 'what-we-do', 'about', 'contact', 'legal']
+const PAGES = ['home', 'what-we-do', 'preferred', 'about', 'contact', 'legal']
   .map(n => require('./pages/' + n));
 
 /* [slug, label, icon] — the icon is a 24-box line drawing, stroked in currentColor. */
 const NAV = [
   ['', 'Home', '<path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>'],
   ['what-we-do', 'Approach', '<path d="M3 21h8"/><path d="M7 21v-4"/><path d="M13.5 4.5l6 6-5 5-6-6z"/><path d="M11 10l-7 7"/>'],
+  ['preferred', 'Preferred Equity', '<path d=\"M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M3 10l9-6 9 6\"/>'],
   ['about', 'Team', '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-5-6.3"/>'],
   ['contact', 'Contact', '<path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/>'],
 ];
@@ -32,7 +33,6 @@ const NAV = [
 /* Paths that were once live and now live elsewhere. A link in someone's
    inbox should land, not 404. */
 const MOVED = {
-  preferred: 'contact',
   fund: 'contact',
   investors: 'contact',
   strategy: 'what-we-do',
@@ -98,8 +98,7 @@ ${p.body(r)}
 <footer>
   <div class="wrap">
     <a class="brand" href="${r}"><span><b>Trident National</b><i>A Patel Legacy Properties company</i></span>${MARK}</a>
-    <a class="plp" href="https://patel-legacyproperties.com/" rel="noopener"><img src="${r}assets/img/plp-seal-white.png" alt="Patel Legacy Properties" width="96" height="96" loading="lazy"></a>
-    <div class="fl">${foot}<a href="${r}legal/">Disclosures</a><a href="mailto:sgd3210@gmail.com?subject=Trident">sgd3210@gmail.com</a></div>
+    <div class="fl">${foot}<a href="${r}legal/">Disclosures</a><a href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a><a href="mailto:ayushpatel75@gmail.com?subject=Trident%20National">ayushpatel75@gmail.com</a></div>
     <p class="cop">&copy; 2026 Trident National, a Patel Legacy Properties company. All Rights Reserved.</p>
     <p class="legal">This website is for informational purposes only. Nothing on it is an offer to sell, or a solicitation of an offer to buy, any security. Trident National does not offer investments to the public. Any opportunity to invest is made available only to qualified investors with whom Trident has an existing relationship, through definitive offering documents. Trident National is not a registered investment adviser or broker dealer. Real estate investments are illiquid and involve risk, including loss of the amount invested. <a href="${r}legal/">Disclosures.</a></p>
   </div>

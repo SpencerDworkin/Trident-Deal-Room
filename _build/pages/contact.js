@@ -10,7 +10,8 @@ module.exports = {
     <p class="lead">Email reaches Spencer Dworkin and Ayush Patel directly. Tell us a little about yourself and how you found
       us, and one of us will reply within a business day.</p>
     <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a>
-    <p class="also">Trident National, a Patel Legacy Properties company. New Jersey.</p>
+    <a class="mail" href="mailto:ayushpatel75@gmail.com?subject=Trident%20National">ayushpatel75@gmail.com</a>
+    <p class="also">Spencer Dworkin and Ayush Patel. Trident National, a Patel Legacy Properties company. New Jersey.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">
@@ -30,6 +31,6 @@ module.exports = {
     </div>
   </div></div></section>
 
-  <nav class="cont"><div class="wrap"><a href="${r}what-we-do/">Approach &rarr;</a> <a href="${r}about/">About Us &rarr;</a></div></nav>
+  <nav class="cont"><div class="wrap"><a href="${r}preferred/">Preferred Equity &rarr;</a> <a href="${r}what-we-do/">Approach &rarr;</a> <a href="${r}about/">About Us &rarr;</a></div></nav>
 `,
 };
