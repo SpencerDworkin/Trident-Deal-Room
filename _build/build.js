@@ -98,7 +98,7 @@ ${p.body(r)}
 <footer>
   <div class="wrap">
     <a class="brand" href="${r}"><span><b>Trident National</b><i>A Patel Legacy Properties company</i></span>${MARK}</a>
-    <div class="fl">${foot}<a href="${r}legal/">Disclosures</a><a href="mailto:ayushpatel75@gmail.com?subject=Trident%20National">ayushpatel75@gmail.com</a><a href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a></div>
+    <div class="fl">${foot}<a href="${r}legal/">Disclosures</a><a href="mailto:crepatel75@gmail.com?subject=Trident%20National">crepatel75@gmail.com</a><a href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a></div>
     <p class="cop">&copy; 2026 Trident National, a Patel Legacy Properties company. All Rights Reserved.</p>
     <p class="legal">This website is for informational purposes only. Nothing on it is an offer to sell, or a solicitation of an offer to buy, any security. Trident National does not offer investments to the public. Any opportunity to invest is made available only to qualified investors with whom Trident has an existing relationship, through definitive offering documents. Trident National is not a registered investment adviser or broker dealer. Real estate investments are illiquid and involve risk, including loss of the amount invested. <a href="${r}legal/">Disclosures.</a></p>
   </div>

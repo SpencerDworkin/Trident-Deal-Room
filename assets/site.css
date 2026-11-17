@@ -307,8 +307,7 @@ footer .legal a{color:var(--onnavy2);text-decoration:underline;text-underline-of
 
 .person .photo{flex:0 0 96px;width:96px;height:96px;border-radius:50%;overflow:hidden;background:var(--navy);margin:0}
 .person .photo img{width:100%;height:100%;object-fit:cover;display:block}
-footer .plp{display:block;margin:22px auto 0;width:96px;opacity:.9}
-footer .plp img{display:block;width:96px;height:96px}
+footer .plpseal{display:block;margin:0 auto 26px;width:150px;height:150px}
 .pipe-list{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .pipe-list li{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);padding:22px}
 .pipe-list b{display:block;font-family:var(--serif);font-size:1.2rem;color:var(--navy);margin-bottom:8px}
@@ -316,11 +315,8 @@ footer .plp img{display:block;width:96px;height:96px}
 @media (max-width:900px){.pipe-list{grid-template-columns:1fr}}
 
 /* ---- PLP seal watermark, as on the deck dividers ----------------------- */
-.band.navy,footer{background-image:url(img/plp-seal-wm.png);background-repeat:no-repeat;background-position:center 110%;background-size:min(760px,120vw) auto}
 .band.navy{background-color:var(--navy2)}
 .terms{margin-top:0}
 .terms dt{white-space:normal}
 .note{background:var(--white);border:1px solid var(--rule);border-left:3px solid var(--accent);padding:18px 20px;font-size:14.5px;color:var(--ink2);line-height:1.6;margin-top:22px}
 a.mail{display:inline-block;margin:6px 14px 0}
-.band.navy{background-position:center calc(100% + 150px)}
-footer{background-position:center calc(100% + 60px);background-size:min(560px,110vw) auto}
