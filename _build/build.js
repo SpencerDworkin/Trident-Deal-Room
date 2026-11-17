@@ -97,6 +97,7 @@ ${p.body(r)}
 
 <footer>
   <div class="wrap">
+    <img class="plpseal" src="${r}assets/img/plp-seal-white.png" alt="Patel Legacy Properties" width="150" height="150">
     <a class="brand" href="${r}"><span><b>Trident National</b><i>A Patel Legacy Properties company</i></span>${MARK}</a>
     <div class="fl">${foot}<a href="${r}legal/">Disclosures</a><a href="mailto:crepatel75@gmail.com?subject=Trident%20National">crepatel75@gmail.com</a><a href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a></div>
     <p class="cop">&copy; 2026 Trident National, a Patel Legacy Properties company. All Rights Reserved.</p>
