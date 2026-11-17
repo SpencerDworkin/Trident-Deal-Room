@@ -74,8 +74,8 @@ module.exports = {
   <section class="band navy"><div class="wrap">
     <p class="kicker">Next Step</p>
     <h2 style="margin-top:12px">Talk to a principal.</h2>
-    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20National%20preferred%20equity">sgd3210@gmail.com</a>
     <a class="mail" href="mailto:ayushpatel75@gmail.com?subject=Trident%20National%20preferred%20equity">ayushpatel75@gmail.com</a>
+    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20National%20preferred%20equity">sgd3210@gmail.com</a>
     <div class="actions onnavy" style="justify-content:center"><a class="btn" href="${r}contact/">Contact</a><a class="btn" href="${r}legal/">Disclosures</a></div>
   </div></section>
 

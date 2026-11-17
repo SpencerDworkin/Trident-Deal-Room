@@ -7,11 +7,11 @@ module.exports = {
   <section class="phead" style="background-image:url(${r}assets/img/hero-street.webp)"><div class="wrap">
     <p class="kicker">Contact</p>
     <h1>Talk to a principal.</h1>
-    <p class="lead">Email reaches Spencer Dworkin and Ayush Patel directly. Tell us a little about yourself and how you found
+    <p class="lead">Email reaches Ayush Patel and Spencer Dworkin directly. Tell us a little about yourself and how you found
       us, and one of us will reply within a business day.</p>
-    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a>
     <a class="mail" href="mailto:ayushpatel75@gmail.com?subject=Trident%20National">ayushpatel75@gmail.com</a>
-    <p class="also">Spencer Dworkin and Ayush Patel. Trident National, a Patel Legacy Properties company. New Jersey.</p>
+    <a class="mail" href="mailto:sgd3210@gmail.com?subject=Trident%20National">sgd3210@gmail.com</a>
+    <p class="also">Ayush Patel and Spencer Dworkin. Trident National, a Patel Legacy Properties company. New Jersey.</p>
   </div></section>
 
   <section class="scene"><div class="wrap"><div class="split r3 start">

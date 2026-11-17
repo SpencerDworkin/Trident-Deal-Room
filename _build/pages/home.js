@@ -57,7 +57,7 @@ module.exports = {
     <p class="kicker">Principals</p>
     <h2>Two principals. You deal with us directly.</h2>
     <div class="people">
-      <div class="person"><figure class="photo"><img src="${r}assets/img/spencer.jpg" alt="Spencer Dworkin" ></figure><div><h3>Spencer Dworkin</h3><p class="role">Principal</p><p>Built the Trident platform. Leads sourcing, data and underwriting. Head of AI and underwriter at Sustainable Credit Partners. M.S. in Real Estate, NYU Schack.</p></div></div>
+      <div class="person"><figure class="photo"><img src="${r}assets/img/spencer.jpg" alt="Spencer Dworkin" ></figure><div><h3>Spencer Dworkin</h3><p class="role">Principal · Pursuit CRE AI</p><p>Built the Trident platform. Leads sourcing, data and underwriting. Head of AI and underwriter at Sustainable Credit Partners. M.S. in Real Estate, NYU Schack.</p></div></div>
       <div class="person"><figure class="photo"><img src="${r}assets/img/ayush.jpg" alt="Ayush Patel" ></figure><div><h3>Ayush Patel</h3><p class="role">Principal · Patel Legacy Properties</p><p>Investment sales at NAI James E. Hanson; formerly asset management at Heidenberg Properties. Leads acquisitions, operations and investor relations. M.S. in Real Estate, NYU Schack; B.S., Rutgers.</p></div></div>
     </div>
     <div class="actions" style="justify-content:center"><a class="btn btn-solid" href="${r}about/">About Us</a></div>
